@@ -58,6 +58,25 @@
             }
         },
         {
+            "Key": "0890afeb-6468-4a67-8c6a-d792a2280e54",
+            "Value": {
+                "id": "36ed9714-153b-4485-914a-1e62f9b23c11",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/oCombatPlayer\/oCombatPlayer.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0d2bccc1-d0e0-4b43-9e98-90c3a9882a9d",
             "Value": {
                 "id": "533a3444-d1b4-43f5-bdc5-1475846dabc0",
@@ -644,25 +663,6 @@
                 ],
                 "resourcePath": "options\/linux\/options_linux.yy",
                 "resourceType": "GMLinuxOptions"
-            }
-        },
-        {
-            "Key": "abfa3875-f01c-4904-9edf-7e4cecc2a293",
-            "Value": {
-                "id": "f084cf36-d199-4ccd-ab88-1dafa4bd80da",
-                "modelName": "GMResourceInfo",
-                "mvc": "1.0",
-                "configDeltaFiles": [
-                    
-                ],
-                "configDeltas": [
-                    
-                ],
-                "resourceCreationConfigs": [
-                    "default"
-                ],
-                "resourcePath": "objects\/oCombatPlayer\/oCombatPlayer.yy",
-                "resourceType": "GMObject"
             }
         },
         {
