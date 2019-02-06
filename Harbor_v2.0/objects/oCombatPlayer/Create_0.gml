@@ -4,4 +4,4 @@ player			= noone;
 boardInst		= noone;
 state			= PLAYER_STATE.NAVIGATE;
 spellBook		= noone;
-spellBookIndex	= 0;
+spellBookIndex	= 2;

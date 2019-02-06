@@ -1,8 +1,8 @@
 {
-    "id": "728bdaed-a706-4f1a-befa-41daa9285c26",
+    "id": "23d00dfb-c9eb-46c7-837c-66df0bcdd9ba",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "update_team_order",
+    "name": "update_spell_data",
     "IsCompatibility": false,
     "IsDnD": false
 }

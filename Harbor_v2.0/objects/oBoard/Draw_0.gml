@@ -7,4 +7,4 @@ switch (state) {
 		break;
 }
 
-draw_text(x, y, global.spellData[player.spellBook[player.spellBookIndex], SP.FLIP_ORIENTATION]);
+//draw_text(x, y, global.spellData[player.spellBook[player.spellBookIndex], SP.FLIP_ORIENTATION]);

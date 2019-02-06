@@ -28,6 +28,7 @@ switch(state) {
 		board1Inst.player = player1Inst;
 		player1Inst.boardInst = board1Inst;
 		board1Inst.cursor = player1Inst.spellBook[player1Inst.spellBookIndex];
+		update_spell_data(board1Inst);
 		
 		var board2 = ds_grid_create(board2W, board2H);
 		randomize_board(board2);		
@@ -42,6 +43,7 @@ switch(state) {
 		board2Inst.player = player2Inst;
 		player2Inst.boardInst = board2Inst;
 		board2Inst.cursor = player2Inst.spellBook[player2Inst.spellBookIndex];
+		update_spell_data(board2Inst);
 		
 		state = PUZZLE_ROOM_STATE.PRE_COMBAT;
 		

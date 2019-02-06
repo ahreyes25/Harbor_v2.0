@@ -10,10 +10,13 @@ yRest	= noone;
 
 // Cursor
 cursor		= noone;
-cursorW		= 1;
-cursorH		= 1;
-cursorI		= 0;
-cursorJ		= 0;
+cursorW		= 1;	// width
+cursorH		= 1;	// height
+cursorI		= 0;	// i index
+cursorJ		= 0;	// j index
+cursorF		= 1;	// flip
+cursorR		= 0;	// rotation
+config		= [];
 
 // Other
 pid		= noone;
