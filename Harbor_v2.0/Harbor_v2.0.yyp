@@ -286,6 +286,25 @@
             }
         },
         {
+            "Key": "11a9340b-ef33-41cb-970e-d26d3ce0a07a",
+            "Value": {
+                "id": "cfd14018-e1dc-4f1f-b938-111486e2fb90",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/rotate_cursor\/rotate_cursor.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "19f22c56-ce5c-44a5-91b7-728f3f4bd61a",
             "Value": {
                 "id": "b3d78726-20d2-41d4-944f-84c716d3bc3e",
@@ -1236,6 +1255,25 @@
             }
         },
         {
+            "Key": "c189fc07-16e0-4eb3-91d6-c2f8ab22201d",
+            "Value": {
+                "id": "15273074-8352-42ff-a8b9-36f900728512",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/flip_cursor\/flip_cursor.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "c2dae40c-c3fe-44d4-a389-71250320c9e9",
             "Value": {
                 "id": "a76f44d2-b1e7-418a-8b0d-d1d1f1ced710",
@@ -1598,6 +1636,8 @@
         "1bb2e370-4757-4ae7-a42d-b2b51e3664b1",
         "1bf9f4ff-085f-4da1-9f2d-c4bcc596e55c",
         "01c34289-70be-4c7c-8f92-3721017962fc",
+        "c189fc07-16e0-4eb3-91d6-c2f8ab22201d",
+        "11a9340b-ef33-41cb-970e-d26d3ce0a07a",
         "3a643fdc-ca0d-41bb-9165-60186c52ec94",
         "fa7c74f7-b2f7-4eaa-b98d-13481f3a6b8f",
         "7f1d927b-aa26-40da-9c18-9eb8f0689f0a"

@@ -1,18 +1,26 @@
 input();
 
 var cast = false;
-var c = [];
+var configuration = [];
 
 if (kA1Pressed) {
 
 	switch (cursor) {
 		
+		#region Basic
 		case SPELL.BASIC:
+			
+			var config = global.spellData[cursor, SP.CONFIG];
 			cast = true;
+			configuration = config;
+			
 			break;
+			#endregion
 		
+		#region Fireball
 		case SPELL.FIREBALL:
-			var config = [[1, 0], [0, 1], [1, 1], [2, 1], [1, 2]];
+		
+			var config = global.spellData[cursor, SP.CONFIG];
 
 			// Check For All Fires
 			var pass = true;
@@ -24,17 +32,19 @@ if (kA1Pressed) {
 				}
 			}	
 			cast = pass;
-			c = config
+			configuration = config;
+			
 			break;
+			#endregion
 	}
 }
 
 // Valid spell found
 if (cast) {
-	state = BOARD_STATE.CHARGE;
-	
-	for (var i = 0; i < array_length_1d(config); i++) {
+	for (var i = 0; i < array_length_1d(configuration); i++) {
 		var c = config[i];
 		ds_grid_set(grid, c[0] + cursorI, c[1] + cursorJ, ds_grid_get(grid, c[0] + cursorI, c[1] + cursorJ) + 10);	
 	}
+	
+	state = BOARD_STATE.CHARGE;
 }

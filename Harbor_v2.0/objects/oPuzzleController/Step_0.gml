@@ -27,7 +27,7 @@ switch(state) {
 		board1Inst.pid = PLAYER.P1;
 		board1Inst.player = player1Inst;
 		player1Inst.boardInst = board1Inst;
-		board1Inst.cursor = player1Inst.spellBook[1];
+		board1Inst.cursor = player1Inst.spellBook[player1Inst.spellBookIndex];
 		
 		var board2 = ds_grid_create(board2W, board2H);
 		randomize_board(board2);		
@@ -41,7 +41,7 @@ switch(state) {
 		board2Inst.pid = PLAYER.P2;
 		board2Inst.player = player2Inst;
 		player2Inst.boardInst = board2Inst;
-		board2Inst.cursor = player2Inst.spellBook[1];
+		board2Inst.cursor = player2Inst.spellBook[player2Inst.spellBookIndex];
 		
 		state = PUZZLE_ROOM_STATE.PRE_COMBAT;
 		

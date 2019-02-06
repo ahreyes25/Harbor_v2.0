@@ -13,6 +13,8 @@ switch (state) {
 	#region Navigate
 	case BOARD_STATE.NAVIGATE:
 		update_cursor_wh();
+		flip_cursor();
+		rotate_cursor();
 		move_cursor();
 		check_spell_forms();
 		

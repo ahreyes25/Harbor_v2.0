@@ -6,3 +6,5 @@ switch (state) {
 		draw_cursor();
 		break;
 }
+
+draw_text(x, y, global.spellData[player.spellBook[player.spellBookIndex], SP.FLIP_ORIENTATION]);

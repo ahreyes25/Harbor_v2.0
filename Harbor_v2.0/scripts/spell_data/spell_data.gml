@@ -3,25 +3,33 @@ enum SPELL {
 }
 
 enum SP {
-	SPELL_ID, SPELL_NAME, SPELL_TYPE, TARGET_BOARD,
-	ELEMENT_TYPE, DAMAGE_LOW, DAMAGE_HIGH, CHAIN_PIECE, ACCURACY,
-	CURSOR_WIDTH, CURSOR_HEIGHT, CAN_ROTATE, ORIENTATION, CAN_FLIP, FLIP_ORIENTATION,
+	SPELL_ID, SPELL_NAME, SPELL_TYPE, DEFAULT_CONFIG, ACTIVE_CONFIG,
+	CURSOR_DEFAULT_WIDTH, CURSOR_DEFAULT_HEIGHT, CURSOR_ACTIVE_WIDTH, CURSOR_ACTIVE_HEIGHT,
+	CAN_ROTATE, ROTATION, CAN_FLIP, FLIP_ORIENTATION,
+	
+	TARGET_BOARD,ELEMENT_TYPE, DAMAGE_LOW, DAMAGE_HIGH, CHAIN_PIECE, ACCURACY,
 }
 
 #region Basic
-global.spellData[SPELL.BASIC, SP.SPELL_ID]			= 1;
-global.spellData[SPELL.BASIC, SP.SPELL_NAME]		= "Basic";	
-global.spellData[SPELL.BASIC, SP.SPELL_TYPE]		= "Active";
+global.spellData[SPELL.BASIC, SP.SPELL_ID]				= 1;
+global.spellData[SPELL.BASIC, SP.SPELL_NAME]			= "Basic";	
+global.spellData[SPELL.BASIC, SP.SPELL_TYPE]			= "Active";
+global.spellData[SPELL.BASIC, SP.DEFAULT_CONFIG]		= [[0,0]];
+global.spellData[SPELL.BASIC, SP.ACTIVE_CONFIG]			= [[0,0]];
+global.spellData[SPELL.BASIC, SP.CURSOR_DEFAULT_WIDTH]	= 1;						
+global.spellData[SPELL.BASIC, SP.CURSOR_DEFAULT_HEIGHT]	= 1;
+global.spellData[SPELL.BASIC, SP.CURSOR_ACTIVE_WIDTH]	= 1;						
+global.spellData[SPELL.BASIC, SP.CURSOR_ACTIVE_HEIGHT]	= 1;
+global.spellData[SPELL.BASIC, SP.CAN_ROTATE]			= false;
+global.spellData[SPELL.BASIC, SP.ROTATION]				= 0;
+global.spellData[SPELL.BASIC, SP.CAN_FLIP]				= true;
+global.spellData[SPELL.BASIC, SP.FLIP_ORIENTATION]		= 1;
+
 global.spellData[SPELL.BASIC, SP.TARGET_BOARD]		= TEAM.ENEMY;
 global.spellData[SPELL.BASIC, SP.ELEMENT_TYPE]		= ELEMENT.ALL;
 global.spellData[SPELL.BASIC, SP.DAMAGE_LOW]		= 1;						
 global.spellData[SPELL.BASIC, SP.DAMAGE_HIGH]		= 1;							
 global.spellData[SPELL.BASIC, SP.CHAIN_PIECE]		= noone;
 global.spellData[SPELL.BASIC, SP.ACCURACY]			= 100;
-global.spellData[SPELL.BASIC, SP.CURSOR_WIDTH]		= 1;						
-global.spellData[SPELL.BASIC, SP.CURSOR_HEIGHT]		= 1;									
-global.spellData[SPELL.BASIC, SP.CAN_ROTATE]		= false;
-global.spellData[SPELL.BASIC, SP.ORIENTATION]		= 0;
-global.spellData[SPELL.BASIC, SP.CAN_FLIP]			= false;
-global.spellData[SPELL.BASIC, SP.FLIP_ORIENTATION]	= 1;
+									
 #endregion
