@@ -1,1 +1,1 @@
-draw_text(10, room_height - 30, room_get_name(room));
+draw_text(10, (room_height * 4) - 20, room_get_name(room));

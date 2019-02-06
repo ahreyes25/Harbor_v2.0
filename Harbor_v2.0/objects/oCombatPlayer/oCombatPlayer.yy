@@ -5,13 +5,23 @@
     "name": "oCombatPlayer",
     "eventList": [
         {
-            "id": "a390dedb-0d7b-4af5-bdfd-5223f4cb3a9a",
+            "id": "a8375a89-1fb1-49af-b3aa-3bd704abcb00",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
-            "eventtype": 3,
+            "eventtype": 0,
+            "m_owner": "0890afeb-6468-4a67-8c6a-d792a2280e54"
+        },
+        {
+            "id": "e7df0824-8e84-474b-8c55-142a67fb0992",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 8,
             "m_owner": "0890afeb-6468-4a67-8c6a-d792a2280e54"
         }
     ],

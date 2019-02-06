@@ -1,23 +1,23 @@
-#region Turn Controller
-// Destroy All Old Turn Controllers
-if (instance_exists(oTurnController))
-	with (oTurnController)
-		instance_destroy();
-		
-// Create New Turn Controller
-turnController = instance_create_layer(0, 0, "Controllers", oTurnController);
-#endregion
+enum PUZZLE_ROOM_STATE { LOAD_DATA, PRE_COMBAT, COMBAT }
 
-#region Setup Room
-#endregion
+state	= PUZZLE_ROOM_STATE.LOAD_DATA;
 
-#region Setup Players
-player1 = instance_create_layer(room_width / 2, room_height / 2, "Instances", oCombatPlayer);
+boardSpace			= 7;
+boardScale			= 1;
+boardXOff			= 10;
+boardYOff			= 5;
 
-// Add Players To Turn Controller
-if (ds_exists(turnController.leftTeam, ds_type_list))
-	ds_list_add(turnController.leftTeam, player1);
-	
-// Set this player object instance as the starting player
-turnController.currentPlayerTurn = player1;
-#endregion
+board1W				= 12;
+board1H				= 8;
+board2W				= board1W;
+board2H				= board1H;
+
+player1Inst			= noone;
+board1Inst			= noone;
+player1Collection	= noone;
+player1Name			= noone;
+
+player2Inst			= noone;
+board2Inst			= noone;
+player2Collection	= noone;
+player2Name			= noone;

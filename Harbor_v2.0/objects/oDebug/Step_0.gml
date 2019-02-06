@@ -1,7 +1,7 @@
 if (keyboard_check_pressed(vk_escape))
 	game_end();
 	
-if (keyboard_check(vk_control)) {
+if (keyboard_check(vk_shift)) {
 	if (keyboard_check_pressed(vk_right))
 		room_goto_next();
 	if (keyboard_check_pressed(vk_left))
