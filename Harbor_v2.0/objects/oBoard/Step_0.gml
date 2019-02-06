@@ -12,7 +12,6 @@ switch (state) {
 	
 	#region Navigate
 	case BOARD_STATE.NAVIGATE:
-		update_cursor_wh();
 		flip_spell();
 		rotate_spell();
 		move_cursor();
