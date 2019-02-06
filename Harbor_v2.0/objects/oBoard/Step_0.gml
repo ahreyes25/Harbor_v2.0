@@ -20,17 +20,11 @@ switch (state) {
 		break;
 		#endregion
 	
-	#region Charge
-	case BOARD_STATE.CHARGE:
+	#region CAST
+	case BOARD_STATE.CAST:
 		if (alarm[0] == -1)
 			alarm[0] = 5;
-		state = BOARD_STATE.CAST;
-		
-		break;
-		#endregion
-	
-	#region Cast
-	case BOARD_STATE.CAST:
+		state = BOARD_STATE.WAIT;
 		break;
 		#endregion
 }

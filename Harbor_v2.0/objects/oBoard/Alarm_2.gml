@@ -1,5 +1,4 @@
-/// @description Refill Board
+/// @description Refill
 
 refill_board();
-
-state = BOARD_STATE.NAVIGATE;
+state = BOARD_STATE.WAIT;

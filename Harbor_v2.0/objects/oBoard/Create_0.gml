@@ -1,4 +1,4 @@
-enum BOARD_STATE { WAIT, EASE_IN, NAVIGATE, CHARGE, CAST }
+enum BOARD_STATE { WAIT, EASE_IN, NAVIGATE, CAST }
 
 // Grid
 grid	= noone;
@@ -7,6 +7,7 @@ gridH	= noone;
 space	= noone;
 scale	= noone;
 yRest	= noone;
+pGrid	= noone;
 
 // Cursor
 cursor		= noone;
@@ -19,6 +20,8 @@ cursorR		= 0;	// rotation
 config		= [];
 
 // Other
-pid		= noone;
-player	= noone;
-state	= BOARD_STATE.WAIT;
+pid				= noone;
+player			= noone;
+state			= BOARD_STATE.WAIT;
+waveCounter		= 0;
+chainCounter	= 0;

@@ -26,7 +26,7 @@ if (kA2Pressed) {
 			}
 			else {
 				var cx = c[1];
-				var cy = c[0] * -1 + (cursorW - 1);
+				var cy = (c[0] * -1) + (cursorH - 1);
 			}
 			
 			config[i] = [cx, cy];

@@ -566,7 +566,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "scripts\/clear_board\/clear_board.yy",
+                "resourcePath": "scripts\/clear_grid\/clear_grid.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -777,6 +777,25 @@
                 ],
                 "resourcePath": "views\/6ccc9eaa-933d-4b31-b9f7-531219027a9b.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "6cfb09c0-db5a-45d0-b634-4e73d8584bae",
+            "Value": {
+                "id": "564c9f9e-19b7-49ad-8fa7-927e3875e0b3",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/wave\/wave.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1518,6 +1537,7 @@
         "11a9340b-ef33-41cb-970e-d26d3ce0a07a",
         "1822f45c-5cbd-4c1d-a627-b2fc2357e43f",
         "23d00dfb-c9eb-46c7-837c-66df0bcdd9ba",
+        "6cfb09c0-db5a-45d0-b634-4e73d8584bae",
         "3a643fdc-ca0d-41bb-9165-60186c52ec94",
         "7f1d927b-aa26-40da-9c18-9eb8f0689f0a",
         "fa7c74f7-b2f7-4eaa-b98d-13481f3a6b8f"
