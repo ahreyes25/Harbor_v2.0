@@ -1,6 +1,6 @@
 #region Enums
 enum SPELL { 
-	BASIC, FIREBALL, ELEMENTAL, ELECTRIC_BOLT, SPROUT, TSUNAMI, BRUSHFIRE, THUNDERSTORM,
+	BASIC, FIREBALL, ELECTRIC_BOLT, ELEMENTAL, SPROUT, TSUNAMI, BRUSHFIRE, THUNDERSTORM,
 }
 
 enum SP {
@@ -66,4 +66,80 @@ global.spellData[SPELL.ELECTRIC_BOLT, SP.ELEMENT_TYPE]			= ELEMENT.ELECTRIC;
 global.spellData[SPELL.ELECTRIC_BOLT, SP.DAMAGE_LOW]			= 1;						
 global.spellData[SPELL.ELECTRIC_BOLT, SP.DAMAGE_HIGH]			= 1;							
 global.spellData[SPELL.ELECTRIC_BOLT, SP.ACCURACY]				= 100;
+#endregion
+
+#region Elemental
+global.spellData[SPELL.ELEMENTAL, SP.SPELL_ID]				= 4;
+global.spellData[SPELL.ELEMENTAL, SP.SPELL_NAME]			= "Elemental";	
+global.spellData[SPELL.ELEMENTAL, SP.SPELL_TYPE]			= "Active";
+global.spellData[SPELL.ELEMENTAL, SP.SPELL_ELEMENT]			= ELEMENT.ALL;
+global.spellData[SPELL.ELEMENTAL, SP.CONFIG]				= [[0, 0], [1, 0], [0, 1], [1, 1]];
+global.spellData[SPELL.ELEMENTAL, SP.WIDTH]					= 2;						
+global.spellData[SPELL.ELEMENTAL, SP.HEIGHT]				= 2;
+global.spellData[SPELL.ELEMENTAL, SP.CAN_ROTATE]			= false;
+global.spellData[SPELL.ELEMENTAL, SP.CAN_FLIP]				= false;
+global.spellData[SPELL.ELEMENTAL, SP.CHAIN_PIECE]			= noone;
+
+global.spellData[SPELL.ELEMENTAL, SP.TARGET_BOARD]			= TEAM.ENEMY;
+global.spellData[SPELL.ELEMENTAL, SP.ELEMENT_TYPE]			= ELEMENT.ALL;
+global.spellData[SPELL.ELEMENTAL, SP.DAMAGE_LOW]			= 1;						
+global.spellData[SPELL.ELEMENTAL, SP.DAMAGE_HIGH]			= 1;							
+global.spellData[SPELL.ELEMENTAL, SP.ACCURACY]				= 100;
+#endregion
+
+#region Tsunami
+global.spellData[SPELL.TSUNAMI, SP.SPELL_ID]			= 5;
+global.spellData[SPELL.TSUNAMI, SP.SPELL_NAME]			= "Tsunami";	
+global.spellData[SPELL.TSUNAMI, SP.SPELL_TYPE]			= "Active";
+global.spellData[SPELL.TSUNAMI, SP.SPELL_ELEMENT]		= ELEMENT.WATER;
+global.spellData[SPELL.TSUNAMI, SP.CONFIG]				= [[0, 0], [1, 0], [0, 1]];
+global.spellData[SPELL.TSUNAMI, SP.WIDTH]				= 2;						
+global.spellData[SPELL.TSUNAMI, SP.HEIGHT]				= 2;
+global.spellData[SPELL.TSUNAMI, SP.CAN_ROTATE]			= false;
+global.spellData[SPELL.TSUNAMI, SP.CAN_FLIP]			= true;
+global.spellData[SPELL.TSUNAMI, SP.CHAIN_PIECE]			= ELEMENT.WATER;
+
+global.spellData[SPELL.TSUNAMI, SP.TARGET_BOARD]		= TEAM.ENEMY;
+global.spellData[SPELL.TSUNAMI, SP.ELEMENT_TYPE]		= ELEMENT.WATER;
+global.spellData[SPELL.TSUNAMI, SP.DAMAGE_LOW]			= 1;						
+global.spellData[SPELL.TSUNAMI, SP.DAMAGE_HIGH]			= 1;							
+global.spellData[SPELL.TSUNAMI, SP.ACCURACY]			= 100;
+#endregion
+
+#region Sprout
+global.spellData[SPELL.SPROUT, SP.SPELL_ID]				= 6;
+global.spellData[SPELL.SPROUT, SP.SPELL_NAME]			= "Sprout";	
+global.spellData[SPELL.SPROUT, SP.SPELL_TYPE]			= "Active";
+global.spellData[SPELL.SPROUT, SP.SPELL_ELEMENT]		= ELEMENT.GRASS;
+global.spellData[SPELL.SPROUT, SP.CONFIG]				= [[0, 0], [1, 1], [2, 0]];
+global.spellData[SPELL.SPROUT, SP.WIDTH]				= 3;						
+global.spellData[SPELL.SPROUT, SP.HEIGHT]				= 2;
+global.spellData[SPELL.SPROUT, SP.CAN_ROTATE]			= false;
+global.spellData[SPELL.SPROUT, SP.CAN_FLIP]				= false;
+global.spellData[SPELL.SPROUT, SP.CHAIN_PIECE]			= noone;
+
+global.spellData[SPELL.SPROUT, SP.TARGET_BOARD]			= TEAM.ENEMY;
+global.spellData[SPELL.SPROUT, SP.ELEMENT_TYPE]			= ELEMENT.GRASS;
+global.spellData[SPELL.SPROUT, SP.DAMAGE_LOW]			= 1;						
+global.spellData[SPELL.SPROUT, SP.DAMAGE_HIGH]			= 1;							
+global.spellData[SPELL.SPROUT, SP.ACCURACY]				= 100;
+#endregion
+
+#region Brushfire
+global.spellData[SPELL.BRUSHFIRE, SP.SPELL_ID]				= 7;
+global.spellData[SPELL.BRUSHFIRE, SP.SPELL_NAME]			= "Brushfire";	
+global.spellData[SPELL.BRUSHFIRE, SP.SPELL_TYPE]			= "Active";
+global.spellData[SPELL.BRUSHFIRE, SP.SPELL_ELEMENT]			= ELEMENT.FIRE;
+global.spellData[SPELL.BRUSHFIRE, SP.CONFIG]				= [[0, 0], [1, 0], [2, 0]];
+global.spellData[SPELL.BRUSHFIRE, SP.WIDTH]					= 3;						
+global.spellData[SPELL.BRUSHFIRE, SP.HEIGHT]				= 1;
+global.spellData[SPELL.BRUSHFIRE, SP.CAN_ROTATE]			= true;
+global.spellData[SPELL.BRUSHFIRE, SP.CAN_FLIP]				= false;
+global.spellData[SPELL.BRUSHFIRE, SP.CHAIN_PIECE]			= ELEMENT.GRASS;
+
+global.spellData[SPELL.BRUSHFIRE, SP.TARGET_BOARD]			= TEAM.ENEMY;
+global.spellData[SPELL.BRUSHFIRE, SP.ELEMENT_TYPE]			= ELEMENT.FIRE;
+global.spellData[SPELL.BRUSHFIRE, SP.DAMAGE_LOW]			= 1;						
+global.spellData[SPELL.BRUSHFIRE, SP.DAMAGE_HIGH]			= 1;							
+global.spellData[SPELL.BRUSHFIRE, SP.ACCURACY]				= 100;
 #endregion

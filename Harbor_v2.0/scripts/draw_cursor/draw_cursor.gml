@@ -1,14 +1,4 @@
-switch (cursor) {
-	case SPELL.BASIC:
-		var sp = sCursorBasic;
-		break;
-	case SPELL.FIREBALL:
-		var sp = sCursorFireball;
-		break;
-	case SPELL.ELECTRIC_BOLT:
-		var sp = sCursorElectricBolt;
-		break;
-}
+var sp = asset_get_index("sCursor" + string(global.spellData[cursor, SP.SPELL_NAME]));
 	
 #region Flipped & Rotated
 if (cursorF == 1) {

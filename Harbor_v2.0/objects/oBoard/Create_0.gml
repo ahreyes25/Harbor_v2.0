@@ -20,7 +20,7 @@ cursorR		= 0;	// rotation
 config		= [];
 
 // Spell Book
-spellBook		= noone;
+//spellBook		= noone;
 
 // Other
 pid				= noone;

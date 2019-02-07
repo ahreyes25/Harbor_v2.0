@@ -229,6 +229,25 @@
             }
         },
         {
+            "Key": "0e45b241-cb00-44f5-99dd-eb01f851eea0",
+            "Value": {
+                "id": "c3a0d66f-a457-4965-95d6-168713d55d27",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/sCursorBrushfire\/sCursorBrushfire.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0e90e8e1-db97-472f-b7e5-02f598d3ab07",
             "Value": {
                 "id": "b6103b66-9530-40fa-8967-ae1624912ef6",
@@ -1179,6 +1198,25 @@
             }
         },
         {
+            "Key": "c2ae6014-e168-4889-ab79-fd5c5631f975",
+            "Value": {
+                "id": "16180b87-3745-4040-9ac1-4ddc2e3ab271",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/sCursorElemental\/sCursorElemental.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c2dae40c-c3fe-44d4-a389-71250320c9e9",
             "Value": {
                 "id": "a76f44d2-b1e7-418a-8b0d-d1d1f1ced710",
@@ -1483,6 +1521,25 @@
             }
         },
         {
+            "Key": "f0e6286a-fd38-42d3-8d02-bf3843f202fd",
+            "Value": {
+                "id": "f7211e04-518c-49fd-b9ec-c789154cdc12",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/sCursorTsunami\/sCursorTsunami.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "f418569b-3bdd-4706-a0e4-364317f54032",
             "Value": {
                 "id": "798f8d56-32bc-46fb-b452-067c84f52c8b",
@@ -1499,6 +1556,25 @@
                 ],
                 "resourcePath": "options\/mac\/options_mac.yy",
                 "resourceType": "GMMacOptions"
+            }
+        },
+        {
+            "Key": "f6416102-9f04-410b-a630-afd82e8fbca1",
+            "Value": {
+                "id": "0ebcc8e3-9bb7-497f-8c83-3c11cec6f92a",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/sCursorSprout\/sCursorSprout.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
