@@ -4,8 +4,8 @@ state	= PUZZLE_ROOM_STATE.LOAD_DATA;
 
 boardSpace			= 7;
 boardScale			= 1;
-boardXOff			= 10;
-boardYOff			= 5;
+boardXOff			= 20;
+boardYOff			= 10;
 
 board1W				= 12;
 board1H				= 8;
