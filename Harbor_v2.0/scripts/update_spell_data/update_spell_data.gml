@@ -5,6 +5,10 @@ if (argument_count == 1)
 else
 	var b = id;
 
+if (!instance_exists(b))
+	return;
+
+b.cursor = b.player.spellBook[b.player.spellBookIndex];
 b.cursorW = global.spellData[b.cursor, SP.WIDTH];
 b.cursorH = global.spellData[b.cursor, SP.HEIGHT];
 b.cursorF = 1;

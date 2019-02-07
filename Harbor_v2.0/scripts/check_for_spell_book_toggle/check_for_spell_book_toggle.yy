@@ -1,8 +1,8 @@
 {
-    "id": "19f22c56-ce5c-44a5-91b7-728f3f4bd61a",
+    "id": "e271408f-4fbb-457b-bfe4-ef53cb6ebcef",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "monster_data",
+    "name": "check_for_spell_book_toggle",
     "IsCompatibility": false,
     "IsDnD": false
 }

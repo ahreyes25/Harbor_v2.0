@@ -1,6 +1,6 @@
 input();
 
-if (kA3Pressed) {
+if (kA4Pressed) {
 	var currentSpell = player.spellBook[player.spellBookIndex];
 
 	if (global.spellData[currentSpell, SP.CAN_FLIP]) {

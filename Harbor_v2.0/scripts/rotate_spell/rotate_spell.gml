@@ -1,6 +1,6 @@
 input();
 
-if (kA2Pressed) {
+if (kA3Pressed) {
 	var currentSpell = player.spellBook[player.spellBookIndex];
 
 	if (global.spellData[currentSpell, SP.CAN_ROTATE]) {

@@ -1,4 +1,4 @@
-enum BOARD_STATE { WAIT, EASE_IN, NAVIGATE, CAST }
+enum BOARD_STATE { WAIT, EASE_IN, NAVIGATE, CAST, SPELL_BOOK }
 
 // Grid
 grid	= noone;
@@ -18,6 +18,9 @@ cursorJ		= 0;	// j index
 cursorF		= 1;	// flip
 cursorR		= 0;	// rotation
 config		= [];
+
+// Spell Book
+spellBook		= noone;
 
 // Other
 pid				= noone;
