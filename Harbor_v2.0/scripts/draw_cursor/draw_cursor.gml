@@ -1,6 +1,5 @@
 var sp = asset_get_index("sCursor" + string(global.spellData[cursor, SP.SPELL_NAME]));
 	
-#region Flipped & Rotated
 if (cursorF == 1) {
 	if (cursorR == 0)
 		draw_sprite_ext(sp, 0, x + (cursorI * space) - 2, y + (cursorJ * space) - 2, 1, image_yscale, 0, c_white, 1);
@@ -21,4 +20,3 @@ else if (cursorF == -1) {
 	else if (cursorR == 270)
 		draw_sprite_ext(sp, 1, x + ((cursorI + 2) * space) + 1, y + ((cursorJ + 3) * space) + 1, -1, image_yscale, 270, c_white, 1);
 }
-#endregion

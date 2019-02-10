@@ -1,4 +1,4 @@
-enum BOARD_STATE { WAIT, EASE_IN, NAVIGATE, CAST, SPELL_BOOK }
+enum BOARD_STATE { WAIT, EASE_IN, NAVIGATE, CHARGE, CAST, SPELL_BOOK }
 
 // Grid
 grid	= noone;
@@ -19,12 +19,10 @@ cursorF		= 1;	// flip
 cursorR		= 0;	// rotation
 config		= [];
 
-// Spell Book
-//spellBook		= noone;
-
 // Other
 pid				= noone;
 player			= noone;
+ground			= noone;
 state			= BOARD_STATE.WAIT;
 waveCounter		= 0;
 chainCounter	= 0;

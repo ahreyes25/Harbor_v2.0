@@ -22,13 +22,14 @@ if (kA3Pressed) {
 		
 			if (cursorR == 90 || cursorR == 270) {
 				var cx = c[1];
-				var cy = (c[0] * -1) + (cursorH - 1);
+				var cy = (c[0] * -1) + max(1, (cursorH - 1));
 			}
 			else {
 				var cx = c[1];
-				var cy = (c[0] * -1) + (cursorH - 1);
+				var cy = (c[0] * -1) + max(1, (cursorH - 1));
 			}
 			
+			// Store new config
 			config[i] = [cx, cy];
 		}
 	}

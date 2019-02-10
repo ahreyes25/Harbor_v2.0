@@ -1,4 +1,5 @@
 /// @description Chain Delete
+
 for (var i = 0; i < gridW; i++) {
 	for (var j = 0; j < gridH; j++) {
 		if (ds_grid_get(grid, i, j) >= 20) {

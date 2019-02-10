@@ -14,3 +14,5 @@ b.cursorH = global.spellData[b.cursor, SP.HEIGHT];
 b.cursorF = 1;
 b.cursorR = 0;
 b.config = global.spellData[b.cursor, SP.CONFIG];
+b.cursorI = floor(b.gridW / 2) - floor(b.cursorW / 2);
+b.cursorJ = floor(b.gridH / 2) - floor(b.cursorH / 2);

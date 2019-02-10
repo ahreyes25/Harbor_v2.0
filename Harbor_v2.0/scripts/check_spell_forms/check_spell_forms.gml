@@ -142,6 +142,5 @@ if (cast) {
 		var c = config[i];
 		ds_grid_set(grid, c[0] + cursorI, c[1] + cursorJ, ds_grid_get(grid, c[0] + cursorI, c[1] + cursorJ) + 10);	
 	}
-	
-	state = BOARD_STATE.CAST;	
+	state = BOARD_STATE.CHARGE;	
 }

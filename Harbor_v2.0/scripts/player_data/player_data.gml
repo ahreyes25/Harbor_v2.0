@@ -10,7 +10,7 @@ global.playerData[PLAYER.P1, PP.LIFE]				= 10;
 global.playerData[PLAYER.P1, PP.CONTROL]			= CONTROL.HUMAN;
 global.playerData[PLAYER.P1, PP.AFFINITY]			= [ELEMENT.ALL];
 global.playerData[PLAYER.P1, PP.WEAKNESS]			= [ELEMENT.NONE];
-global.playerData[PLAYER.P1, PP.SKIN]				= "Wizard";
+global.playerData[PLAYER.P1, PP.SKIN]				= "Witch";
 global.playerData[PLAYER.P1, PP.SPELL_COLLECTION]	= noone;
 
 global.playerData[PLAYER.P1, PP.LEFT_KEY]			= ord("A");
@@ -29,7 +29,7 @@ global.playerData[PLAYER.P2, PP.LIFE]				= 10;
 global.playerData[PLAYER.P2, PP.CONTROL]			= CONTROL.HUMAN;
 global.playerData[PLAYER.P2, PP.AFFINITY]			= [ELEMENT.ALL];
 global.playerData[PLAYER.P2, PP.WEAKNESS]			= [ELEMENT.NONE];
-global.playerData[PLAYER.P2, PP.SKIN]				= "Wizard";
+global.playerData[PLAYER.P2, PP.SKIN]				= "Frog";
 global.playerData[PLAYER.P2, PP.SPELL_COLLECTION]	= noone;
 
 global.playerData[PLAYER.P2, PP.LEFT_KEY]			= vk_left;

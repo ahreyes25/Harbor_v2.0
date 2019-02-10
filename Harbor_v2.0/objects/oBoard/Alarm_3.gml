@@ -10,12 +10,20 @@ if (waveCounter > 0) {
 			if (global.spellData[cursor, SP.CHAIN_PIECE] == global.spellData[cursor, SP.SPELL_ELEMENT]) {
 				if (ds_grid_get(pGrid, i, j) == chainCounter) {
 					ds_grid_set(grid,  i, j, ds_grid_get(grid, i, j) + 20);
+					
+					screen_shake();
+					float_text(board_to_world(id, i, "x"), board_to_world(id, j, "y"), 1);
+					chain_sign(board_to_world(id, i, "x"), board_to_world(id, j, "y"));
 				}
 			}
 			// piece to chain and type dont match
 			else {
 				if (ds_grid_get(pGrid, i, j) == chainCounter) {
 					ds_grid_set(grid, i, j, global.spellData[cursor, SP.SPELL_ELEMENT] + 20);
+					
+					screen_shake();
+					float_text(board_to_world(id, i, "x"), board_to_world(id, j, "y"), 1);
+					chain_sign(board_to_world(id, i, "x"), board_to_world(id, j, "y"));
 				}
 			}
 		}

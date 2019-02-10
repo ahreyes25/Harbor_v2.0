@@ -1,16 +1,35 @@
 #region Puzzle Room State
 switch(state) {
 	
-	#region Loading Data
+	#region Load Data
 	case PUZZLE_ROOM_STATE.LOAD_DATA:
 
-		// Spawn Player
-		player1Inst = instance_create_layer(room_width / 4, room_height - (room_height / 4), "Instances", oCombatPlayer);			
-		player2Inst = instance_create_layer(room_width - (room_width / 4), room_height - (room_height / 4), "Instances", oCombatPlayer);
+		#region Setup Environment
+		ground1 = instance_create_layer(boardXOff + ((board1W / 2) * boardSpace), room_height - (room_height / 8), "Instances", oGround);			
+		ground2 = instance_create_layer(room_width - (boardXOff + ((board2W / 2) * boardSpace)), room_height - (room_height / 8), "Instances", oGround);
+		instance_create_layer((ground1.x + ground2.x) / 2, ground1.y, "BackInstances", oCloud);
+		#endregion
+
+		#region Spawn Player
+		player1Inst = instance_create_layer(ground1.x, ground1.y - 1, "Instances", oCombatCharacter);			
 		player1Inst.spellBook = master_book();
-		player2Inst.spellBook = master_book();
+		player1Inst.pid = PLAYER.P1;
+		player1Inst.skin = global.playerData[player1Inst.pid, PP.SKIN];
+		player1Inst.ground = ground1;
+		ground1.playerInst = player1Inst;
 		
-		// Setup Board
+		player2Inst = instance_create_layer(ground2.x, ground2.y - 1, "Instances", oCombatCharacter);
+		player2Inst.spellBook = master_book();
+		player2Inst.pid = PLAYER.P2;
+		player2Inst.skin = global.playerData[player2Inst.pid, PP.SKIN];
+		player2Inst.ground = ground2;
+		ground2.playerInst = player2Inst;
+		
+		player1Inst.enemy = player2Inst;
+		player2Inst.enemy = player1Inst;
+		#endregion
+		
+		#region Setup Board
 		var b1X = boardXOff;
 		var b2X = (room_width - b1X) - (board1W * boardSpace);
 		var bY  = boardYOff;
@@ -28,6 +47,8 @@ switch(state) {
 		board1Inst.player = player1Inst;
 		player1Inst.boardInst = board1Inst;
 		board1Inst.cursor = player1Inst.spellBook[player1Inst.spellBookIndex];
+		board1Inst.ground = ground1;
+		ground1.boardInst = board1Inst;
 		update_spell_data(board1Inst);
 		
 		var board2 = ds_grid_create(board2W, board2H);
@@ -43,7 +64,10 @@ switch(state) {
 		board2Inst.player = player2Inst;
 		player2Inst.boardInst = board2Inst;
 		board2Inst.cursor = player2Inst.spellBook[player2Inst.spellBookIndex];
+		board2Inst.ground = ground2;
+		ground2.boardInst = board2Inst;
 		update_spell_data(board2Inst);
+		#endregion
 		
 		state = PUZZLE_ROOM_STATE.PRE_COMBAT;
 		
@@ -71,4 +95,25 @@ switch(state) {
 		break;
 	#endregion
 }
+#endregion
+
+#region Screen Shake
+if (shakeScreen) {
+	view_xport[0] = random_range(-shakeSize, shakeSize); //sets the view to a random x position
+	view_yport[0] = random_range(-shakeSize, shakeSize); //sets the view to a random y position
+}
+// Reset screen
+else {
+	if view_xport[0] < 0
+		view_xport[0] = 0;
+		
+	if view_xport[0] > 0
+		view_xport[0] = 0;
+		
+	if view_yport[0] < 0
+		view_yport[0] = 0;
+		
+	if view_yport[0] > 0
+		view_yport[0] = 0;
+}	
 #endregion
