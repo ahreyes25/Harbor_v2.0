@@ -1,4 +1,6 @@
-enum PLAYER_STATE { WAIT, NAVIGATE, CHARGE, CAST, HURT, DEAD }
+enum PLAYER_STATE { 
+	WAIT, CHARGE, CAST, CASTING, HURT, DEAD 
+}
 
 boardInst		= noone;
 ground			= noone;
@@ -7,7 +9,9 @@ spellBook		= noone;
 spellBookIndex	= 0;
 pid				= noone;
 enemy			= noone;
+skin			= "";
+spellInst		= noone;
 
-skin	= "";
+playedHurtSound = false;
 
 image_xscale = 1 + (-2 * (x > room_width / 2));

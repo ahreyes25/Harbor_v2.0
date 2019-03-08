@@ -23,3 +23,10 @@ switch (moves) {
 			instance_destroy();
 		break;
 }
+
+if (place_meeting(x, y, target) && !dealtDamage) {
+	if (chance(accuracy)) {
+		//show_message("hit");	
+	}
+	dealtDamage = true;
+}
