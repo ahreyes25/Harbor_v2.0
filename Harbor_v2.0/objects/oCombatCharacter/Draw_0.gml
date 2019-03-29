@@ -5,8 +5,10 @@ switch(state) {
 	break;
 		
 	case PLAYER_STATE.CHARGE:
-		image_speed = 0;
-		sprite_index = asset_get_index("s" + string(skin) + "Cast");
+		if (instance_exists(oSpell)) {
+			image_speed = 0;
+			sprite_index = asset_get_index("s" + string(skin) + "Cast");
+		}
 	break;
 		
 	case PLAYER_STATE.CAST:

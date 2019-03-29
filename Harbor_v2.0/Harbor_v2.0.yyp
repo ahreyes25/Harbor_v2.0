@@ -533,25 +533,6 @@
             }
         },
         {
-            "Key": "1a00fc15-7c3f-4abc-8595-e21cb5918812",
-            "Value": {
-                "id": "5359e460-3cc0-4c55-b581-d84c0a71ddb0",
-                "modelName": "GMResourceInfo",
-                "mvc": "1.0",
-                "configDeltaFiles": [
-                    
-                ],
-                "configDeltas": [
-                    
-                ],
-                "resourceCreationConfigs": [
-                    "default"
-                ],
-                "resourcePath": "objects\/oMainMenu\/oMainMenu.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "1bb2e370-4757-4ae7-a42d-b2b51e3664b1",
             "Value": {
                 "id": "2bd8e47c-6a80-43c3-ad47-c3a85f05c5d6",
@@ -2886,25 +2867,6 @@
                 ],
                 "resourcePath": "scripts\/in_bounds\/in_bounds.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "fca46505-7aa1-4fbc-a511-d780d9c88bb5",
-            "Value": {
-                "id": "06415ee7-34df-4ee1-a04a-58d24fee422d",
-                "modelName": "GMResourceInfo",
-                "mvc": "1.0",
-                "configDeltaFiles": [
-                    
-                ],
-                "configDeltas": [
-                    
-                ],
-                "resourceCreationConfigs": [
-                    "default"
-                ],
-                "resourcePath": "objects\/oCharacterSelect\/oCharacterSelect.yy",
-                "resourceType": "GMObject"
             }
         },
         {
