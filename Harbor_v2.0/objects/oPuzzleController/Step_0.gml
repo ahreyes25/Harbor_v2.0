@@ -5,8 +5,8 @@ switch(state) {
 	case PUZZLE_ROOM_STATE.LOAD_DATA:
 
 		#region Setup Environment
-		ground1 = instance_create_layer(boardXOff + ((board1W / 2) * boardSpace), room_height - (room_height / 8), "Instances", oGround);			
-		ground2 = instance_create_layer(room_width - (boardXOff + ((board2W / 2) * boardSpace)), room_height - (room_height / 8), "Instances", oGround);
+		ground1 = instance_create_layer(groundX, groundY, "Instances", oGround);			
+		ground2 = instance_create_layer(room_width - groundX, groundY, "Instances", oGround);
 		instance_create_layer((ground1.x + ground2.x) / 2, ground1.y, "BackInstances", oCloud);
 		#endregion
 
@@ -117,3 +117,6 @@ else {
 		view_yport[0] = 0;
 }	
 #endregion
+
+if (instance_exists(oBoard))
+	depth = oBoard.depth + 1;

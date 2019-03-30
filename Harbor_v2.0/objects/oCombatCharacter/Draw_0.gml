@@ -1,3 +1,4 @@
+// Draw Stuff
 switch(state) {
 	case PLAYER_STATE.WAIT:
 		image_speed = 0.3;
@@ -32,5 +33,6 @@ switch(state) {
 	break;
 }
 
+// Draw Self
 if (state != noone)
 	draw_self();

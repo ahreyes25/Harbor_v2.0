@@ -913,6 +913,25 @@
             }
         },
         {
+            "Key": "3ad906a9-5dc3-4b14-ae58-c1a3c0ea7da2",
+            "Value": {
+                "id": "ae33b56b-685b-469a-af32-5abd02f3a08c",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/sSquares\/sSquares.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3b2a7cae-1978-4b3c-bc55-c656ba75c583",
             "Value": {
                 "id": "6c5a2a34-f23a-4e93-a35e-7d881d1a9763",
@@ -1426,6 +1445,25 @@
             }
         },
         {
+            "Key": "700a1c64-5c9a-403b-afd0-c8215988de27",
+            "Value": {
+                "id": "fcefc88f-b7a3-4264-bdba-8fd83e38f984",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/draw_sprite_nine\/draw_sprite_nine.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "712d68fd-fcf2-49cd-b91c-1f8b21c19fea",
             "Value": {
                 "id": "57118f2e-b91d-403c-93c1-99eef2907775",
@@ -1594,6 +1632,25 @@
                 ],
                 "resourcePath": "options\/ios\/options_ios.yy",
                 "resourceType": "GMiOSOptions"
+            }
+        },
+        {
+            "Key": "85cb0307-65d4-41d3-9a56-b528b56b6faa",
+            "Value": {
+                "id": "5ce95422-ae3d-404f-af14-e575544e7d03",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/sSimpleFrame\/sSimpleFrame.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -2940,7 +2997,8 @@
         "101fa8b2-be49-4b50-8700-69ccfd015ffd",
         "87aee4ee-3ebd-4228-9aa3-d752822e16ed",
         "0bb2570d-1d95-4f3e-b56b-47935a106259",
-        "7a6f2135-42db-4119-afb1-affe83bd1348"
+        "7a6f2135-42db-4119-afb1-affe83bd1348",
+        "700a1c64-5c9a-403b-afd0-c8215988de27"
     ],
     "tutorial": ""
 }

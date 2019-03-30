@@ -24,3 +24,9 @@ player2Name			= noone;
 
 shakeSize	= 0;
 shakeScreen = false;
+
+groundX = boardXOff + ((board1W / 2) * boardSpace);
+groundY = (room_height - (room_height / 8)) + 10;
+
+// Surfaces
+global.puzzleSurface = surface_create(room_width, room_height);
