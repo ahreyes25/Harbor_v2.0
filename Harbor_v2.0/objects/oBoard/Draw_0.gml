@@ -22,20 +22,24 @@ switch (state) {
 		draw_elements();
 		draw_cursor();
 		draw_spell_book();
+		draw_flood();
 	break;
 		
 	case BOARD_STATE.SPELL_BOOK:
 		draw_elements();
 		draw_spell_book();
+		draw_flood();
 	break;
 		
 	case BOARD_STATE.CHARGE:
 		draw_elements();
 		draw_spell_book();
+		draw_flood();
 	break;
 	
 	case BOARD_STATE.WAIT:
 		draw_elements();
+		draw_flood();
 	break;
 }
 

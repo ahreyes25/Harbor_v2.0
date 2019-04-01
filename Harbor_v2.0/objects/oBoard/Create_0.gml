@@ -28,3 +28,9 @@ ground			= noone;
 state			= BOARD_STATE.WAIT;
 waveCounter		= 0;
 chainCounter	= 0;
+
+// Obstructions
+floodGrid = noone;
+floodTimer = 300;
+//smokeGrid = noone;
+//smokeTimer = noone;
