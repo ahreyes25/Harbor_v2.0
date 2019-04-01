@@ -13,30 +13,31 @@ if ((kRight && state == BOARD_STATE.SPELL_BOOK) || state != BOARD_STATE.SPELL_BO
 	draw_sprite_ext(sRightArrow, 0, x + ww, y + hh, 1, 1, 0, make_color_rgb(29, 43, 83), 1);
 else 
 	draw_sprite_ext(sRightArrow, 0, x + ww, y + hh, 1, 1, 0, c_white, 1);
-	
-// Draw Spell Icon
-draw_sprite_ext(
-	asset_get_index("sIcon" + global.spellData[cursor, SP.SPELL_NAME]), image_index / 30, 
-	x + ww / 4 + 5, 
-	y + hh + 3.5, 
-	cursorF, 1, cursorR, c_white, 1
-); 
+
+// Draw Inactive Spell
+if (state != BOARD_STATE.NAVIGATE && state != BOARD_STATE.SPELL_BOOK) {
+	draw_sprite_ext(
+		asset_get_index("sInactive" + global.spellData[cursor, SP.SPELL_NAME]), image_index / 30, 
+		x + ww / 4 + 5, 
+		y + hh + 3.5, 
+		cursorF, 1, cursorR, c_white, 1
+	);
+}
+else {
+	// Draw Spell Icon
+	draw_sprite_ext(
+		asset_get_index("sIcon" + global.spellData[cursor, SP.SPELL_NAME]), image_index / 30, 
+		x + ww / 4 + 5, 
+		y + hh + 3.5, 
+		cursorF, 1, cursorR, c_white, 1
+	); 	
+}
 
 // Draw Spell Frame
 if (state == BOARD_STATE.SPELL_BOOK) {
 	draw_sprite_ext(
 		asset_get_index("sFrame" + global.spellData[cursor, SP.SPELL_NAME]), image_index / 30, 
 		x + ww / 4 + 5, 
-		y + hh + 3.5, 
-		cursorF, 1, cursorR, c_white, 1
-	);
-}
-
-// Draw Inactive Spell
-if (state != BOARD_STATE.NAVIGATE && state != BOARD_STATE.SPELL_BOOK) {
-	draw_sprite_ext(
-		asset_get_index("sInactive" + global.spellData[cursor, SP.SPELL_NAME]), image_index / 30, 
-		x + ww / 4, 
 		y + hh + 3.5, 
 		cursorF, 1, cursorR, c_white, 1
 	);

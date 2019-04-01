@@ -30,7 +30,8 @@ waveCounter		= 0;
 chainCounter	= 0;
 
 // Obstructions
-floodGrid = noone;
-floodTimer = 300;
+floodHeight	= noone;
+floodTimer	= 150;
+floodInst	= noone;
 //smokeGrid = noone;
 //smokeTimer = noone;

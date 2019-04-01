@@ -31,4 +31,4 @@ groundX = boardXOff + ((board1W / 2) * boardSpace);
 groundY = room_height - 10;
 
 // Surfaces
-global.puzzleSurface = surface_create(room_width, room_height);
+global.squaresSurface = surface_create(room_width, room_height);

@@ -11,20 +11,23 @@ if (!ds_exists(board.grid, ds_type_grid))
 	return;
 if (board.grid == noone)
 	return;
-	
-// Create Flood Grid
-if (board.floodGrid == noone)
-	board.floodGrid = ds_grid_create(board.gridW, board.gridH);
-if (!ds_exists(board.floodGrid, ds_type_grid))
-	board.floodGrid = ds_grid_create(board.gridW, board.gridH);
 
-// Populate Flood Grid, Set Flood Timer
-if (alarm[6] == -1) {
+// Populate, Set Flood Timer
+if (alarm[6] < 0) {
 	
-	for (var i = 0; i < board.gridW; i++) {
-		for (var j = 0; j < height; j++) {
-			ds_grid_set(board.floodGrid, i, board.gridH - 1 - j, 1);
-		}
-	}
+	floodHeight = height;
 	alarm[6] = floodTimer;
+	
+	if (ds_exists(board.floodInst, ds_type_list))
+		ds_list_destroy(board.floodInst);
+	board.floodInst = ds_list_create();
+		
+	// Create Flood Instances
+	for (var i = 0; i < board.gridW; i++) {
+		var f = instance_create_layer(board.x + (board.space * i), board.y + (board.gridH * board.space), "Boards", oFlood);
+		f.depth = board.depth - 1;
+		f.target = height;
+		f.boardInst = board;
+		ds_list_add(board.floodInst, f);
+	}
 }

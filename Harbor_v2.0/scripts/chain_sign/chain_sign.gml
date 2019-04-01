@@ -1,6 +1,6 @@
 if (!instance_exists(oChainSign)) {
 
-	var cs = instance_create_layer(argument0 + random_range(-5, 5) + 2, argument1 + random_range(-5, 5) + 3, "Controllers", oChainSign);
+	var cs = instance_create_layer(argument0 + random_range(-5, 5) + 2, argument1 + random_range(-5, 5) + 3, "Boards", oChainSign);
 
 	if (instance_exists(oPuzzleController))
 		cs.depth = oPuzzleController.depth - 1;

@@ -1,41 +1,26 @@
 /// @param Amount
 
-if (floodGrid == noone)
-	return;
-if (!ds_exists(floodGrid, ds_type_grid))
-	return;
-
-var floodLevel = noone;
-
-// Find Water Level
-for (var i = 0; i < gridW; i++) {
-	for (var j = 0; j < gridH; j++) {
-		if (ds_grid_get(floodGrid, i, j) == 1) {
-			floodLevel = j;
-			break;
-		}
-	}
-	if (floodLevel != noone)
-		break;
-}
-
-if (floodLevel != noone) {
-
-	// Clear x number of layers off top of water
-	for (var i = 0; i < gridW; i++) {
-		for (var j = 0; j < argument0; j++) {
-			if (floodLevel + j < gridH) {
-				ds_grid_set(floodGrid, i, floodLevel + j, 0);	
-			}
-		}
-	}
-}
+floodHeight -= argument0;
+	
+if (floodHeight > 0) {
+	for (var i = 0; i < ds_list_size(floodInst); i++) {
+		var fi = ds_list_find_value(floodInst, i);
+		fi.target -= argument0;	
+	}	
+}		
 else {
-	// Stop Draining & Destroy Grid
-	alarm[6] = -1;
+	// Stop Draining
+	floodHeight = 0;
 	
-	if (ds_exists(floodGrid, ds_type_grid))
-		ds_grid_destroy(floodGrid)
+	// Destroy Flood Instances
+	if (ds_exists(floodInst, ds_type_list))
+		for (var i = 0; i < ds_list_size(floodInst); i++) {
+			var fi = ds_list_find_value(floodInst, i);
+			fi.state = FLOOD_STATE.FADE_OUT;
+		}
 	
-	floodGrid = noone;
+	// Destroy Flood Instances List
+	if (ds_exists(floodInst, ds_type_list))
+		ds_list_destroy(floodInst);
+	floodInst = noone;
 }

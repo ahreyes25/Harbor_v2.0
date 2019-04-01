@@ -1,1 +1,1 @@
-surface_free(global.puzzleSurface);
+surface_free(global.squaresSurface);
