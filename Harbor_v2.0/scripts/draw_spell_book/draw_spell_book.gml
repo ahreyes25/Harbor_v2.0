@@ -47,7 +47,7 @@ if (state == BOARD_STATE.SPELL_BOOK)
 	draw_set_color(c_white);
 else
 	draw_set_color(make_color_rgb(29, 43, 83));
-	
+
 draw_text_transformed(x + ww / 2 - 4, y + hh - 2, global.spellData[cursor, SP.SPELL_NAME], 0.3, 0.3, 0);
 draw_text_transformed(x + ww / 2 - 4, y + hh + 4, global.spellData[cursor, SP.SPELL_INFO], 0.3, 0.3, 0);	
 draw_set_color(c_white);

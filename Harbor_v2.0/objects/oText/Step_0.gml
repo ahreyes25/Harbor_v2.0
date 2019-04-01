@@ -8,3 +8,6 @@ if (image_alpha > 0)
 // delete
 if (image_alpha <= 0)
 	instance_destroy();
+
+if (instance_exists(oBoard))
+	depth = oBoard.depth - 1;
