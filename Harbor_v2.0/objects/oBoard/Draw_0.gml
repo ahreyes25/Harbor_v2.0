@@ -1,8 +1,8 @@
 if (!surface_exists(global.puzzleSurface))
 	global.puzzleSurface = surface_create(room_width, room_height);
 
-surface_set_target(global.puzzleSurface);
-draw_clear_alpha(c_black, 0);
+//surface_set_target(global.puzzleSurface);
+//draw_clear_alpha(c_black, 0);
 
 // Draw Border & Black Background Around Elements
 var x1 = x - (space / 2);
@@ -39,5 +39,5 @@ switch (state) {
 	break;
 }
 
-surface_reset_target();
-draw_surface(global.puzzleSurface, 0, 0);
+//surface_reset_target();
+//draw_surface(global.puzzleSurface, 0, 0);
