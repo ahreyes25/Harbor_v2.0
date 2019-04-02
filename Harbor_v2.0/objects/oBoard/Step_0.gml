@@ -7,6 +7,7 @@ switch (state) {
 		move_cursor();
 		check_spell_forms();
 		check_for_spell_book_toggle();
+		cursor_out_of_water();
 	break;
 		
 	case BOARD_STATE.SPELL_BOOK:

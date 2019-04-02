@@ -1103,6 +1103,25 @@
             }
         },
         {
+            "Key": "52100909-5a21-4e9b-9d84-0ab854e818d1",
+            "Value": {
+                "id": "a040669c-9d84-42e2-81be-0afe742947d0",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/cursor_in_water\/cursor_in_water.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "5315512c-af9b-45c7-b2f5-69542e5cc108",
             "Value": {
                 "id": "640264b0-466c-48af-9a8a-c95d51d434ee",
@@ -3003,6 +3022,25 @@
             }
         },
         {
+            "Key": "fa2974ed-4af6-4bf6-8a55-c364c288a656",
+            "Value": {
+                "id": "2c93737b-8d16-438e-8044-b9afc5870c75",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/cursor_out_of_water\/cursor_out_of_water.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "fa7c74f7-b2f7-4eaa-b98d-13481f3a6b8f",
             "Value": {
                 "id": "97382e46-c7e4-4efe-9d95-0786508e14bc",
@@ -3096,6 +3134,8 @@
         "568735a5-9367-4ceb-8672-d64839604a9b",
         "edec320e-a34f-43bd-993f-1de79ef814e8",
         "faec393c-2c7a-4bfd-85ee-e748e74e48c3",
+        "52100909-5a21-4e9b-9d84-0ab854e818d1",
+        "fa2974ed-4af6-4bf6-8a55-c364c288a656",
         "090af413-f11e-4c16-b32b-d22a934b34e9",
         "3829c36a-f8e2-475a-8ba5-e35cd4daa183",
         "5e6294e8-0ead-42a5-9ab2-8950211d5c63",

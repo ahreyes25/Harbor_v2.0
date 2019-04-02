@@ -1,3 +1,5 @@
+if (newTarget == noone)
+	newTarget = target;
 if (boardInst == noone) 
 	instance_destroy();
 	
@@ -20,12 +22,12 @@ switch(state) {
 	case FLOOD_STATE.FLUCTUATE:
 		if (newTarget != noone) {
 			if (image_yscale < newTarget) {
-				image_yscale += 0.01;
-				y -= 0.01;
+				image_yscale += 0.005;
+				y -= 0.005;
 			}
 			if (image_yscale > newTarget) {
-				image_yscale -= 0.01;
-				y += 0.01;
+				image_yscale -= 0.005;
+				y += 0.005;
 			}
 		}
 	break;

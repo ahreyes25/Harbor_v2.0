@@ -33,5 +33,6 @@ chainCounter	= 0;
 floodHeight	= noone;
 floodTimer	= 150;
 floodInst	= noone;
+floodMoveNext = noone;
 //smokeGrid = noone;
 //smokeTimer = noone;

@@ -13,10 +13,10 @@ if (board.grid == noone)
 	return;
 
 // Populate, Set Flood Timer
-if (alarm[6] < 0) {
+if (board.alarm[6] < 0) {
 	
-	floodHeight = height;
-	alarm[6] = floodTimer;
+	board.floodHeight = height;
+	board.alarm[6] = board.floodTimer;
 	
 	if (ds_exists(board.floodInst, ds_type_list))
 		ds_list_destroy(board.floodInst);
