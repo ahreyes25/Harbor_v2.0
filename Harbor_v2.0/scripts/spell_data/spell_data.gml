@@ -6,7 +6,7 @@ enum SPELL {
 enum SP {	
 	SPELL_NAME, SPELL_INFO, SPELL_TYPE, SPELL_ELEMENT, CONFIG, WIDTH, HEIGHT, CAN_ROTATE, CAN_FLIP,
 	CHAIN_PIECE, ORIGIN, DAMAGE_LOW, DAMAGE_HIGH, ACCURACY, MOVES,
-	FLOOD_CHANCE, FLOOD_AMOUNT_LO, FLOOD_AMOUNT_HI,
+	FLOOD_CHANCE, FLOOD_AMOUNT_LO, FLOOD_AMOUNT_HI, SMOKE_CHANCE, SMOKE_TIME,
 }
 #endregion
 
@@ -29,6 +29,8 @@ global.spellData[SPELL.BASIC, SP.MOVES]					= noone;
 global.spellData[SPELL.BASIC, SP.FLOOD_CHANCE]			= noone;
 global.spellData[SPELL.BASIC, SP.FLOOD_AMOUNT_LO]		= noone;
 global.spellData[SPELL.BASIC, SP.FLOOD_AMOUNT_HI]		= noone;
+global.spellData[SPELL.BASIC, SP.SMOKE_CHANCE]			= noone;
+global.spellData[SPELL.BASIC, SP.SMOKE_TIME]			= noone;
 #endregion
 
 #region Fireball
@@ -50,6 +52,8 @@ global.spellData[SPELL.FIREBALL, SP.MOVES]					= noone;
 global.spellData[SPELL.FIREBALL, SP.FLOOD_CHANCE]			= noone;
 global.spellData[SPELL.FIREBALL, SP.FLOOD_AMOUNT_LO]		= noone;
 global.spellData[SPELL.FIREBALL, SP.FLOOD_AMOUNT_HI]		= noone;
+global.spellData[SPELL.FIREBALL, SP.SMOKE_CHANCE]			= noone;
+global.spellData[SPELL.FIREBALL, SP.SMOKE_TIME]				= noone;
 #endregion
 
 #region ElectricBolt
@@ -71,6 +75,8 @@ global.spellData[SPELL.ELECTRIC_BOLT, SP.MOVES]					= noone;
 global.spellData[SPELL.ELECTRIC_BOLT, SP.FLOOD_CHANCE]			= noone;
 global.spellData[SPELL.ELECTRIC_BOLT, SP.FLOOD_AMOUNT_LO]		= noone;
 global.spellData[SPELL.ELECTRIC_BOLT, SP.FLOOD_AMOUNT_HI]		= noone;
+global.spellData[SPELL.ELECTRIC_BOLT, SP.SMOKE_CHANCE]			= noone;
+global.spellData[SPELL.ELECTRIC_BOLT, SP.SMOKE_TIME]			= noone;
 #endregion
 
 #region Elemental
@@ -92,6 +98,8 @@ global.spellData[SPELL.ELEMENTAL, SP.MOVES]					= noone;
 global.spellData[SPELL.ELEMENTAL, SP.FLOOD_CHANCE]			= noone;
 global.spellData[SPELL.ELEMENTAL, SP.FLOOD_AMOUNT_LO]		= noone;
 global.spellData[SPELL.ELEMENTAL, SP.FLOOD_AMOUNT_HI]		= noone;
+global.spellData[SPELL.ELEMENTAL, SP.SMOKE_CHANCE]			= noone;
+global.spellData[SPELL.ELEMENTAL, SP.SMOKE_TIME]			= noone;
 #endregion
 
 #region Tsunami
@@ -112,7 +120,9 @@ global.spellData[SPELL.TSUNAMI, SP.ACCURACY]			= 100;
 global.spellData[SPELL.TSUNAMI, SP.MOVES]				= DIR.UP;
 global.spellData[SPELL.TSUNAMI, SP.FLOOD_CHANCE]		= 0.5;
 global.spellData[SPELL.TSUNAMI, SP.FLOOD_AMOUNT_LO]		= 1;
-global.spellData[SPELL.TSUNAMI, SP.FLOOD_AMOUNT_HI]		= 6;
+global.spellData[SPELL.TSUNAMI, SP.FLOOD_AMOUNT_HI]		= 4;
+global.spellData[SPELL.TSUNAMI, SP.SMOKE_CHANCE]		= noone;
+global.spellData[SPELL.TSUNAMI, SP.SMOKE_TIME]			= noone;
 #endregion
 
 #region Sprout
@@ -134,6 +144,8 @@ global.spellData[SPELL.SPROUT, SP.MOVES]				= noone;
 global.spellData[SPELL.SPROUT, SP.FLOOD_CHANCE]			= noone;
 global.spellData[SPELL.SPROUT, SP.FLOOD_AMOUNT_LO]		= noone;
 global.spellData[SPELL.SPROUT, SP.FLOOD_AMOUNT_HI]		= noone;
+global.spellData[SPELL.SPROUT, SP.SMOKE_CHANCE]			= noone;
+global.spellData[SPELL.SPROUT, SP.SMOKE_TIME]			= noone;
 #endregion
 
 #region Brushfire
@@ -155,4 +167,6 @@ global.spellData[SPELL.BRUSHFIRE, SP.MOVES]					= noone;
 global.spellData[SPELL.BRUSHFIRE, SP.FLOOD_CHANCE]			= noone;
 global.spellData[SPELL.BRUSHFIRE, SP.FLOOD_AMOUNT_LO]		= noone;
 global.spellData[SPELL.BRUSHFIRE, SP.FLOOD_AMOUNT_HI]		= noone;
+global.spellData[SPELL.BRUSHFIRE, SP.SMOKE_CHANCE]			= noone;
+global.spellData[SPELL.BRUSHFIRE, SP.SMOKE_TIME]			= noone;
 #endregion

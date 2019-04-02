@@ -1,0 +1,3 @@
+enum SMOKE_STATE {
+	FADE_IN, FADE_OUT	
+}
