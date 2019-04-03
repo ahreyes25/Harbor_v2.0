@@ -15,9 +15,9 @@ var timer	= argument5;
 // Exit
 if (!instance_exists(board))
 	return;
-if (!ds_exists(board.grid, ds_type_grid))
-	return;
 if (board.grid == noone)
+	return;
+if (!ds_exists(board.grid, ds_type_grid))
 	return;
 	
 // Create smoke inst list
@@ -46,6 +46,7 @@ for (var i = 0; i < ww; i++) {
 		s.timer = timer;
 		s.state = SMOKE_STATE.FADE_IN;
 		s.boardInst = board;
+		s.ii = 
 	
 		ds_list_add(board.smokeInst, s);
 	}

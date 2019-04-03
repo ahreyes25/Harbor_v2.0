@@ -7,9 +7,9 @@ var height = argument1;
 // Exit
 if (!instance_exists(board))
 	return;	
-if (!ds_exists(board.grid, ds_type_grid))
-	return;
 if (board.grid == noone)
+	return;
+if (!ds_exists(board.grid, ds_type_grid))
 	return;
 
 // Populate, Set Flood Timer
