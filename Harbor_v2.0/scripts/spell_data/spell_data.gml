@@ -52,8 +52,8 @@ global.spellData[SPELL.FIREBALL, SP.MOVES]					= noone;
 global.spellData[SPELL.FIREBALL, SP.FLOOD_CHANCE]			= noone;
 global.spellData[SPELL.FIREBALL, SP.FLOOD_AMOUNT_LO]		= noone;
 global.spellData[SPELL.FIREBALL, SP.FLOOD_AMOUNT_HI]		= noone;
-global.spellData[SPELL.FIREBALL, SP.SMOKE_CHANCE]			= noone;
-global.spellData[SPELL.FIREBALL, SP.SMOKE_TIME]				= noone;
+global.spellData[SPELL.FIREBALL, SP.SMOKE_CHANCE]			= 1;
+global.spellData[SPELL.FIREBALL, SP.SMOKE_TIME]				= 2;
 #endregion
 
 #region ElectricBolt

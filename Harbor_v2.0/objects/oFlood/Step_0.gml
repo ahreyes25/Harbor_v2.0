@@ -1,7 +1,10 @@
 if (newTarget == noone)
 	newTarget = target;
-if (boardInst == noone) 
+if (boardInst == noone)
 	instance_destroy();
+else
+	if (!instance_exists(boardInst))
+		instance_destroy();
 	
 switch(state) {
 	case FLOOD_STATE.EASE_IN:
@@ -38,5 +41,18 @@ switch(state) {
 		else
 			instance_destroy();
 	break;
+	
+	case FLOOD_STATE.DRAIN:
+		target = 0;
+		if (image_yscale > target) {
+			image_yscale -= fillSpeed;
+			y += fillSpeed;
+		}
+		else
+			state = FLOOD_STATE.FADE_OUT;
+	break;
 }
 	
+// Hide Smoke Behind Water
+if (instance_exists(oSmoke))
+	depth = oSmoke.depth - 1;

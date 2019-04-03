@@ -3,7 +3,7 @@ enum BOARD_STATE {
 }
 
 // Grid
-grid	= noone;
+grid	= noone;	// ds_grid
 gridW	= noone;
 gridH	= noone;
 space	= noone;
@@ -32,7 +32,6 @@ chainCounter	= 0;
 // Obstructions
 floodHeight		= 0;
 floodTimer		= 150;
-floodInst		= noone;
+floodInst		= noone;	// ds_list
 floodMoveNext	= noone;
-smokeInst		= noone;
-smokeTime		= 0
+smokeInst		= noone;	// ds_list

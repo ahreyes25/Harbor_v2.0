@@ -32,7 +32,7 @@ if (board.alarm[6] < 0) {
 	// Create Flood Instances
 	if (ds_list_size(board.floodInst) == 0) {
 		for (var i = 0; i < board.gridW; i++) {
-			var f = instance_create_layer(board.x + (board.space * i), board.y + (board.gridH * board.space), "Boards", oFlood);
+			var f = instance_create_layer(board.x + (board.space * i), board.y + (board.gridH * board.space) - 1, "Boards", oFlood);
 			f.depth = board.depth - 1;
 			f.target = height;
 			f.boardInst = board;

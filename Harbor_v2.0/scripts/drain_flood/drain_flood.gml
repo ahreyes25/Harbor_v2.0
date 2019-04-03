@@ -16,7 +16,7 @@ else {
 	if (ds_exists(floodInst, ds_type_list))
 		for (var i = 0; i < ds_list_size(floodInst); i++) {
 			var fi = ds_list_find_value(floodInst, i);
-			fi.state = FLOOD_STATE.FADE_OUT;
+			fi.state = FLOOD_STATE.DRAIN;
 		}
 	
 	// Destroy Flood Instances List

@@ -1,16 +1,27 @@
 if (owner != noone) {
-	// Flood?
-	if (global.spellData[owner.boardInst.cursor, SP.FLOOD_CHANCE] != noone) {
-		if (chance(global.spellData[owner.boardInst.cursor, SP.FLOOD_CHANCE])) {
-			if (instance_exists(owner.enemy)) {
-				var height = irandom_range(global.spellData[owner.boardInst.cursor, SP.FLOOD_AMOUNT_LO], global.spellData[owner.boardInst.cursor, SP.FLOOD_AMOUNT_HI]);
-				flood(owner.enemy.boardInst, height);
+	if (instance_exists(owner)) {
+		
+		// Flood?
+		if (global.spellData[owner.boardInst.cursor, SP.FLOOD_CHANCE] != noone) {
+			if (chance(global.spellData[owner.boardInst.cursor, SP.FLOOD_CHANCE])) {
+				if (instance_exists(owner.enemy)) {
+					var height = irandom_range(global.spellData[owner.boardInst.cursor, SP.FLOOD_AMOUNT_LO], global.spellData[owner.boardInst.cursor, SP.FLOOD_AMOUNT_HI]);
+					flood(owner.enemy.boardInst, height);
+				}
 			}
 		}
-	}
 	
-	// Clear Values & Progress State Machine
-	if (instance_exists(owner)) {
+		// Smoke?
+		if (global.spellData[owner.boardInst.cursor, SP.SMOKE_CHANCE] != noone) {
+			if (chance(global.spellData[owner.boardInst.cursor, SP.SMOKE_CHANCE])) {
+				if (instance_exists(owner.enemy)) {
+					var time = global.spellData[owner.boardInst.cursor, SP.SMOKE_TIME];
+					smoke(owner.enemy.boardInst, owner.boardInst.cursorI, owner.boardInst.cursorJ, owner.boardInst.cursorW, owner.boardInst.cursorH, time);
+				}
+			}
+		}
+	
+		// Clear Values & Progress State Machine
 		owner.state = PLAYER_STATE.WAIT;
 		owner.spellInst = noone;
 		owner.boardInst.state = BOARD_STATE.SPELL_BOOK;
