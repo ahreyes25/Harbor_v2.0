@@ -8,6 +8,7 @@ switch(state) {
 	break;
 		
 	case PLAYER_STATE.CAST:
+		play_spell_sound();
 		check_spell_hit();
 		spawn_spell();
 	break;
@@ -25,5 +26,6 @@ switch(state) {
 	break;
 } 
 
+// Reset Hurt Check Var
 if (state != PLAYER_STATE.HURT)
 	playedHurtSound = false;

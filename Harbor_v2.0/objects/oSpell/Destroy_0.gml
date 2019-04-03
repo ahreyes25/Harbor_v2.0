@@ -25,6 +25,7 @@ if (owner != noone) {
 		owner.state = PLAYER_STATE.WAIT;
 		owner.spellInst = noone;
 		owner.boardInst.state = BOARD_STATE.SPELL_BOOK;
+		owner.playedSpellChargeSound = false;
 	}
 	else
 		owner = noone;

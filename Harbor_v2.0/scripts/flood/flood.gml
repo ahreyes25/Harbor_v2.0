@@ -1,6 +1,8 @@
 /// @param BoardInst
 /// @param height
 
+// *** FLOOD CALLED IN oSPELL DESTROY EVENT *** //
+
 var board = argument0;
 var height = argument1;
 

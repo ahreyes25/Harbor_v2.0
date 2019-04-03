@@ -12,6 +12,7 @@ enemy			= noone;
 skin			= "";
 spellInst		= noone;
 
-playedHurtSound = false;
+playedHurtSound			= false;
+playedSpellSound		= false;
 
 image_xscale = 1 + (-2 * (x > room_width / 2));

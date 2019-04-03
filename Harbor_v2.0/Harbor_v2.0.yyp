@@ -1388,6 +1388,25 @@
             }
         },
         {
+            "Key": "55e31c84-45bd-4cca-8a2e-3cbe136a7230",
+            "Value": {
+                "id": "0e3a7fdf-850c-48ef-b4f4-cb28f4c95432",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/play_spell_sound\/play_spell_sound.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "568735a5-9367-4ceb-8672-d64839604a9b",
             "Value": {
                 "id": "eeb36f2e-f2a2-4e0f-a844-ba71e4008ee2",
@@ -3872,6 +3891,7 @@
         "1f594f15-cc62-46b3-aad4-eb095477fc0a",
         "23d00dfb-c9eb-46c7-837c-66df0bcdd9ba",
         "520cf9f1-075d-476b-9349-838c3bad7bcf",
+        "55e31c84-45bd-4cca-8a2e-3cbe136a7230",
         "01c34289-70be-4c7c-8f92-3721017962fc",
         "1bf9f4ff-085f-4da1-9f2d-c4bcc596e55c",
         "5acf478b-5fd3-4251-b66e-58f87ecc6cd8",
