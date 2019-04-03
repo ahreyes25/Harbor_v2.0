@@ -6,6 +6,7 @@ if (kRightPressed) {
 			cursorI++;
 		else
 			cursorI = 0;
+		audio_play_sound(sfx_cursor_move, 0, 0);
 	}
 	// Move Cursor Slower Through Water
 	else {
@@ -20,6 +21,7 @@ if (kLeftPressed) {
 			cursorI--;
 		else
 			cursorI = gridW - cursorW;
+		audio_play_sound(sfx_cursor_move, 0, 0);
 	}
 	// Move Cursor Slower Through Water
 	else {
@@ -34,6 +36,7 @@ if (kUpPressed) {
 			cursorJ--;
 		else
 			cursorJ = gridH - cursorH;
+		audio_play_sound(sfx_cursor_move, 0, 0);
 	}
 	// Move Cursor Slower Through Water
 	else {
@@ -48,6 +51,7 @@ if (kDownPressed) {
 			cursorJ++;
 		else
 			cursorJ = 0;
+		audio_play_sound(sfx_cursor_move, 0, 0);
 	}
 	// Move Cursor Slower Through Water
 	else {

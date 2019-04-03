@@ -13,6 +13,8 @@ if (kA4Pressed) {
 			var cx = (c[0] * -1) + cursorW - 1;
 			var cy = c[1];
 			
+			audio_play_sound(sfx_spell_flip, 0, 0);
+			
 			// Store new config values
 			config[i] = [cx, cy];
 		}

@@ -23,3 +23,5 @@ if (smokeInst != noone) {
 state = BOARD_STATE.CHARGE;	
 
 // Flooding Occurs In Spell Destroy
+
+audio_play_sound(sfx_spell_select, 0, 0);

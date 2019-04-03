@@ -11,6 +11,8 @@ if (kA3Pressed) {
 		else
 			cursorR = 0;
 			
+		audio_play_sound(sfx_spell_rotate, 0, 0);
+			
 		// Swap Width & Height 
 		var tw = cursorW;
 		cursorW = cursorH;
