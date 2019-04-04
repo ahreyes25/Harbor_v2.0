@@ -1,3 +1,9 @@
+// Store Last Element Value
+if (cursor == SPELL.BASIC)
+	currentSpellElement = ds_grid_get(grid, cursorI, cursorJ);	
+else
+	currentSpellElement = global.spellData[cursor, SP.SPELL_ELEMENT];	
+
 // Adjust Grid Values
 for (var i = 0; i < array_length_1d(config); i++) {
 	var c = config[i];

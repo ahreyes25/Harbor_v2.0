@@ -29,6 +29,8 @@ state			= BOARD_STATE.WAIT;
 waveCounter		= 0;
 chainCounter	= 0;
 
+currentSpellElement	= ELEMENT.NONE;
+
 // Obstructions
 floodHeight		= 0;
 floodTimer		= 150;

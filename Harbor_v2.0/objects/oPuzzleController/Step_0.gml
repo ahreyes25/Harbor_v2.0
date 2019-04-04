@@ -35,7 +35,6 @@ switch(state) {
 		var bY  = boardYOff;
 		
 		var board1 = ds_grid_create(board1W, board1H);
-		randomize_grid(board1);
 		board1Inst = instance_create_layer(b1X, -bY - (board1H * boardSpace), "Boards", oBoard);
 		board1Inst.grid = board1;
 		board1Inst.gridW = board1W;
@@ -49,10 +48,10 @@ switch(state) {
 		board1Inst.cursor = player1Inst.spellBook[player1Inst.spellBookIndex];
 		board1Inst.ground = ground1;
 		ground1.boardInst = board1Inst;
+		randomize_board(board1Inst);
 		update_spell_data(board1Inst);
 		
 		var board2 = ds_grid_create(board2W, board2H);
-		randomize_grid(board2);		
 		board2Inst = instance_create_layer(b2X, -bY - (board1H * boardSpace), "Boards", oBoard);		
 		board2Inst.grid = board2;
 		board2Inst.gridW = board2W;
@@ -66,6 +65,7 @@ switch(state) {
 		board2Inst.cursor = player2Inst.spellBook[player2Inst.spellBookIndex];
 		board2Inst.ground = ground2;
 		ground2.boardInst = board2Inst;
+		randomize_board(board2Inst);
 		update_spell_data(board2Inst);
 		#endregion
 		

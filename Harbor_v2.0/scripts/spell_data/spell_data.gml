@@ -7,7 +7,7 @@ enum SP {
 	SPELL_NAME, SPELL_INFO, SPELL_TYPE, SPELL_ELEMENT, CONFIG, WIDTH, HEIGHT, CAN_ROTATE, CAN_FLIP,
 	CHAIN_PIECE, ORIGIN, DAMAGE_LOW, DAMAGE_HIGH, ACCURACY, MOVES,
 	FLOOD_CHANCE, FLOOD_AMOUNT_LO, FLOOD_AMOUNT_HI, SMOKE_CHANCE, SMOKE_TIME,
-	SOUND, SOUND_CHARGE, SOUND_FRAME,
+	SOUND, SOUND_CHARGE, SOUND_FRAME, SPRITE_ANIMATION,
 }
 #endregion
 
@@ -24,12 +24,13 @@ global.spellData[SPELL.BASIC, SP.CAN_FLIP]				= false;
 global.spellData[SPELL.BASIC, SP.CHAIN_PIECE]			= noone;
 global.spellData[SPELL.BASIC, SP.DAMAGE_LOW]			= 1;						
 global.spellData[SPELL.BASIC, SP.DAMAGE_HIGH]			= 1;							
-global.spellData[SPELL.BASIC, SP.ORIGIN]				= TEAM.FRIENDLY;
+global.spellData[SPELL.BASIC, SP.ORIGIN]				= [noone, TEAM.FRIENDLY, TEAM.ENEMY, TEAM.ENEMY, TEAM.FRIENDLY];
 global.spellData[SPELL.BASIC, SP.ACCURACY]				= 100;
 global.spellData[SPELL.BASIC, SP.MOVES]					= noone;
-global.spellData[SPELL.BASIC, SP.SOUND]					= [noone, sfx_basic_fire, sfx_basic_water, sfx_basic_leaf, sfx_basic_bolt];
+global.spellData[SPELL.BASIC, SP.SOUND]					= [noone, sfx_basic_fire, sfx_basic_water, sfx_basic_grass, sfx_basic_electric];
 global.spellData[SPELL.BASIC, SP.SOUND_CHARGE]			= noone;
 global.spellData[SPELL.BASIC, SP.SOUND_FRAME]			= noone;
+global.spellData[SPELL.BASIC, SP.SPRITE_ANIMATION]		= [noone, sBasicFire, sBasicWater, sBasicGrass, sBasicElectric];
 #endregion
 
 #region Fireball
@@ -54,6 +55,7 @@ global.spellData[SPELL.FIREBALL, SP.SMOKE_TIME]				= 3;
 global.spellData[SPELL.FIREBALL, SP.SOUND]					= sfx_fireball;
 global.spellData[SPELL.FIREBALL, SP.SOUND_CHARGE]			= sfx_fireball_charge;
 global.spellData[SPELL.FIREBALL, SP.SOUND_FRAME]			= 8;
+global.spellData[SPELL.FIREBALL, SP.SPRITE_ANIMATION]		= sFireball;
 
 #endregion
 
@@ -73,9 +75,10 @@ global.spellData[SPELL.ELECTRIC_BOLT, SP.DAMAGE_HIGH]			= 4;
 global.spellData[SPELL.ELECTRIC_BOLT, SP.ORIGIN]				= TEAM.FRIENDLY;
 global.spellData[SPELL.ELECTRIC_BOLT, SP.ACCURACY]				= 100;
 global.spellData[SPELL.ELECTRIC_BOLT, SP.MOVES]					= noone;
-global.spellData[SPELL.ELECTRIC_BOLT, SP.SOUND]					= sfx_lightningBolt;
-global.spellData[SPELL.ELECTRIC_BOLT, SP.SOUND_CHARGE]			= sfx_lightningBolt_charge;
+global.spellData[SPELL.ELECTRIC_BOLT, SP.SOUND]					= sfx_electricBolt;
+global.spellData[SPELL.ELECTRIC_BOLT, SP.SOUND_CHARGE]			= sfx_electricBolt_charge;
 global.spellData[SPELL.ELECTRIC_BOLT, SP.SOUND_FRAME]			= 8;
+global.spellData[SPELL.ELECTRIC_BOLT, SP.SPRITE_ANIMATION]		= sElectricBolt;
 #endregion
 
 #region Elemental
@@ -97,6 +100,7 @@ global.spellData[SPELL.ELEMENTAL, SP.MOVES]					= noone;
 global.spellData[SPELL.ELEMENTAL, SP.SOUND]					= sfx_elemental;
 global.spellData[SPELL.ELEMENTAL, SP.SOUND_CHARGE]			= sfx_elemental_charge;
 global.spellData[SPELL.ELEMENTAL, SP.SOUND_FRAME]			= 9;
+global.spellData[SPELL.ELEMENTAL, SP.SPRITE_ANIMATION]		= sElemental;
 #endregion
 
 #region Tsunami
@@ -121,6 +125,7 @@ global.spellData[SPELL.TSUNAMI, SP.FLOOD_AMOUNT_HI]		= 4;
 global.spellData[SPELL.TSUNAMI, SP.SOUND]				= sfx_tsunami;
 global.spellData[SPELL.TSUNAMI, SP.SOUND_CHARGE]		= noone;
 global.spellData[SPELL.TSUNAMI, SP.SOUND_FRAME]			= noone;
+global.spellData[SPELL.TSUNAMI, SP.SPRITE_ANIMATION]	= sTsunami;
 #endregion
 
 #region Sprout
@@ -136,12 +141,13 @@ global.spellData[SPELL.SPROUT, SP.CAN_FLIP]				= false;
 global.spellData[SPELL.SPROUT, SP.CHAIN_PIECE]			= noone;
 global.spellData[SPELL.SPROUT, SP.DAMAGE_LOW]			= 0;						
 global.spellData[SPELL.SPROUT, SP.DAMAGE_HIGH]			= 0;
-global.spellData[SPELL.SPROUT, SP.ORIGIN]				= TEAM.ENEMY;
+global.spellData[SPELL.SPROUT, SP.ORIGIN]				= TEAM.FRIENDLY;
 global.spellData[SPELL.SPROUT, SP.ACCURACY]				= 100;
 global.spellData[SPELL.SPROUT, SP.MOVES]				= noone;
 global.spellData[SPELL.SPROUT, SP.SOUND]				= sfx_sprout;
 global.spellData[SPELL.SPROUT, SP.SOUND_CHARGE]			= sfx_sprout_charge;
 global.spellData[SPELL.SPROUT, SP.SOUND_FRAME]			= noone;
+global.spellData[SPELL.SPROUT, SP.SPRITE_ANIMATION]		= sSprout;
 #endregion
 
 #region Brushfire
@@ -163,4 +169,5 @@ global.spellData[SPELL.BRUSHFIRE, SP.MOVES]					= noone;
 global.spellData[SPELL.BRUSHFIRE, SP.SOUND]					= sfx_brushfire;
 global.spellData[SPELL.BRUSHFIRE, SP.SOUND_CHARGE]			= sfx_brushfire_charge;
 global.spellData[SPELL.BRUSHFIRE, SP.SOUND_FRAME]			= noone;
+global.spellData[SPELL.BRUSHFIRE, SP.SPRITE_ANIMATION]		= sBrushfire;
 #endregion

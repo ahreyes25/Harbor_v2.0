@@ -490,7 +490,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "scripts\/randomize_grid\/randomize_grid.yy",
+                "resourcePath": "scripts\/randomize_board\/randomize_board.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1236,6 +1236,25 @@
             }
         },
         {
+            "Key": "461688d6-33f0-49db-ad04-035c296724a5",
+            "Value": {
+                "id": "79fb8e89-1e8f-4186-b561-2a9136f39bcd",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/convert_column_to\/convert_column_to.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "46cd96b0-6c2a-4505-b63d-dd4a77aa3b0b",
             "Value": {
                 "id": "a79d1265-1863-41c6-a32e-af385f094850",
@@ -1497,7 +1516,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "sounds\/sfx_lightningBolt_charge\/sfx_lightningBolt_charge.yy",
+                "resourcePath": "sounds\/sfx_electricBolt_charge\/sfx_electricBolt_charge.yy",
                 "resourceType": "GMSound"
             }
         },
@@ -1597,6 +1616,25 @@
             }
         },
         {
+            "Key": "5d7cc834-5ca2-49db-b2bc-9103a83437b9",
+            "Value": {
+                "id": "f3574826-b28c-4b28-9911-325b82436be4",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/convert_row_to\/convert_row_to.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "5e02ac12-0a06-47eb-87d8-713f4ef86eff",
             "Value": {
                 "id": "e6cf6768-4750-4a46-813b-d856d4fa476c",
@@ -1673,6 +1711,25 @@
             }
         },
         {
+            "Key": "63423192-73be-4a66-9a53-1b26c907c86a",
+            "Value": {
+                "id": "e94fb5d3-28ad-4c62-a0a1-b8315f849732",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "views\/63423192-73be-4a66-9a53-1b26c907c86a.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "63faf07a-a243-47e6-b968-a45841d2a4ad",
             "Value": {
                 "id": "e23c0475-dca8-44fa-b1a2-fb603aadd48b",
@@ -1689,6 +1746,25 @@
                 ],
                 "resourcePath": "views\/63faf07a-a243-47e6-b968-a45841d2a4ad.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "648974ce-6a78-483b-8488-d75d8c543180",
+            "Value": {
+                "id": "483f3c81-5a3e-4ced-953e-46280794f121",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/sSprout\/sSprout.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -2053,6 +2129,25 @@
             }
         },
         {
+            "Key": "82dece86-20dd-43ce-a2b9-1fdc2d3ce9d1",
+            "Value": {
+                "id": "2e1409dd-4003-4c29-b60b-9f0c21737aaa",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/sBrushfire\/sBrushfire.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8427047f-9ef8-4c77-89f3-9c20623d07b6",
             "Value": {
                 "id": "7bceb24f-81d4-4fa5-9d23-70c5daf13dee",
@@ -2354,6 +2449,25 @@
                 ],
                 "resourcePath": "scripts\/game_data\/game_data.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "9b5502d1-059d-425f-bcd7-c72ef0be7070",
+            "Value": {
+                "id": "ae7df5af-610a-4453-aec6-afafe3c6e2cb",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "views\/9b5502d1-059d-425f-bcd7-c72ef0be7070.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -2751,7 +2865,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "sounds\/sfx_basic_leaf\/sfx_basic_leaf.yy",
+                "resourcePath": "sounds\/sfx_basic_grass\/sfx_basic_grass.yy",
                 "resourceType": "GMSound"
             }
         },
@@ -2979,7 +3093,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "sounds\/sfx_basic_bolt\/sfx_basic_bolt.yy",
+                "resourcePath": "sounds\/sfx_basic_electric\/sfx_basic_electric.yy",
                 "resourceType": "GMSound"
             }
         },
@@ -3530,7 +3644,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "sounds\/sfx_lightningBolt\/sfx_lightningBolt.yy",
+                "resourcePath": "sounds\/sfx_electricBolt\/sfx_electricBolt.yy",
                 "resourceType": "GMSound"
             }
         },
@@ -3895,14 +4009,19 @@
         "01c34289-70be-4c7c-8f92-3721017962fc",
         "1bf9f4ff-085f-4da1-9f2d-c4bcc596e55c",
         "5acf478b-5fd3-4251-b66e-58f87ecc6cd8",
-        "1bb2e370-4757-4ae7-a42d-b2b51e3664b1",
-        "6cfb09c0-db5a-45d0-b634-4e73d8584bae",
-        "568735a5-9367-4ceb-8672-d64839604a9b",
         "edec320e-a34f-43bd-993f-1de79ef814e8",
         "faec393c-2c7a-4bfd-85ee-e748e74e48c3",
         "bec0ec6b-c848-4b6b-81f9-ca15e6a944a7",
         "446968a9-67cd-4faa-a98e-08b119379d09",
         "a5f0943d-78bf-41e6-bebf-3eb9e8a786ff",
+        "fa7c74f7-b2f7-4eaa-b98d-13481f3a6b8f",
+        "0bb2570d-1d95-4f3e-b56b-47935a106259",
+        "101fa8b2-be49-4b50-8700-69ccfd015ffd",
+        "1bb2e370-4757-4ae7-a42d-b2b51e3664b1",
+        "461688d6-33f0-49db-ad04-035c296724a5",
+        "5d7cc834-5ca2-49db-b2bc-9103a83437b9",
+        "6cfb09c0-db5a-45d0-b634-4e73d8584bae",
+        "568735a5-9367-4ceb-8672-d64839604a9b",
         "090af413-f11e-4c16-b32b-d22a934b34e9",
         "3829c36a-f8e2-475a-8ba5-e35cd4daa183",
         "5e6294e8-0ead-42a5-9ab2-8950211d5c63",
@@ -3913,12 +4032,9 @@
         "19fb34e0-5ed2-464c-8efe-3b242a60aefd",
         "cc7bd7c1-795e-4ea0-93d6-4e2ea9726524",
         "7f1d927b-aa26-40da-9c18-9eb8f0689f0a",
-        "fa7c74f7-b2f7-4eaa-b98d-13481f3a6b8f",
-        "4bc11f46-bf88-4586-b7dc-90467039973f",
-        "101fa8b2-be49-4b50-8700-69ccfd015ffd",
-        "87aee4ee-3ebd-4228-9aa3-d752822e16ed",
-        "0bb2570d-1d95-4f3e-b56b-47935a106259",
         "7a6f2135-42db-4119-afb1-affe83bd1348",
+        "4bc11f46-bf88-4586-b7dc-90467039973f",
+        "87aee4ee-3ebd-4228-9aa3-d752822e16ed",
         "700a1c64-5c9a-403b-afd0-c8215988de27"
     ],
     "tutorial": ""
