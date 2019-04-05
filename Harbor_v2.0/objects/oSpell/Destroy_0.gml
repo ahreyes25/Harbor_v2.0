@@ -16,7 +16,7 @@ if (owner != noone) {
 			if (chance(global.spellData[owner.boardInst.cursor, SP.SMOKE_CHANCE])) {
 				if (instance_exists(owner.enemy)) {
 					var time = global.spellData[owner.boardInst.cursor, SP.SMOKE_TIME];
-					smoke(owner.enemy.boardInst, owner.boardInst.cursorI, owner.boardInst.cursorJ, owner.boardInst.cursorW, owner.boardInst.cursorH, time);
+					smoke(owner.enemy.boardInst, time);
 				}
 			}
 		}

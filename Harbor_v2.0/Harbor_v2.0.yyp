@@ -1730,6 +1730,25 @@
             }
         },
         {
+            "Key": "63798b81-1839-4caa-88da-0b99820da07e",
+            "Value": {
+                "id": "27a9ad31-edf1-49c5-a377-5726b6b871cd",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/sBasicElectric\/sBasicElectric.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "63faf07a-a243-47e6-b968-a45841d2a4ad",
             "Value": {
                 "id": "e23c0475-dca8-44fa-b1a2-fb603aadd48b",
@@ -2619,25 +2638,6 @@
                     "default"
                 ],
                 "resourcePath": "sprites\/sTree\/sTree.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "a809331b-efd9-4007-b605-db1095be9eb9",
-            "Value": {
-                "id": "98e6bc51-3c50-40d2-ad9a-35dc517c572e",
-                "modelName": "GMResourceInfo",
-                "mvc": "1.0",
-                "configDeltaFiles": [
-                    
-                ],
-                "configDeltas": [
-                    
-                ],
-                "resourceCreationConfigs": [
-                    "default"
-                ],
-                "resourcePath": "sprites\/sBasicElectric\/sBasicElectric.yy",
                 "resourceType": "GMSprite"
             }
         },
