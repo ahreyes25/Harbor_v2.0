@@ -20,6 +20,15 @@ if (owner != noone) {
 				}
 			}
 		}
+		
+		// Deal Damage
+		if (owner.enemy != noone) {
+			if (instance_exists(owner.enemy)) {
+				var dLo = global.spellData[owner.boardInst.cursor, SP.DAMAGE_LOW];
+				var dHi = global.spellData[owner.boardInst.cursor, SP.DAMAGE_HIGH];
+				owner.enemy.life -= irandom_range(dLo, dHi);
+			}
+		}
 	
 		// Clear Values & Progress State Machine
 		owner.state = PLAYER_STATE.WAIT;

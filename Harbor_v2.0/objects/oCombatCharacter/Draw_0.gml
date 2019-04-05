@@ -36,3 +36,5 @@ switch(state) {
 // Draw Self
 if (state != noone)
 	draw_self();
+
+// Draw Heart & Health Bar in oPuzzleController

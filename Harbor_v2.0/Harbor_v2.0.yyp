@@ -2452,6 +2452,25 @@
             }
         },
         {
+            "Key": "968b3b67-e310-41c4-a01d-3fa672e488ed",
+            "Value": {
+                "id": "a4bce2f0-7f2b-42cc-905d-3998c22c2ca0",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/sHeart\/sHeart.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "972693e3-f99a-49bd-b9d2-d0590018f673",
             "Value": {
                 "id": "4998c505-ef93-4aa0-ae08-c6e84f91994b",

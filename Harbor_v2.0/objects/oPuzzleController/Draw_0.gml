@@ -2,8 +2,6 @@
 if (!surface_exists(global.squaresSurface))
 	global.squaresSurface = surface_create(room_width, room_height);
 	
-//////////////////////////////////////////////////////////////////////////////
-// Draw Transparent Surface
 surface_set_target(global.squaresSurface);
 draw_clear_alpha(c_black, 0);
 
@@ -41,15 +39,6 @@ if (board2Inst != noone) {
 	}
 }
 
-// Draw Surface
-surface_reset_target();
-draw_surface_ext(global.squaresSurface, 0, 0, 1, 1, 0, c_white, 1.0);
-
-//////////////////////////////////////////////////////////////////////////////
-// Draw Opaque Surface
-surface_set_target(global.squaresSurface);
-draw_clear_alpha(c_black, 0);
-
 // Draw Blue Border Around Combat Area
 if (instance_exists(player1Inst) && instance_exists(player2Inst))
 	draw_sprite_nine(sSimpleFrame, x1, y1, x2, y2);
@@ -73,8 +62,28 @@ if (board2Inst != noone) {
 		draw_sprite_nine(sSimpleFrame, b2x1, b2y1, b2x2, b2y2); 
 	}
 }
-	
-// Draw 1.0 Alpha Surface
+
+// Draw Health Bar
+if (player1Inst != noone) {
+	if (instance_exists(player1Inst)) {
+		var xOff = 40;
+		var heartX = player1Inst.x - xOff + ((player1Inst.x > room_width / 2) * xOff * 2)
+		var r = make_color_rgb(255, 0, 52);
+		var g = make_color_rgb(0, 241, 0);
+		draw_healthbar(heartX - 3, player1Inst.y - 55, heartX + 3, player1Inst.y - 5, player1Inst.life, c_black, r, g, 3, false, false);
+		draw_sprite(sHeart, 0, heartX, player1Inst.y);
+	}
+}
+if (player2Inst != noone) {
+	if (instance_exists(player2Inst)) {
+		var xOff = 40;
+		var heartX = player2Inst.x - xOff + ((player2Inst.x > room_width / 2) * xOff * 2)
+		var r = make_color_rgb(255, 0, 52);
+		var g = make_color_rgb(0, 241, 0);
+		draw_healthbar(heartX - 3, player2Inst.y - 55, heartX + 3, player2Inst.y - 5, player2Inst.life, c_black, r, g, 3, false, false);
+		draw_sprite(sHeart, 0, heartX, player2Inst.y);
+	}
+}
+
 surface_reset_target();
 draw_surface(global.squaresSurface, 0, 0);
-
