@@ -27,6 +27,11 @@ if (owner != noone) {
 				var dLo = global.spellData[owner.boardInst.cursor, SP.DAMAGE_LOW];
 				var dHi = global.spellData[owner.boardInst.cursor, SP.DAMAGE_HIGH];
 				var dam = irandom_range(dLo, dHi)
+				
+				// Add Chain Damage
+				if (global.spellData[owner.boardInst.cursor, SP.CHAIN_PIECE] != ELEMENT.NONE)
+					dam += compute_chain_damage(owner.boardInst);
+				
 				owner.enemy.life -= dam;
 				float_text(owner.enemy.x, owner.enemy.y, -dam, 0);
 			}

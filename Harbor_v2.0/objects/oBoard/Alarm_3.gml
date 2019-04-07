@@ -19,7 +19,7 @@ if (waveCounter > 0) {
 					var sound = global.spellData[SPELL.BASIC, SP.SOUND];
 					if (sound != noone) {
 						if (ds_exists(grid, ds_type_grid))
-							if (!audio_is_playing(sound[currentSpellElement]))
+							//if (!audio_is_playing(sound[currentSpellElement]))
 								audio_play_sound(sound[currentSpellElement], 0, 0);
 					}
 				}
@@ -37,7 +37,7 @@ if (waveCounter > 0) {
 					var sound = global.spellData[SPELL.BASIC, SP.SOUND];
 					if (sound != noone) {
 						if (ds_exists(grid, ds_type_grid))
-							if (!audio_is_playing(sound[currentSpellElement]))
+							//if (!audio_is_playing(sound[currentSpellElement]))
 								audio_play_sound(sound[currentSpellElement], 0, 0);
 					}
 				}

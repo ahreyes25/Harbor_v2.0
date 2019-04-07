@@ -419,6 +419,25 @@
             }
         },
         {
+            "Key": "0dbb310d-bb97-4f53-9257-9abc014e73b1",
+            "Value": {
+                "id": "678605c0-2c54-4a4f-80c5-4f6d005c8698",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/compute_chain_damage\/compute_chain_damage.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "0e45b241-cb00-44f5-99dd-eb01f851eea0",
             "Value": {
                 "id": "c3a0d66f-a457-4965-95d6-168713d55d27",
@@ -4025,6 +4044,7 @@
         "23d00dfb-c9eb-46c7-837c-66df0bcdd9ba",
         "520cf9f1-075d-476b-9349-838c3bad7bcf",
         "55e31c84-45bd-4cca-8a2e-3cbe136a7230",
+        "0dbb310d-bb97-4f53-9257-9abc014e73b1",
         "01c34289-70be-4c7c-8f92-3721017962fc",
         "1bf9f4ff-085f-4da1-9f2d-c4bcc596e55c",
         "5acf478b-5fd3-4251-b66e-58f87ecc6cd8",
