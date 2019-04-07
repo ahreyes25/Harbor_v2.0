@@ -1,8 +1,8 @@
 switch (moves) {
-	case DIR.UP:
+	case DIR.UP:		
 		y -= moveSpeed;
 		if (y < -100)
-			instance_destroy();
+				instance_destroy();
 		break;
 		
 	case DIR.RIGHT:
@@ -25,12 +25,8 @@ switch (moves) {
 }
 
 // Hit Enemy
-if (place_meeting(x, y, target) && !dealtDamage) {
-	if (chance(accuracy)) {
-		//show_message("hit");	
-	}
+if (place_meeting(x, y, target) && !dealtDamage)
 	dealtDamage = true;
-}
 
 // Play Spell Sound At Key Frame
 if (instance_exists(owner)) {

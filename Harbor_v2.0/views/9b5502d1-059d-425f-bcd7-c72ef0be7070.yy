@@ -8,7 +8,8 @@
         "faec393c-2c7a-4bfd-85ee-e748e74e48c3",
         "bec0ec6b-c848-4b6b-81f9-ca15e6a944a7",
         "446968a9-67cd-4faa-a98e-08b119379d09",
-        "a5f0943d-78bf-41e6-bebf-3eb9e8a786ff"
+        "a5f0943d-78bf-41e6-bebf-3eb9e8a786ff",
+        "0143e67e-dd0d-456a-88f2-245f8ee185b1"
     ],
     "filterType": "GMScript",
     "folderName": "Effects",

@@ -6,6 +6,7 @@
     "children": [
         "6a96a3a9-021e-42b0-85ba-2b407787ea53",
         "fccf3b79-3939-433a-b3a3-58b69435eb28",
+        "e9a6ad18-b04a-459e-8598-12d090465cf3",
         "63faf07a-a243-47e6-b968-a45841d2a4ad"
     ],
     "filterType": "GMSound",

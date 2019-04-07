@@ -14,3 +14,4 @@ state		= SMOKE_STATE.FADE_IN;
 ii			= noone;
 jj			= noone;
 alpha		= 0;
+playedSound = false;

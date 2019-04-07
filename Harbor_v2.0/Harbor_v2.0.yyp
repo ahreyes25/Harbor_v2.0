@@ -39,6 +39,25 @@
     },
     "resources": [
         {
+            "Key": "0143e67e-dd0d-456a-88f2-245f8ee185b1",
+            "Value": {
+                "id": "7eb6c818-f6db-4e18-a18c-3e612a5acf77",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/play_smoke_flood_loop\/play_smoke_flood_loop.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "01c34289-70be-4c7c-8f92-3721017962fc",
             "Value": {
                 "id": "aff0289f-105f-4cc8-8e99-d73c6adbcd6f",
@@ -129,7 +148,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "sounds\/sfx_water_rush\/sfx_water_rush.yy",
+                "resourcePath": "sounds\/sfx_flood\/sfx_flood.yy",
                 "resourceType": "GMSound"
             }
         },
@@ -3245,7 +3264,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "sounds\/sfx_water_bubs\/sfx_water_bubs.yy",
+                "resourcePath": "sounds\/sfx_flood_loop\/sfx_flood_loop.yy",
                 "resourceType": "GMSound"
             }
         },
@@ -3801,6 +3820,25 @@
             }
         },
         {
+            "Key": "e9a6ad18-b04a-459e-8598-12d090465cf3",
+            "Value": {
+                "id": "9931bc48-4520-4e89-aa7d-1a388d8e085e",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "views\/e9a6ad18-b04a-459e-8598-12d090465cf3.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "ebb3e39b-f975-4ab5-8968-44b96195df23",
             "Value": {
                 "id": "62ccbfbc-2781-4eac-9ee8-d4ca457c5bb4",
@@ -4224,6 +4262,7 @@
         "bec0ec6b-c848-4b6b-81f9-ca15e6a944a7",
         "446968a9-67cd-4faa-a98e-08b119379d09",
         "a5f0943d-78bf-41e6-bebf-3eb9e8a786ff",
+        "0143e67e-dd0d-456a-88f2-245f8ee185b1",
         "fa7c74f7-b2f7-4eaa-b98d-13481f3a6b8f",
         "0bb2570d-1d95-4f3e-b56b-47935a106259",
         "101fa8b2-be49-4b50-8700-69ccfd015ffd",

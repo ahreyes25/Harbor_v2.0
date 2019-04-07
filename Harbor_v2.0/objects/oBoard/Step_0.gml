@@ -8,12 +8,14 @@ switch (state) {
 		check_spell_forms();
 		check_for_spell_book_toggle();
 		cursor_out_of_water();
+		play_smoke_flood_loop();
 	break;
 		
 	case BOARD_STATE.SPELL_BOOK:
 		navigate_spell_book();
 		flip_spell();
 		rotate_spell();
+		play_smoke_flood_loop();
 	break;
 	
 	case BOARD_STATE.CHARGE:
@@ -21,5 +23,7 @@ switch (state) {
 			alarm[0] = 5;
 		if (player.state = PLAYER_STATE.WAIT)
 			player.state = PLAYER_STATE.CHARGE;
+		
+		play_smoke_flood_loop();
 	break;
 }

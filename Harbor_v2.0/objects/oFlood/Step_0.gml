@@ -16,23 +16,32 @@ switch(state) {
 			state = FLOOD_STATE.FLUCTUATE;
 			alarm[0] = waveSpeed;
 		}
+		
+		if (!playedSound) {
+			if (!audio_is_playing(sfx_flood)) { 
+				audio_play_sound(sfx_flood, 0, 0);
+				playedSound = true;
+			}
+		}
 	break;
 	
 	case FLOOD_STATE.STILL:
 		image_yscale = target;
+		playedSound = false;
 	break;
 	
 	case FLOOD_STATE.FLUCTUATE:
 		if (newTarget != noone) {
 			if (image_yscale < newTarget) {
-				image_yscale += 0.005;
-				y -= 0.005;
+				image_yscale += 0.01;
+				y -= 0.01;
 			}
 			if (image_yscale > newTarget) {
-				image_yscale -= 0.005;
-				y += 0.005;
+				image_yscale -= 0.01;
+				y += 0.01;
 			}
 		}
+		playedSound = false;
 	break;
 	
 	case FLOOD_STATE.FADE_OUT:
@@ -50,6 +59,13 @@ switch(state) {
 		}
 		else
 			state = FLOOD_STATE.FADE_OUT;
+			
+		if (!playedSound) {
+			if (!audio_is_playing(sfx_flood)) { 
+				audio_play_sound(sfx_flood, 0, 0);
+				playedSound = true;
+			}
+		}
 	break;
 }
 	

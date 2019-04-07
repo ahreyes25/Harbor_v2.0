@@ -11,3 +11,4 @@ newTarget		= target;
 waveSpeed		= 15;
 waveRange		= 0.2;
 state			= FLOOD_STATE.EASE_IN;
+playedSound		= false;
