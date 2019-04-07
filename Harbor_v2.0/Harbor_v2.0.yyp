@@ -115,6 +115,25 @@
             }
         },
         {
+            "Key": "03ec2337-c38e-4fa0-87be-795fb5e544ed",
+            "Value": {
+                "id": "fa58260f-3e5d-47d9-b54c-ccdcc3d97ab0",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sounds\/sfx_water_rush\/sfx_water_rush.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "04825da0-45f0-4ff6-b57d-8a7e7efd6abd",
             "Value": {
                 "id": "23b80d1a-b808-4575-82d9-68f3e2b3fe5b",
@@ -1385,6 +1404,25 @@
                 ],
                 "resourcePath": "sprites\/sChainR\/sChainR.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "4e4b34f5-0756-4f2f-8383-f004cbfbfb0d",
+            "Value": {
+                "id": "9e68c34c-b15f-41ff-9f44-b5cab954f161",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sounds\/sfx_smoke_loop\/sfx_smoke_loop.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -3193,6 +3231,25 @@
             }
         },
         {
+            "Key": "c88d530c-dde0-4d0a-8f8e-0112636cc884",
+            "Value": {
+                "id": "e3ea2080-aad4-404a-bd2b-06f66a343554",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sounds\/sfx_water_bubs\/sfx_water_bubs.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "c9795e47-0fd4-42e4-81fd-bc58f3b06a10",
             "Value": {
                 "id": "6e1cf456-3349-48b9-9bf4-79794d7f179c",
@@ -3494,6 +3551,25 @@
                 ],
                 "resourcePath": "objects\/oBoard\/oBoard.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "de925ba2-4f2d-4651-81cb-a540e8485fb4",
+            "Value": {
+                "id": "a4af15b0-e4a5-442f-8a71-12cd2a7145a8",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sounds\/sfx_smoke\/sfx_smoke.yy",
+                "resourceType": "GMSound"
             }
         },
         {
