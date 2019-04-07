@@ -27,8 +27,6 @@ if (smokeInst != noone) {
 
 // Reset Values
 state = BOARD_STATE.CHARGE;	
-cursorI = gridW / 2;
-cursorJ = gridH / 2;
 
 audio_play_sound(sfx_spell_select, 0, 0);
 

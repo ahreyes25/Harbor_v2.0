@@ -168,6 +168,6 @@ global.spellData[SPELL.BRUSHFIRE, SP.ACCURACY]				= 100;
 global.spellData[SPELL.BRUSHFIRE, SP.MOVES]					= noone;
 global.spellData[SPELL.BRUSHFIRE, SP.SOUND]					= sfx_brushfire;
 global.spellData[SPELL.BRUSHFIRE, SP.SOUND_CHARGE]			= sfx_brushfire_charge;
-global.spellData[SPELL.BRUSHFIRE, SP.SOUND_FRAME]			= noone;
+global.spellData[SPELL.BRUSHFIRE, SP.SOUND_FRAME]			= 9;
 global.spellData[SPELL.BRUSHFIRE, SP.SPRITE_ANIMATION]		= sBrushfire;
 #endregion

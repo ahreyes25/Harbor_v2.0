@@ -26,7 +26,9 @@ if (owner != noone) {
 			if (instance_exists(owner.enemy)) {
 				var dLo = global.spellData[owner.boardInst.cursor, SP.DAMAGE_LOW];
 				var dHi = global.spellData[owner.boardInst.cursor, SP.DAMAGE_HIGH];
-				owner.enemy.life -= irandom_range(dLo, dHi);
+				var dam = irandom_range(dLo, dHi)
+				owner.enemy.life -= dam;
+				float_text(owner.enemy.x, owner.enemy.y, -dam, 0);
 			}
 		}
 	
@@ -35,6 +37,8 @@ if (owner != noone) {
 		owner.spellInst = noone;
 		owner.boardInst.state = BOARD_STATE.SPELL_BOOK;
 		owner.playedSpellSound = false;
+		owner.boardInst.cursorI = owner.boardInst.gridW / 2;
+		owner.boardInst.cursorJ = owner.boardInst.gridH / 2;
 	}
 	else
 		owner = noone;

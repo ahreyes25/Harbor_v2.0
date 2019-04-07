@@ -12,8 +12,16 @@ if (waveCounter > 0) {
 					ds_grid_set(grid,  i, j, ds_grid_get(grid, i, j) + 20);
 					
 					screen_shake();
-					float_text(board_to_world(id, i, "x"), board_to_world(id, j, "y"), 1);
+					float_text(board_to_world(id, i, "x"), board_to_world(id, j, "y"), 1, 5);
 					chain_sign(board_to_world(id, i, "x"), board_to_world(id, j, "y"));
+					
+					// Play Sound Effect On Element Delete
+					var sound = global.spellData[SPELL.BASIC, SP.SOUND];
+					if (sound != noone) {
+						if (ds_exists(grid, ds_type_grid))
+							if (!audio_is_playing(sound[currentSpellElement]))
+								audio_play_sound(sound[currentSpellElement], 0, 0);
+					}
 				}
 			}
 			// piece to chain and type dont match
@@ -22,8 +30,16 @@ if (waveCounter > 0) {
 					ds_grid_set(grid, i, j, global.spellData[cursor, SP.SPELL_ELEMENT] + 20);
 					
 					screen_shake();
-					float_text(board_to_world(id, i, "x"), board_to_world(id, j, "y"), 1);
+					float_text(board_to_world(id, i, "x"), board_to_world(id, j, "y"), 1, 5);
 					chain_sign(board_to_world(id, i, "x"), board_to_world(id, j, "y"));
+					
+					// Play Sound Effect On Element Delete
+					var sound = global.spellData[SPELL.BASIC, SP.SOUND];
+					if (sound != noone) {
+						if (ds_exists(grid, ds_type_grid))
+							if (!audio_is_playing(sound[currentSpellElement]))
+								audio_play_sound(sound[currentSpellElement], 0, 0);
+					}
 				}
 			}
 		}

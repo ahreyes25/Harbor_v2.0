@@ -11,7 +11,8 @@ pid				= noone;
 enemy			= noone;
 skin			= "";
 spellInst		= noone;
-life			= 100;
+startingLife	= 100;
+life			= startingLife;
 
 playedHurtSound			= false;
 playedSpellSound		= false;
