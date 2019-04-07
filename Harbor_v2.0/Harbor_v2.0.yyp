@@ -628,6 +628,25 @@
             }
         },
         {
+            "Key": "18f0f9ab-0b45-4896-9658-4aa51683a1b1",
+            "Value": {
+                "id": "34672d95-0606-49b5-9cfc-0d581f534c24",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "views\/18f0f9ab-0b45-4896-9658-4aa51683a1b1.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "19fb34e0-5ed2-464c-8efe-3b242a60aefd",
             "Value": {
                 "id": "326cbae2-ef65-48fb-8065-ca8b0a6ce324",
@@ -894,6 +913,25 @@
             }
         },
         {
+            "Key": "270898ef-47a5-4a4c-a8fa-c7d3bd894e91",
+            "Value": {
+                "id": "3e6f9487-e072-44e6-bf67-523c79672078",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/sEffectElectric\/sEffectElectric.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2e5b9d55-35f2-4ef7-a28c-30b4ddcf1782",
             "Value": {
                 "id": "8d985a7c-3c2e-4093-b468-d84ce143a2af",
@@ -986,6 +1024,25 @@
                 ],
                 "resourcePath": "views\/3171abb9-8740-439f-91a9-c20bf9b2c11a.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "318a60ae-73be-44aa-8d87-ed2d53ed59c9",
+            "Value": {
+                "id": "0377fc48-4a12-468b-99cf-e690420b940f",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/sEffectDrip\/sEffectDrip.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -3459,6 +3516,25 @@
             }
         },
         {
+            "Key": "dfec3a58-c4d5-43d4-9ed6-3fd3ec9ae9ae",
+            "Value": {
+                "id": "cad397f3-6d3e-412b-9016-f1d4e059f293",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/sEffectFire\/sEffectFire.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "e0311e76-84c4-4b63-b80a-73d2c2e83d96",
             "Value": {
                 "id": "36542037-6dcd-4cf4-85ad-659706353664",
@@ -3665,6 +3741,25 @@
                 ],
                 "resourcePath": "sounds\/sfx_elemental_charge\/sfx_elemental_charge.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "ed07134d-ec80-470b-bbe7-2f895265ae43",
+            "Value": {
+                "id": "7181c6ca-64fa-4f90-b6ac-babf125c4fbc",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/sEffectGrass\/sEffectGrass.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
