@@ -86,7 +86,7 @@ var y2 = player2Inst.y + 5;
 			var heartX = player1Inst.x - xOff + ((player1Inst.x > room_width / 2) * xOff * 2)
 			var r = make_color_rgb(255, 0, 52);
 			var g = make_color_rgb(0, 241, 0);
-			draw_healthbar(heartX - 3, player1Inst.y - 55, heartX + 3, player1Inst.y - 5, player1Inst.life, c_black, r, g, 3, true, false);
+			draw_healthbar(heartX - 3, player1Inst.y - 55, heartX + 3, player1Inst.y - 5, player1Inst.life / player1Inst.startingLife * 100, c_black, r, g, 3, true, false);
 			draw_sprite(sHeart, 0, heartX, player1Inst.y);
 		}
 	}
@@ -96,7 +96,7 @@ var y2 = player2Inst.y + 5;
 			var heartX = player2Inst.x - xOff + ((player2Inst.x > room_width / 2) * xOff * 2)
 			var r = make_color_rgb(255, 0, 52);
 			var g = make_color_rgb(0, 241, 0);
-			draw_healthbar(heartX - 3, player2Inst.y - 55, heartX + 3, player2Inst.y - 5, player2Inst.life, c_black, r, g, 3, true, false);
+			draw_healthbar(heartX - 3, player2Inst.y - 55, heartX + 3, player2Inst.y - 5, player2Inst.life / player2Inst.startingLife * 100, c_black, r, g, 3, true, false);
 			draw_sprite(sHeart, 0, heartX, player2Inst.y);
 		}
 	}

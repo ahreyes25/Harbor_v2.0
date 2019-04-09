@@ -2,7 +2,7 @@
     "id": "ed07134d-ec80-470b-bbe7-2f895265ae43",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "sEffectGrass",
+    "name": "sEffectPlant",
     "For3D": false,
     "HTile": false,
     "VTile": false,

@@ -11,10 +11,13 @@ pid				= noone;
 enemy			= noone;
 skin			= "";
 spellInst		= noone;
-startingLife	= 100;
+startingLife	= 30;
 life			= startingLife;
 
 playedHurtSound			= false;
 playedSpellSound		= false;
 
 image_xscale = 1 + (-2 * (x > room_width / 2));
+
+lastingEffects = ds_list_create();
+appliedEffects = false;

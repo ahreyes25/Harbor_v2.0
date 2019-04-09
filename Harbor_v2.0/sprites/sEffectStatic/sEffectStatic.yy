@@ -2,7 +2,7 @@
     "id": "270898ef-47a5-4a4c-a8fa-c7d3bd894e91",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "sEffectElectric",
+    "name": "sEffectStatic",
     "For3D": false,
     "HTile": false,
     "VTile": false,

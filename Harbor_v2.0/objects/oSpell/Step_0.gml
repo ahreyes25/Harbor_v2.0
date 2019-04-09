@@ -44,3 +44,11 @@ if (instance_exists(owner)) {
 		}
 	}
 }
+
+// Screen Shake
+if (owner != noone)
+	if (instance_exists(owner))
+		if (owner.boardInst != noone)
+			if (instance_exists(owner.boardInst))
+				if (global.spellData[owner.boardInst.cursor, SP.SCREEN_SHAKE_CAST] != noone)
+					screen_shake(global.spellData[owner.boardInst.cursor, SP.SCREEN_SHAKE_CAST]);

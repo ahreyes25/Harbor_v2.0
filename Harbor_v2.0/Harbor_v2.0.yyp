@@ -647,6 +647,25 @@
             }
         },
         {
+            "Key": "13d36186-6223-422a-86c5-3ae96f3d5ce0",
+            "Value": {
+                "id": "10506a28-3afb-4c20-b283-a9b0a8c786f2",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/apply_lasting_effects\/apply_lasting_effects.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "1822f45c-5cbd-4c1d-a627-b2fc2357e43f",
             "Value": {
                 "id": "bacf51a0-f323-4323-a52e-ca4b6b31afcd",
@@ -965,7 +984,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "sprites\/sEffectElectric\/sEffectElectric.yy",
+                "resourcePath": "sprites\/sEffectStatic\/sEffectStatic.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1841,6 +1860,25 @@
                 ],
                 "resourcePath": "views\/61e0fa3e-d11a-4565-9664-ba6feea7293b.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "6246e6cd-a240-49b3-8163-1a40c6f4afa0",
+            "Value": {
+                "id": "64483331-cedd-46e7-be19-f92e32af5588",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/heal_damage\/heal_damage.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -3364,6 +3402,25 @@
             }
         },
         {
+            "Key": "cf24d5ed-5be3-4872-ac5e-d1b56f95cb6f",
+            "Value": {
+                "id": "79ee87d2-2536-4791-80ef-e148bcf0f77a",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/oLastingEffect\/oLastingEffect.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "d1af39c5-96d7-4480-92c0-0442c259641c",
             "Value": {
                 "id": "c565b360-aeb4-4469-a6f4-6ad937bdffde",
@@ -3625,7 +3682,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "sprites\/sEffectFire\/sEffectFire.yy",
+                "resourcePath": "sprites\/sEffectBurn\/sEffectBurn.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -3872,7 +3929,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "sprites\/sEffectGrass\/sEffectGrass.yy",
+                "resourcePath": "sprites\/sEffectPlant\/sEffectPlant.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -4275,6 +4332,8 @@
         "3829c36a-f8e2-475a-8ba5-e35cd4daa183",
         "5e6294e8-0ead-42a5-9ab2-8950211d5c63",
         "e069ebaa-f569-43f6-97e5-bfd57b2f85fb",
+        "13d36186-6223-422a-86c5-3ae96f3d5ce0",
+        "6246e6cd-a240-49b3-8163-1a40c6f4afa0",
         "3a643fdc-ca0d-41bb-9165-60186c52ec94",
         "e7998db0-91d3-4cc1-b1d5-f458dc4eed1e",
         "03750704-7ce8-46dd-8c98-02553d506d0a",

@@ -2,7 +2,7 @@
     "id": "dfec3a58-c4d5-43d4-9ed6-3fd3ec9ae9ae",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "sEffectFire",
+    "name": "sEffectBurn",
     "For3D": false,
     "HTile": false,
     "VTile": false,

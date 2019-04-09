@@ -1,7 +1,7 @@
 /// @description Shake the screen by a given size and for a given time
 // This function is the function that is called whenever we want to shake the screen
-/// @param Size
-/// @param NumberOfSteps
+/// @param Size*
+/// @param NumberOfSteps*
 
 if (argument_count == 1)
 	var s = argument[0]; // screen shake size
