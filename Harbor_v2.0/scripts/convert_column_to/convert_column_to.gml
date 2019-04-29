@@ -2,17 +2,14 @@
 /// @param columnIndex
 /// @param element
 
-var board	= argument0;
-var column	= argument1;
-var element	= argument2;
+var _boardInst	= argument0;
+var _column		= argument1;
+var _element	= argument2;
 
-if (!instance_exists(board))
-	return;
-if (board.grid == noone)
-	return;
-if (!ds_exists(board.grid, ds_type_grid))
-	return;
+if (!instance_exists(_boardInst)) return;
+if (_boardInst.grid == noone) return;
+if (!ds_exists(_boardInst.grid, ds_type_grid)) return;
 	
 // Convert
-for (var j = 0; j < board.gridH; j++)
-	ds_grid_set(board.grid, column, j, element);	
+for (var j = 0; j < _boardInst.gridH; j++)
+	ds_grid_set(_boardInst.grid, _column, j, _element);	

@@ -1,21 +1,18 @@
 /// @param BoardInst
 
-var board = argument0;
+var _boardInst = argument0;
 
 // Exit
-if (!instance_exists(board))
-	return;
-if (board.grid == noone)
-	return;
-if (!ds_exists(board.grid, ds_type_grid))
-	return;
+if (!instance_exists(_boardInst)) return;
+if (_boardInst.grid == noone) return;
+if (!ds_exists(_boardInst.grid, ds_type_grid)) return;
 	
-var count = 0;
-for (var i = 0; i < board.gridW; i++) {
-	for (var j = 0; j < board.gridH; j++) {
-		if (ds_grid_get(board.grid, i, j) == 0)
-			count++;
+var _count = 0;
+for (var i = 0; i < _boardInst.gridW; i++) {
+	for (var j = 0; j < _boardInst.gridH; j++) {
+		if (ds_grid_get(_boardInst.grid, i, j) == 0)
+			_count++;
 	}
 }
 
-return count - array_length_1d(board.config);
+return _count - array_length_1d(_boardInst.config);

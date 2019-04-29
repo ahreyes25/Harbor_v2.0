@@ -22,18 +22,18 @@ cursorR		= 0;	// rotation
 config		= [];
 
 // Other
-pid				= noone;
-player			= noone;
-ground			= noone;
+pid				= noone;			// player id
+player			= noone;			// player instance
+ground			= noone;			// ground decoration instance
 state			= BOARD_STATE.WAIT;
 waveCounter		= 0;
 chainCounter	= 0;
 
 currentSpellElement	= ELEMENT.NONE;
 
-// Obstructions
+// Board Obstructions
 floodHeight		= 0;
 floodTimer		= 150;
 floodInst		= noone;	// ds_list
-floodMoveNext	= noone;
+floodMoveNext	= noone;	// store next movement for slow movement in water
 smokeInst		= noone;	// ds_list

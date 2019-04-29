@@ -3,12 +3,12 @@ for (var i = gridW - 1; i >= 0; i--){ // loop through grid
 	for (var j = gridH - 1; j >= 0; j--){
 		if (ds_grid_get(grid, i, j) == 0){ // empty in current index
 			// check for all emptys above current index
-			var empty = true;
+			var _emptyAbove = true;
 			var k = j - 1;
 			var l;
 			while (k >= 0){ // search for pieces above
 				if (ds_grid_get(grid, i, k) != 0){ // if there is a piece above
-					empty = false;
+					_emptyAbove = false;
 					l = k; // store index where non-empty piece exists
 					break;
 				}
@@ -16,7 +16,7 @@ for (var i = gridW - 1; i >= 0; i--){ // loop through grid
 					k--;
 			}
 			k = j; // reset k to current index
-			if (!empty){ // shift everything down
+			if (!_emptyAbove){ // shift everything down
 				while (l >= 0){
 					ds_grid_set(grid, i, k, ds_grid_get(grid, i, l));	 // set k to l
 					ds_grid_set(grid, i, l, random_element()); // set l to random

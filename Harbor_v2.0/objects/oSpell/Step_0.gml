@@ -36,8 +36,8 @@ if (instance_exists(owner)) {
 		if (global.spellData[owner.boardInst.cursor, SP.SOUND_CHARGE] != noone) {
 			if (!playedSpellSound) {
 				if (round(image_index) == global.spellData[owner.boardInst.cursor, SP.SOUND_FRAME]) {
-					var sound = global.spellData[owner.boardInst.cursor, SP.SOUND];
-					audio_play_sound(sound, 0, 0);
+					var _sound = global.spellData[owner.boardInst.cursor, SP.SOUND];
+					audio_play_sound(_sound, 0, 0);
 					playedSpellSound = true;
 				}
 			}

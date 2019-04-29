@@ -1,52 +1,49 @@
 /// @param BoardInst
-/// @param height
+/// @param FloodHeight
 
 // *** FLOOD CALLED IN oSPELL DESTROY EVENT *** //
 
-var board = argument0;
-var height = argument1;
+var _boardInst = argument0;
+var _floodHeight = argument1;
 
 // Exit
-if (!instance_exists(board))
-	return;	
-if (board.grid == noone)
-	return;
-if (!ds_exists(board.grid, ds_type_grid))
-	return;
+if (!instance_exists(_boardInst)) return;	
+if (_boardInst.grid == noone) return;
+if (!ds_exists(_boardInst.grid, ds_type_grid)) return;
 
 // Populate, Set Flood Timer
-if (board.alarm[6] < 0) {
+if (_boardInst.alarm[6] < 0) {
 	
-	board.floodHeight += height;
-	board.floodHeight = clamp(board.floodHeight, 0, board.gridH);
-	board.alarm[6] = board.floodTimer;
+	_boardInst.floodHeight += _floodHeight;
+	_boardInst.floodHeight = clamp(_boardInst.floodHeight, 0, _boardInst.gridH);
+	_boardInst.alarm[6] = _boardInst.floodTimer;
 	
 	// Create list of flood instances
-	if (!ds_exists(board.floodInst, ds_type_list))
-		board.floodInst = ds_list_create();
+	if (!ds_exists(_boardInst.floodInst, ds_type_list))
+		_boardInst.floodInst = ds_list_create();
 	else {
-		if (ds_list_size(board.floodInst) == 0) {
-			ds_list_destroy(board.floodInst);
-			board.floodInst = ds_list_create();
+		if (ds_list_size(_boardInst.floodInst) == 0) {
+			ds_list_destroy(_boardInst.floodInst);
+			_boardInst.floodInst = ds_list_create();
 		}
 	}		
 		
 	// Create Flood Instances
-	if (ds_list_size(board.floodInst) == 0) {
-		for (var i = 0; i < board.gridW; i++) {
-			var f = instance_create_layer(board.x + (board.space * i), board.y + (board.gridH * board.space) - 1, "Boards", oFlood);
-			f.depth = board.depth - 1;
-			f.target = height;
-			f.boardInst = board;
-			ds_list_add(board.floodInst, f);
+	if (ds_list_size(_boardInst.floodInst) == 0) {
+		for (var i = 0; i < _boardInst.gridW; i++) {
+			var _floodInst = instance_create_layer(_boardInst.x + (_boardInst.space * i), _boardInst.y + (_boardInst.gridH * _boardInst.space) - 1, "Boards", oFlood);
+			_floodInst.depth = _boardInst.depth - 1;
+			_floodInst.target = _floodHeight;
+			_floodInst.boardInst = _boardInst;
+			ds_list_add(_boardInst.floodInst, _floodInst);
 		}
 	}
 	// Update Old Flood Instances
 	else {
-		for (var i = 0; i < ds_list_size(board.floodInst); i++) {
-			var f = ds_list_find_value(board.floodInst, i);
-			f.target = clamp(board.floodHeight, 0, board.gridH);
-			f.state = FLOOD_STATE.EASE_IN;
+		for (var i = 0; i < ds_list_size(_boardInst.floodInst); i++) {
+			var _floodInst = ds_list_find_value(_boardInst.floodInst, i);
+			_floodInst.target = clamp(_boardInst.floodHeight, 0, _boardInst.gridH);
+			_floodInst.state = FLOOD_STATE.EASE_IN;
 		}
 	}
 }

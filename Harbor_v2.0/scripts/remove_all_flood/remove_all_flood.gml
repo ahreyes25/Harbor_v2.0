@@ -1,27 +1,24 @@
 /// @param BoardInst
 
-var board = argument0;
+var _boardInst = argument0;
 
 // Exit
-if (!instance_exists(board))
-	return;
-if (board.floodInst == noone)
-	return;
-if (!ds_exists(board.floodInst, ds_type_list))
-	return;
+if (!instance_exists(_boardInst)) return;
+if (_boardInst.floodInst == noone) return;
+if (!ds_exists(_boardInst.floodInst, ds_type_list)) return;
 
 // Destroy if list is empty
-if (ds_list_size(board.floodInst) == 0) {
-	ds_list_destroy(board.floodInst);
-	board.floodInst = noone;
+if (ds_list_size(_boardInst.floodInst) == 0) {
+	ds_list_destroy(_boardInst.floodInst);
+	_boardInst.floodInst = noone;
 	return;
 }
 
 // Destroy All Floods
-for (var i = 0; i < ds_list_size(board.floodInst); i++) {
-	with (ds_list_find_value(board.floodInst, i))
+for (var i = 0; i < ds_list_size(_boardInst.floodInst); i++) {
+	with (ds_list_find_value(_boardInst.floodInst, i))
 		state = FLOOD_STATE.DRAIN;
 }
 
-ds_list_destroy(board.floodInst);
-board.floodInst = noone;
+ds_list_destroy(_boardInst.floodInst);
+_boardInst.floodInst = noone;

@@ -1,9 +1,9 @@
 input();
 
 if (kA3Pressed) {
-	var currentSpell = player.spellBook[player.spellBookIndex];
+	var _currentSpell = player.spellBook[player.spellBookIndex];
 
-	if (global.spellData[currentSpell, SP.CAN_ROTATE]) {
+	if (global.spellData[_currentSpell, SP.CAN_ROTATE]) {
 		
 		// Update rotation
 		if (cursorR < 270)

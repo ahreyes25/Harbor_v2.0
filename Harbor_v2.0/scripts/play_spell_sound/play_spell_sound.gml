@@ -3,35 +3,33 @@
 // *** If spell does not have a charge sound, then the rest of the sound is played in the oSpell Object *** //
 
 if (argument_count == 1)
-	var cc = argument[0];
+	var _combatCharacter = argument[0];
 else
-	var cc = id;
+	var _combatCharacter = id;
+	
+if (!instance_exists(_combatCharacter)) return;
+if (!instance_exists(_combatCharacter.boardInst)) return;
 
 // Play sound effect
-if (!cc.playedSpellSound) {
-	if (instance_exists(cc)) {
-		if (instance_exists(cc.boardInst)) {
-			
-			// Has Charge Sound
-			if (global.spellData[cc.boardInst.cursor, SP.SOUND_CHARGE] != noone) {
-			
-				var soundCharge = global.spellData[cc.boardInst.cursor, SP.SOUND_CHARGE];
-				if (soundCharge != noone)
-					audio_play_sound(soundCharge, 0, 0);
-			}
-			// Has No Charge Sound, so Just Play Normal Spell Sound
+if (!_combatCharacter.playedSpellSound) {
+	
+	// Has Charge Sound
+	if (global.spellData[_combatCharacter.boardInst.cursor, SP.SOUND_CHARGE] != noone) {
+		var _soundCharge = global.spellData[_combatCharacter.boardInst.cursor, SP.SOUND_CHARGE];
+		if (_soundCharge != noone)
+			audio_play_sound(_soundCharge, 0, 0);
+	}
+	// Has No Charge Sound, so Just Play Normal Spell Sound
+	else {
+		var _sound = global.spellData[_combatCharacter.boardInst.cursor, SP.SOUND];
+		if (_sound != noone) {
+			if (!is_array(_sound))
+				audio_play_sound(_sound, 0, 0);
 			else {
-				var sound = global.spellData[cc.boardInst.cursor, SP.SOUND];
-				if (sound != noone) {
-					if (!is_array(sound))
-						audio_play_sound(sound, 0, 0);
-					else {
-						if (ds_exists(cc.boardInst.grid, ds_type_grid))
-							audio_play_sound(sound[cc.boardInst.currentSpellElement], 0, 0);
-					}
-				}
+				if (ds_exists(_combatCharacter.boardInst.grid, ds_type_grid))
+					audio_play_sound(_sound[_combatCharacter.boardInst.currentSpellElement], 0, 0);
 			}
-			cc.playedSpellSound = true;
 		}
-	}			
+	}
+	_combatCharacter.playedSpellSound = true;
 }

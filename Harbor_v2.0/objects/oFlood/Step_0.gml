@@ -7,6 +7,8 @@ else
 		instance_destroy();
 	
 switch(state) {
+	#region Ease In
+	
 	case FLOOD_STATE.EASE_IN:
 		if (image_yscale < target + 0.2) {
 			image_yscale += fillSpeed;
@@ -23,12 +25,20 @@ switch(state) {
 				playedSound = true;
 			}
 		}
-	break;
+		break;
+	
+	#endregion
+	
+	#region Still
 	
 	case FLOOD_STATE.STILL:
 		image_yscale = target;
 		playedSound = false;
-	break;
+		break;
+	
+	#endregion
+	
+	#region Fluctuate
 	
 	case FLOOD_STATE.FLUCTUATE:
 		if (newTarget != noone) {
@@ -42,14 +52,22 @@ switch(state) {
 			}
 		}
 		playedSound = false;
-	break;
+		break;
+	
+	#endregion
+	
+	#region Fade Out
 	
 	case FLOOD_STATE.FADE_OUT:
 		if (alpha > 0)
 			alpha -= 0.01;
 		else
 			instance_destroy();
-	break;
+		break;
+	
+	#endregion
+	
+	#region Drain 
 	
 	case FLOOD_STATE.DRAIN:
 		target = 0;
@@ -66,7 +84,9 @@ switch(state) {
 				playedSound = true;
 			}
 		}
-	break;
+		break;
+	
+	#endregion
 }
 	
 // Hide Smoke Behind Water

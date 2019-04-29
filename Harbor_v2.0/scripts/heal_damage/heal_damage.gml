@@ -1,16 +1,16 @@
 ///@param combatCharacter
 ///@param amount
-///@param showText
+///@param showText?
 
-var cc = argument0;
-var am = argument1;
-var st = argument2;
+var _combatCharacter = argument0;
+var _amount			 = argument1;
+var _showText		 = argument2;
 
-if (!instance_exists(cc))
-	return;
+if (!instance_exists(_combatCharacter)) return;
 
-cc.life += am;
-cc.life = clamp(cc.life, 0, cc.startingLife);
+_combatCharacter.life += _amount;
+_combatCharacter.life  = clamp(_combatCharacter, 0, _combatCharacter.startingLife);
 
-if (st)
-	float_text(cc.x, cc.y, am, 0);
+if (_showText) {
+	float_text(_combatCharacter.x, _combatCharacter.y, _amount, 0);
+}

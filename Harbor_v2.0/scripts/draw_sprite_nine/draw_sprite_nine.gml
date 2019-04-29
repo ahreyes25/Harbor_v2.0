@@ -1,3 +1,5 @@
+/// @description	HeartBeast Script
+
 ///@param sprite
 ///@param x1
 ///@param y1

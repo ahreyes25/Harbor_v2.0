@@ -2,6 +2,7 @@ if (place_meeting(x, y, oSpell) && spellInst == noone) {
 	state = PLAYER_STATE.HURT;	
 	
 	#region Screen Shake & Flash
+	
 	if (boardInst != noone) {
 		if (instance_exists(boardInst))	{
 			
@@ -14,5 +15,6 @@ if (place_meeting(x, y, oSpell) && spellInst == noone) {
 				screen_shake(global.spellData[boardInst.cursor, SP.SCREEN_SHAKE_HIT]);
 		}
 	}
+	
 	#endregion
 }

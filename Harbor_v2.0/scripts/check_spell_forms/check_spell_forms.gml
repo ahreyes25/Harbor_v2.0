@@ -1,123 +1,109 @@
 input();
 
-var cast = false;
+var _castSpell = false;
 
 if (kA1Pressed) {
-
 	switch (cursor) {
 		
 		#region Basic
 		case SPELL.BASIC:
-			
-			cast = true;
-			
+			_castSpell = true;
 			break;
-			#endregion
+		#endregion
 		
 		#region Fireball
 		case SPELL.FIREBALL:
-
 			// Check For All Fires
-			var pass = true;
+			var _passedConfig = true;
 			for (var i = 0; i < array_length_1d(config); i++){
 				var c = config[i];
 				if (ds_grid_get(grid, cursorI + c[0], cursorJ + c[1]) != ELEMENT.FIRE) {
-					pass = false;
+					_passedConfig = false;
 					break;
 				}
 			}	
-			cast = pass;
-			
+			_castSpell = _passedConfig;
 			break;
-			#endregion
+		#endregion
 		
 		#region ElectricBolt
 		case SPELL.ELECTRIC_BOLT:
-
 			// Check For All Electric
-			var pass = true;
+			var _passedConfig = true;
 			for (var i = 0; i < array_length_1d(config); i++){
 				var c = config[i];
 				if (ds_grid_get(grid, cursorI + c[0], cursorJ + c[1]) != ELEMENT.ELECTRIC) {
-					pass = false;
+					_passedConfig = false;
 					break;
 				}
 			}	
-			cast = pass;
-			
+			_castSpell = _passedConfig;
 			break;
-			#endregion
+		#endregion
 			
 		#region Elemental
 		case SPELL.ELEMENTAL:
-
 			// Check Spell: check for one of each
-			var red    = false;
-			var blue   = false;
-			var green  = false;
-			var yellow = false;
-			var pass = false;
+			var _red    = false;
+			var _blue   = false;
+			var _green  = false;
+			var _yellow = false;
+			var _passedConfig = false;
 			
 			for (var i = 0; i < array_length_1d(config); i++){
 				var c = config[i];
 				if (ds_grid_get(grid, cursorI + c[0], cursorJ + c[1]) == ELEMENT.FIRE)
-					red = true;
+					_red = true;
 				else if (ds_grid_get(grid, cursorI + c[0], cursorJ + c[1]) == ELEMENT.WATER)
-					blue = true;
+					_blue = true;
 				else if (ds_grid_get(grid, cursorI + c[0], cursorJ + c[1]) == ELEMENT.GRASS)
-					green = true;
+					_green = true;
 				else if (ds_grid_get(grid, cursorI + c[0], cursorJ + c[1]) == ELEMENT.ELECTRIC)
-					yellow = true;
+					_yellow = true;
 			}	
 			
 			// If Valid
-			if (red && blue && green && yellow) {
-				pass = true;
+			if (_red && _blue && _green && _yellow) {
+				_passedConfig = true;
 			}
-			cast = pass;
-			
+			_castSpell = _passedConfig;
 			break;
-			#endregion
+		#endregion
 		
 		#region Tsunami 
 		case SPELL.TSUNAMI:
-		
 			// Check For All Waters
-			var pass = true;
+			var _passedConfig = true;
 			for (var i = 0; i < array_length_1d(config); i++){
 				var c = config[i];
 				if (ds_grid_get(grid, cursorI + c[0], cursorJ + c[1]) != ELEMENT.WATER) {
-					pass = false;
+					_passedConfig = false;
 					break;
 				}
 			}	
-			cast = pass;
-		
+			_castSpell = _passedConfig;
 			break;
-			#endregion
+		#endregion
 		
 		#region Sprout 
 		case SPELL.SPROUT:
-		
 			// Check For All Grass
-			var pass = true;
+			var _passedConfig = true;
 			for (var i = 0; i < array_length_1d(config); i++){
 				var c = config[i];
 				if (ds_grid_get(grid, cursorI + c[0], cursorJ + c[1]) != ELEMENT.GRASS) {
-					pass = false;
+					_passedConfig = false;
 					break;
 				}
 			}	
-			cast = pass;
-		
+			_castSpell = _passedConfig;
 			break;
-			#endregion
+		#endregion
 		
 		#region Brushfire 
 		case SPELL.BRUSHFIRE:
-		
 			// Check Spell: check for fire grass fire
-			var pass = false;
+			var _passedConfig = false;
 			
 			var c = config[0];
 			if (ds_grid_get(grid, cursorI + c[0], cursorJ + c[1]) == ELEMENT.FIRE) { 
@@ -125,17 +111,16 @@ if (kA1Pressed) {
 				if (ds_grid_get(grid, cursorI + c[0], cursorJ + c[1]) == ELEMENT.GRASS) {
 					c = config[2];
 					if (ds_grid_get(grid, cursorI + c[0], cursorJ + c[1]) == ELEMENT.FIRE) {
-						pass = true;
+						_passedConfig = true;
 					}
 				}
 			}
-			cast = pass;
-		
+			_castSpell = _passedConfig;
 			break;
-			#endregion
+		#endregion
 	}
 }
 
 // Valid spell found
-if (cast)
+if (_castSpell)
 	cast_spell();

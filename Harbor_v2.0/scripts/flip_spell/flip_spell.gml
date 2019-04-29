@@ -1,9 +1,9 @@
 input();
 
 if (kA4Pressed) {
-	var currentSpell = player.spellBook[player.spellBookIndex];
+	var _currentSpell = player.spellBook[player.spellBookIndex];
 
-	if (global.spellData[currentSpell, SP.CAN_FLIP]) {
+	if (global.spellData[_currentSpell, SP.CAN_FLIP]) {
 		cursorF *= -1;
 		
 		// Flip on the x axis

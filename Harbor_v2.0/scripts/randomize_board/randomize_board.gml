@@ -1,20 +1,17 @@
 /// @param boardInst
 
-var board = argument0;
+var _boardInst = argument0;
 
-if (!instance_exists(board))
-	return;
-if (board.grid == noone)
-	return;
-if (!ds_exists(board.grid, ds_type_grid))
-	return;
+if (!instance_exists(_boardInst)) return;
+if (_boardInst.grid == noone) return;
+if (!ds_exists(_boardInst.grid, ds_type_grid)) return;
 
-var g = board.grid;
-var gw = ds_grid_width(g);
-var gh = ds_grid_height(g);
+var _grid  = _boardInst.grid;
+var _gridW = ds_grid_width(_grid);
+var _gridH = ds_grid_height(_grid);
 
-for (var i = 0; i < gw; i++) {
-	for (var j = 0; j < gh; j++) {
-		ds_grid_set(g, i, j, random_element());
+for (var i = 0; i < _gridW; i++) {
+	for (var j = 0; j < _gridH; j++) {
+		ds_grid_set(_grid, i, j, random_element());
 	}
 }

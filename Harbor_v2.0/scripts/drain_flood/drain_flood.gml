@@ -4,8 +4,8 @@ floodHeight -= argument0;
 	
 if (floodHeight > 0) {
 	for (var i = 0; i < ds_list_size(floodInst); i++) {
-		var fi = ds_list_find_value(floodInst, i);
-		fi.target -= argument0;	
+		var _floodInst = ds_list_find_value(floodInst, i);
+		_floodInst.target -= argument0;	
 	}	
 }		
 else {
@@ -15,8 +15,8 @@ else {
 	// Destroy Flood Instances
 	if (ds_exists(floodInst, ds_type_list))
 		for (var i = 0; i < ds_list_size(floodInst); i++) {
-			var fi = ds_list_find_value(floodInst, i);
-			fi.state = FLOOD_STATE.DRAIN;
+			var _floodInst = ds_list_find_value(floodInst, i);
+			_floodInst.state = FLOOD_STATE.DRAIN;
 		}
 	
 	// Destroy Flood Instances List

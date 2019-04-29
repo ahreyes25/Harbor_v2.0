@@ -34,11 +34,10 @@ if (waveCounter > 0) {
 					chain_sign(board_to_world(id, i, "x"), board_to_world(id, j, "y"));
 					
 					// Play Sound Effect On Element Delete
-					var sound = global.spellData[SPELL.BASIC, SP.SOUND];
-					if (sound != noone) {
+					var _sound = global.spellData[SPELL.BASIC, SP.SOUND];
+					if (_sound != noone) {
 						if (ds_exists(grid, ds_type_grid))
-							//if (!audio_is_playing(sound[currentSpellElement]))
-								audio_play_sound(sound[currentSpellElement], 0, 0);
+							audio_play_sound(_sound[currentSpellElement], 0, 0);
 					}
 				}
 			}

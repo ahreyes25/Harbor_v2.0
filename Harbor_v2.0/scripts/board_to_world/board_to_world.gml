@@ -2,14 +2,13 @@
 /// @param coord value to convert
 /// @param xOrY if value is an x or y coordinate
 
-var b		= argument0;
-var coord	= argument1;
-var xOrY	= argument2; 
+var _boardInst	= argument0;
+var coord		= argument1;
+var xOrY		= argument2; 
 
-if (!instance_exists(b))
-	return;
+if (!instance_exists(_boardInst)) return;
 
 if (xOrY == "x")
-	return ((coord * b.space) + b.x);
+	return ((coord * _boardInst.space) + _boardInst.x);
 else if (xOrY == "y")
-	return ((coord * b.space) + b.y);
+	return ((coord * _boardInst.space) + _boardInst.y);

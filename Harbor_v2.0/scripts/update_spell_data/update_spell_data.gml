@@ -1,18 +1,19 @@
 /// @param Board
 
 if (argument_count == 1) 
-	var b = argument[0];
+	var _boardInst = argument[0];
 else
-	var b = id;
+	var _boardInst = id;
 
-if (!instance_exists(b))
-	return;
+if (!instance_exists(_boardInst)) return;
+if (_boardInst.player == noone) return;
+if (!instance_exists(_boardInst.player)) return;
 
-b.cursor = b.player.spellBook[b.player.spellBookIndex];
-b.cursorW = global.spellData[b.cursor, SP.WIDTH];
-b.cursorH = global.spellData[b.cursor, SP.HEIGHT];
-b.cursorF = 1;
-b.cursorR = 0;
-b.config = global.spellData[b.cursor, SP.CONFIG];
-b.cursorI = floor(b.gridW / 2) - floor(b.cursorW / 2);
-b.cursorJ = floor(b.gridH / 2) - floor(b.cursorH / 2);
+_boardInst.cursor = _boardInst.player.spellBook[_boardInst.player.spellBookIndex];
+_boardInst.cursorW = global.spellData[_boardInst.cursor, SP.WIDTH];
+_boardInst.cursorH = global.spellData[_boardInst.cursor, SP.HEIGHT];
+_boardInst.cursorF = 1;
+_boardInst.cursorR = 0;
+_boardInst.config = global.spellData[_boardInst.cursor, SP.CONFIG];
+_boardInst.cursorI = floor(_boardInst.gridW / 2) - floor(_boardInst.cursorW / 2);
+_boardInst.cursorJ = floor(_boardInst.gridH / 2) - floor(_boardInst.cursorH / 2);

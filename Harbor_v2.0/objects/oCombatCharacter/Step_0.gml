@@ -1,29 +1,29 @@
 switch(state) {
 	case PLAYER_STATE.WAIT:
 		check_spell_hit();
-	break;
+		break;
 	
 	// Hold For Chaining and Board State Change
 	case PLAYER_STATE.CHARGE:
 		check_spell_hit();
 		apply_lasting_effects();
-	break;
+		break;
 		
 	case PLAYER_STATE.CAST:
 		play_spell_sound();
 		check_spell_hit();
 		spawn_spell();
-	break;
+		break;
 	
 	// Lasting: While Spell Instance Exists
 	case PLAYER_STATE.CASTING:
 		check_spell_hit();
-	break;
+		break;
 		
 	case PLAYER_STATE.HURT:
 		hurt_sound();
 		reset_hurt_state();
-	break;
+		break;
 } 
 
 if (state != PLAYER_STATE.HURT)

@@ -1,27 +1,24 @@
 /// @param BoardInst
 
-var board = argument0;
+var _boardInst = argument0;
 
 // Exit
-if (!instance_exists(board))
-	return;
-if (board.smokeInst == noone)
-	return;
-if (!ds_exists(board.smokeInst, ds_type_list))
-	return;
+if (!instance_exists(_boardInst)) return;
+if (_boardInst.smokeInst == noone) return;
+if (!ds_exists(_boardInst.smokeInst, ds_type_list)) return;
 
 // Destroy if list is empty
-if (ds_list_size(board.smokeInst) == 0) {
-	ds_list_destroy(board.smokeInst);
-	board.smokeInst = noone;
+if (ds_list_size(_boardInst.smokeInst) == 0) {
+	ds_list_destroy(_boardInst.smokeInst);
+	_boardInst.smokeInst = noone;
 	return;
 }
 
 // Destroy All Floods
-for (var i = 0; i < ds_list_size(board.smokeInst); i++) {
-	with (ds_list_find_value(board.smokeInst, i))
+for (var i = 0; i < ds_list_size(_boardInst.smokeInst); i++) {
+	with (ds_list_find_value(_boardInst.smokeInst, i))
 		state = SMOKE_STATE.FADE_OUT;
 }
 
-ds_list_destroy(board.smokeInst);
-board.smokeInst = noone;
+ds_list_destroy(_boardInst.smokeInst);
+_boardInst.smokeInst = noone;

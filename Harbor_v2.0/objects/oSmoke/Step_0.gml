@@ -5,6 +5,8 @@ else
 		instance_destroy();
 
 switch (state) {
+	#region Fade In 
+	
 	case SMOKE_STATE.FADE_IN:
 		if (alpha < 1)
 			alpha += 0.05;
@@ -19,13 +21,21 @@ switch (state) {
 				playedSound = true;
 			}
 		}
-	break;
+		break;
+		
+	#endregion
+	
+	#region Still
 	
 	case SMOKE_STATE.SIT:
 		if (timer == 0)
 			state = SMOKE_STATE.FADE_OUT;
 		playedSound = false;
-	break
+		break
+	
+	#endregion
+	
+	#region Fade Out
 	
 	case SMOKE_STATE.FADE_OUT:
 		if (alpha > 0)
@@ -39,5 +49,7 @@ switch (state) {
 				playedSound = true;
 			}
 		}
-	break;
+		break;
+	
+	#endregion
 }
