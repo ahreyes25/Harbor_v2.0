@@ -12,7 +12,7 @@
         "6246e6cd-a240-49b3-8163-1a40c6f4afa0"
     ],
     "filterType": "GMScript",
-    "folderName": "Players",
+    "folderName": "Combat",
     "isDefaultView": false,
     "localisedFolderName": ""
 }
