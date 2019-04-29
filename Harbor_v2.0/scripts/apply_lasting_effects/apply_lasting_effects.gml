@@ -25,10 +25,10 @@ for (var i = 0; i < ds_list_size(_combatCharacter.lastingEffects); i++) {
 				case ELEMENT.FIRE:
 					heal_damage(_combatCharacter, -1, true);
 					_combatCharacter.state = PLAYER_STATE.HURT;
-				break;
+					break;
 			
 				case ELEMENT.WATER:
-				break;
+					break;
 			
 				case ELEMENT.GRASS:
 					heal_damage(_combatCharacter, -2, true);	
@@ -37,10 +37,10 @@ for (var i = 0; i < ds_list_size(_combatCharacter.lastingEffects); i++) {
 					if (_combatCharacter.enemy != noone)
 						if (instance_exists(_combatCharacter.enemy))
 							heal_damage(_combatCharacter.enemy, 2, true);
-				break;
+					break;
 			
 				case ELEMENT.ELECTRIC:
-				break;
+					break;
 			}
 		}
 	}

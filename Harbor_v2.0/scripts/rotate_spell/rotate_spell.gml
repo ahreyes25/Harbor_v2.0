@@ -1,15 +1,24 @@
 input();
 
-if (kA3Pressed) {
+if (kRotateLeftPressed || kRotateRightPressed) {
+	
 	var _currentSpell = player.spellBook[player.spellBookIndex];
 
 	if (global.spellData[_currentSpell, SP.CAN_ROTATE]) {
 		
 		// Update rotation
-		if (cursorR < 270)
-			cursorR += 90;
-		else
-			cursorR = 0;
+		if (kRotateLeftPressed) {
+			if (cursorR < 270)
+				cursorR += 90;
+			else
+				cursorR = 0;
+		}
+		else if (kRotateRightPressed) {
+			if (cursorR > 0)
+				cursorR -= 90;
+			else
+				cursorR = 360;
+		}
 			
 		audio_play_sound(sfx_spell_rotate, 0, 0);
 			
@@ -36,3 +45,4 @@ if (kA3Pressed) {
 		}
 	}
 }
+

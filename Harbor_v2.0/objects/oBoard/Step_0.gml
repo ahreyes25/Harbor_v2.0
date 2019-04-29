@@ -28,3 +28,5 @@ switch (state) {
 		play_smoke_flood_loop();
 		break;
 }
+
+spellIconImageSpeed += 0.03;

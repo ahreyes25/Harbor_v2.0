@@ -1,7 +1,7 @@
 input();
 
 // Back out
-if (kA1Pressed) {
+if (kSelectPressed) {
 	state = BOARD_STATE.NAVIGATE;
 }
 

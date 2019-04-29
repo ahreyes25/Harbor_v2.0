@@ -2,7 +2,7 @@ input();
 
 var _castSpell = false;
 
-if (kA1Pressed) {
+if (kSelectPressed) {
 	switch (cursor) {
 		
 		#region Basic

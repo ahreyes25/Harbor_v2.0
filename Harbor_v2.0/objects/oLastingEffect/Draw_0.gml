@@ -1,7 +1,7 @@
 switch (type) {
 	case ELEMENT.WATER:
 		sprite_index = sEffectDrip;
-		image_speed = 0.1;
+		image_speed = 0.5;
 		draw_self();
 		break;
 	
@@ -13,7 +13,7 @@ switch (type) {
 	
 	case ELEMENT.ELECTRIC:
 		sprite_index = sEffectStatic;
-		image_speed = 0.1;
+		image_speed = 0.5;
 		draw_self();
 		break;
 	

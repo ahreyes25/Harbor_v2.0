@@ -204,7 +204,7 @@ global.spellData[SPELL.SPROUT, SP.SCREEN_SHAKE_CAST]	= noone;
 global.spellData[SPELL.SPROUT, SP.SCREEN_SHAKE_HIT]		= 1;
 global.spellData[SPELL.SPROUT, SP.SCREEN_FLASH_HIT]		= 0.2;
 global.spellData[SPELL.SPROUT, SP.EFFECT_TYPE]			= ELEMENT.GRASS;
-global.spellData[SPELL.SPROUT, SP.EFFECT_CHANCE]		= 1;
+global.spellData[SPELL.SPROUT, SP.EFFECT_CHANCE]		= 0;
 #endregion
 
 #region Brushfire
@@ -236,5 +236,5 @@ global.spellData[SPELL.BRUSHFIRE, SP.SCREEN_SHAKE_CAST]		= noone;
 global.spellData[SPELL.BRUSHFIRE, SP.SCREEN_SHAKE_HIT]		= 2;
 global.spellData[SPELL.BRUSHFIRE, SP.SCREEN_FLASH_HIT]		= 0.3;
 global.spellData[SPELL.BRUSHFIRE, SP.EFFECT_TYPE]			= ELEMENT.FIRE;
-global.spellData[SPELL.BRUSHFIRE, SP.EFFECT_CHANCE]			= 0.5;
+global.spellData[SPELL.BRUSHFIRE, SP.EFFECT_CHANCE]			= 0;
 #endregion

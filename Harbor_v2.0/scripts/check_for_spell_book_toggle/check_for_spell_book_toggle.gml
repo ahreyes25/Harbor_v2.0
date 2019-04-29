@@ -1,4 +1,4 @@
 input();
 
-if (kA2Pressed) 
+if (kBackPressed) 
 	state = BOARD_STATE.SPELL_BOOK;

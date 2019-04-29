@@ -1,23 +1,30 @@
 kRightPressed	= keyboard_check_pressed(global.playerData[pid, PP.RIGHT_KEY]);
-kRight			= keyboard_check(global.playerData[pid, PP.RIGHT_KEY]);
-
+kRightDown		= keyboard_check(global.playerData[pid, PP.RIGHT_KEY]);
 kLeftPressed	= keyboard_check_pressed(global.playerData[pid, PP.LEFT_KEY]);
-kLeft			= keyboard_check(global.playerData[pid, PP.LEFT_KEY]);
-
+kLeftDown		= keyboard_check(global.playerData[pid, PP.LEFT_KEY]);
 kUpPressed		= keyboard_check_pressed(global.playerData[pid, PP.UP_KEY]);
-kUp				= keyboard_check(global.playerData[pid, PP.UP_KEY]);
-
+kUpDown			= keyboard_check(global.playerData[pid, PP.UP_KEY]);
 kDownPressed	= keyboard_check_pressed(global.playerData[pid, PP.DOWN_KEY]);
-kDown			= keyboard_check(global.playerData[pid, PP.DOWN_KEY]);
-
+kDownDown		= keyboard_check(global.playerData[pid, PP.DOWN_KEY]);
 kA1Pressed		= keyboard_check_pressed(global.playerData[pid, PP.A1_KEY]);
-kA1				= keyboard_check(global.playerData[pid, PP.A1_KEY]);
-
+kA1Down			= keyboard_check(global.playerData[pid, PP.A1_KEY]);
 kA2Pressed		= keyboard_check_pressed(global.playerData[pid, PP.A2_KEY]);
-kA2				= keyboard_check(global.playerData[pid, PP.A2_KEY]);
-
+kA2Down			= keyboard_check(global.playerData[pid, PP.A2_KEY]);
 kA3Pressed		= keyboard_check_pressed(global.playerData[pid, PP.A3_KEY]);
-kA3				= keyboard_check(global.playerData[pid, PP.A3_KEY]);
-
+kA3Down			= keyboard_check(global.playerData[pid, PP.A3_KEY]);
 kA4Pressed		= keyboard_check_pressed(global.playerData[pid, PP.A4_KEY]);
-kA4				= keyboard_check(global.playerData[pid, PP.A4_KEY]);
+kA4Down			= keyboard_check(global.playerData[pid, PP.A4_KEY]);
+kA5Pressed		= keyboard_check_pressed(global.playerData[pid, PP.A5_KEY]);
+kA5Down			= keyboard_check(global.playerData[pid, PP.A5_KEY]);
+
+// Translations
+kSelectPressed		= kA1Pressed;
+kSelectDown			= kA1Pressed;
+kBackPressed		= kA2Pressed;
+kBackDown			= kA2Pressed;
+kRotateLeftPressed	= kA3Pressed;
+kRotateLeftDown		= kA3Pressed;
+kRotateRightPressed = kA4Pressed;
+kRotateRightDown	= kA4Pressed;
+kFlipPressed		= kA5Pressed;
+kFlipDown			= kA5Pressed;
