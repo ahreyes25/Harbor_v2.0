@@ -18,11 +18,13 @@ player1Inst			= noone;
 board1Inst			= noone;
 player1Collection	= noone;
 player1Name			= noone;
+ground1				= noone;
 
 player2Inst			= noone;
 board2Inst			= noone;
 player2Collection	= noone;
 player2Name			= noone;
+ground2				= noone;
 
 shakeSize	= 0;
 shakeScreen = false;

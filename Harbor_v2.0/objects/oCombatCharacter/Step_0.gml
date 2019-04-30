@@ -24,9 +24,15 @@ switch(state) {
 		hurt_sound();
 		reset_hurt_state();
 		break;
+		
+	case PLAYER_STATE.DEAD:
+		instance_destroy();
+		break;
 } 
 
 if (state != PLAYER_STATE.HURT)
 	playedHurtSound = false;
 if (state == PLAYER_STATE.CASTING)
 	appliedEffects = false;
+if (life <= 0)
+	state = PLAYER_STATE.DEAD;

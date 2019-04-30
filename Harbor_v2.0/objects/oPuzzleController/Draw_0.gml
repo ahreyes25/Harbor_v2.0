@@ -11,18 +11,24 @@ image_speed = 0.1;
 draw_sprite_tiled(sSquares, image_index, 0, 0);
 	
 #endregion
+	
+#region Combat Zone
+	
+if (ground1 != noone && ground2 != noone) {
+	if (instance_exists(ground1) && instance_exists(ground2)) {
+		
+		var _x1 = ground1.x - 30;
+		var _y1 = ground1.y - 60;
+		var _x2 = ground2.x + 30;
+		var _y2 = ground2.y + 5;
 
-var _x1 = player1Inst.x - 30;
-var _y1 = player1Inst.y - 60;
-var _x2 = player2Inst.x + 30;
-var _y2 = player2Inst.y + 5;
-	
-#region Subtract Combat Zone
-	
-gpu_set_blendmode(bm_subtract);
-draw_rectangle(_x1 + 1, _y1 + 1, _x2 - 2, _y2 - 2, false);
-gpu_set_blendmode(bm_normal);
-	
+		gpu_set_blendmode(bm_subtract);
+		draw_rectangle(_x1 + 1, _y1 + 1, _x2 - 2, _y2 - 2, false);
+		gpu_set_blendmode(bm_normal);
+		draw_sprite_nine(sSimpleFrame, _x1, _y1, _x2, _y2);
+	}
+}
+
 #endregion
 
 #region Subtract Puzzle
@@ -46,13 +52,6 @@ if (board2Inst != noone) {
 	}
 }
 	
-#endregion
-
-#region Draw Blue Border Around Combat Area
-
-if (instance_exists(player1Inst) && instance_exists(player2Inst))
-	draw_sprite_nine(sSimpleFrame, _x1, _y1, _x2, _y2);
-
 #endregion
 	
 #region Draw Blue Border Around Puzzle
