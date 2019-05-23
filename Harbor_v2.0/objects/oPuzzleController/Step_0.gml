@@ -15,14 +15,14 @@ switch(state) {
 		#region Spawn Player
 		
 		player1Inst = instance_create_layer(ground1.x, ground1.y - 1, "Instances", oCombatCharacter);			
-		player1Inst.spellBook = master_book();
+		player1Inst.spellBook = master_book(); // replace with variable reference
 		player1Inst.pid = PLAYER.P1;
 		player1Inst.skin = global.playerData[player1Inst.pid, PP.SKIN];
 		player1Inst.ground = ground1;
 		ground1.playerInst = player1Inst;
 		
 		player2Inst = instance_create_layer(ground2.x, ground2.y - 1, "Instances", oCombatCharacter);
-		player2Inst.spellBook = master_book();
+		player2Inst.spellBook = master_book(); // replace with variable reference
 		player2Inst.pid = PLAYER.P2;
 		player2Inst.skin = global.playerData[player2Inst.pid, PP.SKIN];
 		player2Inst.ground = ground2;

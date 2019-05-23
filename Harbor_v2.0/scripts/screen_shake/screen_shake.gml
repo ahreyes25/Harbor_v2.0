@@ -6,7 +6,7 @@
 
 if (!instance_exists(oPuzzleController)) return;
 
-if (argument_count == 1)
+if (argument_count >= 1)
 	var _screenShakeSize = argument[0];
 else
 	var _screenShakeSize = 1;

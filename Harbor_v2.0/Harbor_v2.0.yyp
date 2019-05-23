@@ -433,7 +433,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "objects\/oTitleMenu\/oTitleMenu.yy",
+                "resourcePath": "objects\/oGame\/oGame.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -720,6 +720,25 @@
                 ],
                 "resourcePath": "scripts\/float_text\/float_text.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "1b500e88-1301-4c12-ac27-c744d61776b8",
+            "Value": {
+                "id": "8623ba05-98cf-4785-891f-b08adc4e4607",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/sSpellBookCover\/sSpellBookCover.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1236,6 +1255,25 @@
             }
         },
         {
+            "Key": "3944b9ed-325f-416b-b175-8c5245e32173",
+            "Value": {
+                "id": "f91e298a-6bd4-4c6f-ae56-dfcaeb58c54f",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/add_spell_to_book\/add_spell_to_book.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "3a643fdc-ca0d-41bb-9165-60186c52ec94",
             "Value": {
                 "id": "4f8aa7b8-1b18-4670-b8dd-0319acc8f9ae",
@@ -1309,6 +1347,25 @@
                 ],
                 "resourcePath": "sprites\/sInactiveElectricBolt\/sInactiveElectricBolt.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "3c6e919d-38f5-47e2-bba5-d7fab83ef9e9",
+            "Value": {
+                "id": "feabe624-5a46-42ef-a2b2-b62784a46cc8",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "rooms\/rm_deckBuilder\/rm_deckBuilder.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -1977,6 +2034,25 @@
             }
         },
         {
+            "Key": "6686feab-a63d-48e3-bf63-17b85d608385",
+            "Value": {
+                "id": "feafbdb6-af93-4d23-a5e6-8d47b7863f06",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/oDeckBuilder\/oDeckBuilder.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "6a96a3a9-021e-42b0-85ba-2b407787ea53",
             "Value": {
                 "id": "401ae4cd-a602-4161-a2ad-8bf67bc89803",
@@ -2183,6 +2259,25 @@
                 ],
                 "resourcePath": "sounds\/sfx_elemental\/sfx_elemental.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "717b943c-152f-48ac-8cb3-6d7136d5ddc2",
+            "Value": {
+                "id": "5bf5d324-e1da-4407-9e60-db51683ecd27",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "views\/717b943c-152f-48ac-8cb3-6d7136d5ddc2.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -2449,6 +2544,25 @@
                 ],
                 "resourcePath": "sprites\/sChainG\/sChainG.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "89457702-fd95-4510-8799-a53efb1a8136",
+            "Value": {
+                "id": "bb0bdf88-08fa-49f4-8e3e-beb1f72eba83",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/master_collection\/master_collection.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -2946,6 +3060,25 @@
             }
         },
         {
+            "Key": "b12766bb-1e83-45b7-a294-8a39f0d3013d",
+            "Value": {
+                "id": "40b5770e-3b77-4101-8f53-8f0ec2e82a18",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/sSpellBookInside\/sSpellBookInside.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b1c2cffe-35e6-45c1-84bb-5c6deee5476a",
             "Value": {
                 "id": "a74ce51f-772d-41aa-8fc7-4236fb644b8a",
@@ -3399,6 +3532,25 @@
                 ],
                 "resourcePath": "sprites\/sFlood\/sFlood.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "cd06d207-d56a-47de-a0d8-176d83d58325",
+            "Value": {
+                "id": "6ba9371a-60e5-469b-a63b-b79670fdf341",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/remove_spell_from_book\/remove_spell_from_book.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -3991,6 +4143,25 @@
             }
         },
         {
+            "Key": "f0e59028-5e83-4dfd-af3b-f270cc060974",
+            "Value": {
+                "id": "1738acb0-d8fe-4629-97ed-edcc0f994150",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/sSpellBookMini\/sSpellBookMini.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "f0e6286a-fd38-42d3-8d02-bf3843f202fd",
             "Value": {
                 "id": "f7211e04-518c-49fd-b9ec-c789154cdc12",
@@ -4335,7 +4506,10 @@
         "e069ebaa-f569-43f6-97e5-bfd57b2f85fb",
         "13d36186-6223-422a-86c5-3ae96f3d5ce0",
         "6246e6cd-a240-49b3-8163-1a40c6f4afa0",
+        "89457702-fd95-4510-8799-a53efb1a8136",
         "3a643fdc-ca0d-41bb-9165-60186c52ec94",
+        "3944b9ed-325f-416b-b175-8c5245e32173",
+        "cd06d207-d56a-47de-a0d8-176d83d58325",
         "e7998db0-91d3-4cc1-b1d5-f458dc4eed1e",
         "03750704-7ce8-46dd-8c98-02553d506d0a",
         "19fb34e0-5ed2-464c-8efe-3b242a60aefd",

@@ -2,7 +2,7 @@
     "id": "0d2bccc1-d0e0-4b43-9e98-90c3a9882a9d",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oTitleMenu",
+    "name": "oGame",
     "eventList": [
         {
             "id": "af4c2f78-eae5-4c61-9365-686429032624",
@@ -13,12 +13,22 @@
             "enumb": 0,
             "eventtype": 0,
             "m_owner": "0d2bccc1-d0e0-4b43-9e98-90c3a9882a9d"
+        },
+        {
+            "id": "c985baec-50ea-4b02-8b67-f56d2c8c555d",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "0d2bccc1-d0e0-4b43-9e98-90c3a9882a9d"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
     "parentObjectId": "00000000-0000-0000-0000-000000000000",
-    "persistent": false,
+    "persistent": true,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
     "physicsFriction": 0.2,
