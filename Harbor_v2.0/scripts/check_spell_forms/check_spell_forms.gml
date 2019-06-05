@@ -1,9 +1,16 @@
 input();
 
 var _castSpell = false;
+var _swap = false;
 
 if (kSelectPressed) {
 	switch (cursor) {
+		
+		#region Swap
+		case SPELL.SWAP:
+			_swap = true;
+			break;
+		#endregion
 		
 		#region Basic
 		case SPELL.BASIC:
@@ -124,3 +131,5 @@ if (kSelectPressed) {
 // Valid spell found
 if (_castSpell)
 	cast_spell();
+if (_swap)
+	swap();

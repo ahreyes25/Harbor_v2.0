@@ -1,6 +1,5 @@
-#region Enums
 enum SPELL {
-	BASIC, FIREBALL, ELECTRIC_BOLT, ELEMENTAL, SPROUT, TSUNAMI, BRUSHFIRE, THUNDERSTORM,
+	SWAP, BASIC, FIREBALL, ELECTRIC_BOLT, ELEMENTAL, SPROUT, TSUNAMI, BRUSHFIRE, THUNDERSTORM,
 }
 
 enum SP {	
@@ -8,12 +7,46 @@ enum SP {
 	CHAIN_PIECE, ORIGIN, DAMAGE_LOW, DAMAGE_HIGH, ACCURACY, MOVES,
 	FLOOD_CHANCE, FLOOD_AMOUNT_LO, FLOOD_AMOUNT_HI, SMOKE_CHANCE, SMOKE_TIME,
 	SOUND, SOUND_CHARGE, SOUND_FRAME, SPRITE_ANIMATION, SCREEN_SHAKE_CAST, SCREEN_SHAKE_HIT, SCREEN_FLASH_HIT,
-	EFFECT_TYPE, EFFECT_CHANCE, 
+	EFFECT_TYPE, EFFECT_CHANCE, CONVERT_ROW, CONVERT_COLUMN, CONVERT_ROW_CONFIG, CONVERT_COLUMN_CONFIG,
 	
 }
-#endregion
 
-#region Basic
+// Swap
+global.spellData[SPELL.SWAP, SP.SPELL_NAME]				= "Swap";	
+global.spellData[SPELL.SWAP, SP.SPELL_INFO]				= "Dmg: 0";
+global.spellData[SPELL.SWAP, SP.SPELL_TYPE]				= "Passive";
+global.spellData[SPELL.SWAP, SP.SPELL_ELEMENT]			= ELEMENT.NONE;
+global.spellData[SPELL.SWAP, SP.CONFIG]					= [[0, 0], [1, 0]];
+global.spellData[SPELL.SWAP, SP.WIDTH]					= 2;						
+global.spellData[SPELL.SWAP, SP.HEIGHT]					= 1;
+global.spellData[SPELL.SWAP, SP.CAN_ROTATE]				= true;
+global.spellData[SPELL.SWAP, SP.CAN_FLIP]				= false;
+global.spellData[SPELL.SWAP, SP.CHAIN_PIECE]			= noone;
+global.spellData[SPELL.SWAP, SP.DAMAGE_LOW]				= 0;						
+global.spellData[SPELL.SWAP, SP.DAMAGE_HIGH]			= 0;							
+global.spellData[SPELL.SWAP, SP.ORIGIN]					= TEAM.FRIENDLY;
+global.spellData[SPELL.SWAP, SP.ACCURACY]				= 1;
+global.spellData[SPELL.SWAP, SP.MOVES]					= noone;
+global.spellData[SPELL.SWAP, SP.FLOOD_CHANCE]			= noone;
+global.spellData[SPELL.SWAP, SP.FLOOD_AMOUNT_LO]		= noone;
+global.spellData[SPELL.SWAP, SP.FLOOD_AMOUNT_HI]		= noone;
+global.spellData[SPELL.SWAP, SP.SMOKE_CHANCE]			= noone;
+global.spellData[SPELL.SWAP, SP.SMOKE_TIME]				= noone;
+global.spellData[SPELL.SWAP, SP.SOUND]					= noone;	// TO DO : import swap sound
+global.spellData[SPELL.SWAP, SP.SOUND_CHARGE]			= noone;
+global.spellData[SPELL.SWAP, SP.SOUND_FRAME]			= noone;
+global.spellData[SPELL.SWAP, SP.SPRITE_ANIMATION]		= noone;
+global.spellData[SPELL.SWAP, SP.SCREEN_SHAKE_CAST]		= noone;
+global.spellData[SPELL.SWAP, SP.SCREEN_SHAKE_HIT]		= 0;
+global.spellData[SPELL.SWAP, SP.SCREEN_FLASH_HIT]		= 0;
+global.spellData[SPELL.SWAP, SP.EFFECT_TYPE]			= noone;
+global.spellData[SPELL.SWAP, SP.EFFECT_CHANCE]			= 0;
+global.spellData[SPELL.SWAP, SP.CONVERT_ROW]			= noone;
+global.spellData[SPELL.SWAP, SP.CONVERT_COLUMN]			= noone;
+global.spellData[SPELL.SWAP, SP.CONVERT_ROW_CONFIG]		= noone;
+global.spellData[SPELL.SWAP, SP.CONVERT_COLUMN_CONFIG]	= noone;
+
+// Basic
 global.spellData[SPELL.BASIC, SP.SPELL_NAME]			= "Basic";	
 global.spellData[SPELL.BASIC, SP.SPELL_INFO]			= "Dmg: 1";
 global.spellData[SPELL.BASIC, SP.SPELL_TYPE]			= "Active";
@@ -43,9 +76,12 @@ global.spellData[SPELL.BASIC, SP.SCREEN_SHAKE_HIT]		= 1;
 global.spellData[SPELL.BASIC, SP.SCREEN_FLASH_HIT]		= 0;
 global.spellData[SPELL.BASIC, SP.EFFECT_TYPE]			= noone;
 global.spellData[SPELL.BASIC, SP.EFFECT_CHANCE]			= 0;
-#endregion
+global.spellData[SPELL.BASIC, SP.CONVERT_ROW]			= noone;
+global.spellData[SPELL.BASIC, SP.CONVERT_COLUMN]		= noone;
+global.spellData[SPELL.BASIC, SP.CONVERT_ROW_CONFIG]	= noone;
+global.spellData[SPELL.BASIC, SP.CONVERT_COLUMN_CONFIG]	= noone;
 
-#region Fireball
+// Fireball
 global.spellData[SPELL.FIREBALL, SP.SPELL_NAME]				= "Fireball";	
 global.spellData[SPELL.FIREBALL, SP.SPELL_INFO]				= "Dmg: 6-8";
 global.spellData[SPELL.FIREBALL, SP.SPELL_TYPE]				= "Active";
@@ -76,10 +112,12 @@ global.spellData[SPELL.FIREBALL, SP.SCREEN_SHAKE_HIT]		= 2;
 global.spellData[SPELL.FIREBALL, SP.SCREEN_FLASH_HIT]		= 0.4;
 global.spellData[SPELL.FIREBALL, SP.EFFECT_TYPE]			= ELEMENT.FIRE;
 global.spellData[SPELL.FIREBALL, SP.EFFECT_CHANCE]			= 0;
+global.spellData[SPELL.FIREBALL, SP.CONVERT_ROW]			= ELEMENT.FIRE;
+global.spellData[SPELL.FIREBALL, SP.CONVERT_COLUMN]			= ELEMENT.FIRE;
+global.spellData[SPELL.FIREBALL, SP.CONVERT_ROW_CONFIG]		= [[1, 1]];
+global.spellData[SPELL.FIREBALL, SP.CONVERT_COLUMN_CONFIG]	= [[1, 1]];
 
-#endregion
-
-#region ElectricBolt
+// ElectricBolt
 global.spellData[SPELL.ELECTRIC_BOLT, SP.SPELL_NAME]			= "ElectricBolt";
 global.spellData[SPELL.ELECTRIC_BOLT, SP.SPELL_INFO]			= "Dmg: 4";
 global.spellData[SPELL.ELECTRIC_BOLT, SP.SPELL_TYPE]			= "Active";
@@ -109,9 +147,12 @@ global.spellData[SPELL.ELECTRIC_BOLT, SP.SCREEN_SHAKE_HIT]		= 2;
 global.spellData[SPELL.ELECTRIC_BOLT, SP.SCREEN_FLASH_HIT]		= 0.3;
 global.spellData[SPELL.ELECTRIC_BOLT, SP.EFFECT_TYPE]			= ELEMENT.ELECTRIC;
 global.spellData[SPELL.ELECTRIC_BOLT, SP.EFFECT_CHANCE]			= 0;
-#endregion
+global.spellData[SPELL.ELECTRIC_BOLT, SP.CONVERT_ROW]			= noone;
+global.spellData[SPELL.ELECTRIC_BOLT, SP.CONVERT_COLUMN]		= noone;
+global.spellData[SPELL.ELECTRIC_BOLT, SP.CONVERT_ROW_CONFIG]	= noone;
+global.spellData[SPELL.ELECTRIC_BOLT, SP.CONVERT_COLUMN_CONFIG]	= noone;
 
-#region Elemental
+// Elemental
 global.spellData[SPELL.ELEMENTAL, SP.SPELL_NAME]			= "Elemental";	
 global.spellData[SPELL.ELEMENTAL, SP.SPELL_INFO]			= "Dmg: 0 or 10";
 global.spellData[SPELL.ELEMENTAL, SP.SPELL_TYPE]			= "Active";
@@ -141,73 +182,82 @@ global.spellData[SPELL.ELEMENTAL, SP.SCREEN_SHAKE_HIT]		= 1;
 global.spellData[SPELL.ELEMENTAL, SP.SCREEN_FLASH_HIT]		= 0.3;
 global.spellData[SPELL.ELEMENTAL, SP.EFFECT_TYPE]			= noone;
 global.spellData[SPELL.ELEMENTAL, SP.EFFECT_CHANCE]			= 0;
-#endregion
+global.spellData[SPELL.ELEMENTAL, SP.CONVERT_ROW]			= noone;
+global.spellData[SPELL.ELEMENTAL, SP.CONVERT_COLUMN]		= noone;
+global.spellData[SPELL.ELEMENTAL, SP.CONVERT_ROW_CONFIG]	= noone;
+global.spellData[SPELL.ELEMENTAL, SP.CONVERT_COLUMN_CONFIG]	= noone;
 
-#region Tsunami
-global.spellData[SPELL.TSUNAMI, SP.SPELL_NAME]			= "Tsunami";	
-global.spellData[SPELL.TSUNAMI, SP.SPELL_INFO]			= "Dmg: 2";
-global.spellData[SPELL.TSUNAMI, SP.SPELL_TYPE]			= "Active";
-global.spellData[SPELL.TSUNAMI, SP.SPELL_ELEMENT]		= ELEMENT.WATER;
-global.spellData[SPELL.TSUNAMI, SP.CONFIG]				= [[0, 0], [1, 0], [0, 1]];
-global.spellData[SPELL.TSUNAMI, SP.WIDTH]				= 2;						
-global.spellData[SPELL.TSUNAMI, SP.HEIGHT]				= 2;
-global.spellData[SPELL.TSUNAMI, SP.CAN_ROTATE]			= false;
-global.spellData[SPELL.TSUNAMI, SP.CAN_FLIP]			= true;
-global.spellData[SPELL.TSUNAMI, SP.CHAIN_PIECE]			= ELEMENT.WATER;
-global.spellData[SPELL.TSUNAMI, SP.DAMAGE_LOW]			= 2;						
-global.spellData[SPELL.TSUNAMI, SP.DAMAGE_HIGH]			= 2;	
-global.spellData[SPELL.TSUNAMI, SP.ORIGIN]				= TEAM.ENEMY;
-global.spellData[SPELL.TSUNAMI, SP.ACCURACY]			= 1;
-global.spellData[SPELL.TSUNAMI, SP.MOVES]				= DIR.UP;
-global.spellData[SPELL.TSUNAMI, SP.FLOOD_CHANCE]		= 0.5;
-global.spellData[SPELL.TSUNAMI, SP.FLOOD_AMOUNT_LO]		= 1;
-global.spellData[SPELL.TSUNAMI, SP.FLOOD_AMOUNT_HI]		= 4;
-global.spellData[SPELL.TSUNAMI, SP.SMOKE_CHANCE]		= noone;
-global.spellData[SPELL.TSUNAMI, SP.SMOKE_TIME]			= noone;
-global.spellData[SPELL.TSUNAMI, SP.SOUND]				= sfx_tsunami;
-global.spellData[SPELL.TSUNAMI, SP.SOUND_CHARGE]		= noone;
-global.spellData[SPELL.TSUNAMI, SP.SOUND_FRAME]			= noone;
-global.spellData[SPELL.TSUNAMI, SP.SPRITE_ANIMATION]	= sTsunami;
-global.spellData[SPELL.TSUNAMI, SP.SCREEN_SHAKE_CAST]	= 1;
-global.spellData[SPELL.TSUNAMI, SP.SCREEN_SHAKE_HIT]	= 0;
-global.spellData[SPELL.TSUNAMI, SP.SCREEN_FLASH_HIT]	= 0.4;
-global.spellData[SPELL.TSUNAMI, SP.EFFECT_TYPE]			= ELEMENT.WATER;
-global.spellData[SPELL.TSUNAMI, SP.EFFECT_CHANCE]		= 0;
-#endregion
+// Tsunami
+global.spellData[SPELL.TSUNAMI, SP.SPELL_NAME]				= "Tsunami";	
+global.spellData[SPELL.TSUNAMI, SP.SPELL_INFO]				= "Dmg: 2";
+global.spellData[SPELL.TSUNAMI, SP.SPELL_TYPE]				= "Active";
+global.spellData[SPELL.TSUNAMI, SP.SPELL_ELEMENT]			= ELEMENT.WATER;
+global.spellData[SPELL.TSUNAMI, SP.CONFIG]					= [[0, 0], [1, 0], [0, 1]];
+global.spellData[SPELL.TSUNAMI, SP.WIDTH]					= 2;						
+global.spellData[SPELL.TSUNAMI, SP.HEIGHT]					= 2;
+global.spellData[SPELL.TSUNAMI, SP.CAN_ROTATE]				= false;
+global.spellData[SPELL.TSUNAMI, SP.CAN_FLIP]				= true;
+global.spellData[SPELL.TSUNAMI, SP.CHAIN_PIECE]				= ELEMENT.WATER;
+global.spellData[SPELL.TSUNAMI, SP.DAMAGE_LOW]				= 2;						
+global.spellData[SPELL.TSUNAMI, SP.DAMAGE_HIGH]				= 2;	
+global.spellData[SPELL.TSUNAMI, SP.ORIGIN]					= TEAM.ENEMY;
+global.spellData[SPELL.TSUNAMI, SP.ACCURACY]				= 1;
+global.spellData[SPELL.TSUNAMI, SP.MOVES]					= DIR.UP;
+global.spellData[SPELL.TSUNAMI, SP.FLOOD_CHANCE]			= 0.5;
+global.spellData[SPELL.TSUNAMI, SP.FLOOD_AMOUNT_LO]			= 1;
+global.spellData[SPELL.TSUNAMI, SP.FLOOD_AMOUNT_HI]			= 4;
+global.spellData[SPELL.TSUNAMI, SP.SMOKE_CHANCE]			= noone;
+global.spellData[SPELL.TSUNAMI, SP.SMOKE_TIME]				= noone;
+global.spellData[SPELL.TSUNAMI, SP.SOUND]					= sfx_tsunami;
+global.spellData[SPELL.TSUNAMI, SP.SOUND_CHARGE]			= noone;
+global.spellData[SPELL.TSUNAMI, SP.SOUND_FRAME]				= noone;
+global.spellData[SPELL.TSUNAMI, SP.SPRITE_ANIMATION]		= sTsunami;
+global.spellData[SPELL.TSUNAMI, SP.SCREEN_SHAKE_CAST]		= 1;
+global.spellData[SPELL.TSUNAMI, SP.SCREEN_SHAKE_HIT]		= 0;
+global.spellData[SPELL.TSUNAMI, SP.SCREEN_FLASH_HIT]		= 0.4;
+global.spellData[SPELL.TSUNAMI, SP.EFFECT_TYPE]				= ELEMENT.WATER;
+global.spellData[SPELL.TSUNAMI, SP.EFFECT_CHANCE]			= 0;
+global.spellData[SPELL.TSUNAMI, SP.CONVERT_ROW]				= noone;
+global.spellData[SPELL.TSUNAMI, SP.CONVERT_COLUMN]			= noone;
+global.spellData[SPELL.TSUNAMI, SP.CONVERT_ROW_CONFIG]		= noone;
+global.spellData[SPELL.TSUNAMI, SP.CONVERT_COLUMN_CONFIG]	= noone;
 
-#region Sprout
-global.spellData[SPELL.SPROUT, SP.SPELL_NAME]			= "Sprout";	
-global.spellData[SPELL.SPROUT, SP.SPELL_INFO]			= "Dmg: 0";
-global.spellData[SPELL.SPROUT, SP.SPELL_TYPE]			= "Active";
-global.spellData[SPELL.SPROUT, SP.SPELL_ELEMENT]		= ELEMENT.GRASS;
-global.spellData[SPELL.SPROUT, SP.CONFIG]				= [[0, 0], [1, 1], [2, 0]];
-global.spellData[SPELL.SPROUT, SP.WIDTH]				= 3;						
-global.spellData[SPELL.SPROUT, SP.HEIGHT]				= 2;
-global.spellData[SPELL.SPROUT, SP.CAN_ROTATE]			= false;
-global.spellData[SPELL.SPROUT, SP.CAN_FLIP]				= false;
-global.spellData[SPELL.SPROUT, SP.CHAIN_PIECE]			= noone;
-global.spellData[SPELL.SPROUT, SP.DAMAGE_LOW]			= 0;						
-global.spellData[SPELL.SPROUT, SP.DAMAGE_HIGH]			= 0;
-global.spellData[SPELL.SPROUT, SP.ORIGIN]				= TEAM.FRIENDLY;
-global.spellData[SPELL.SPROUT, SP.ACCURACY]				= 1;
-global.spellData[SPELL.SPROUT, SP.MOVES]				= noone;
-global.spellData[SPELL.SPROUT, SP.FLOOD_CHANCE]			= noone;
-global.spellData[SPELL.SPROUT, SP.FLOOD_AMOUNT_LO]		= noone;
-global.spellData[SPELL.SPROUT, SP.FLOOD_AMOUNT_HI]		= noone;
-global.spellData[SPELL.SPROUT, SP.SMOKE_CHANCE]			= noone;
-global.spellData[SPELL.SPROUT, SP.SMOKE_TIME]			= noone;
-global.spellData[SPELL.SPROUT, SP.SOUND]				= sfx_sprout;
-global.spellData[SPELL.SPROUT, SP.SOUND_CHARGE]			= sfx_sprout_charge;
-global.spellData[SPELL.SPROUT, SP.SOUND_FRAME]			= noone;
-global.spellData[SPELL.SPROUT, SP.SPRITE_ANIMATION]		= sSprout;
-global.spellData[SPELL.SPROUT, SP.SCREEN_SHAKE_CAST]	= noone;
-global.spellData[SPELL.SPROUT, SP.SCREEN_SHAKE_HIT]		= 1;
-global.spellData[SPELL.SPROUT, SP.SCREEN_FLASH_HIT]		= 0.2;
-global.spellData[SPELL.SPROUT, SP.EFFECT_TYPE]			= ELEMENT.GRASS;
-global.spellData[SPELL.SPROUT, SP.EFFECT_CHANCE]		= 0;
-#endregion
+// Sprout
+global.spellData[SPELL.SPROUT, SP.SPELL_NAME]				= "Sprout";	
+global.spellData[SPELL.SPROUT, SP.SPELL_INFO]				= "Dmg: 0";
+global.spellData[SPELL.SPROUT, SP.SPELL_TYPE]				= "Active";
+global.spellData[SPELL.SPROUT, SP.SPELL_ELEMENT]			= ELEMENT.GRASS;
+global.spellData[SPELL.SPROUT, SP.CONFIG]					= [[0, 0], [1, 1], [2, 0]];
+global.spellData[SPELL.SPROUT, SP.WIDTH]					= 3;						
+global.spellData[SPELL.SPROUT, SP.HEIGHT]					= 2;
+global.spellData[SPELL.SPROUT, SP.CAN_ROTATE]				= false;
+global.spellData[SPELL.SPROUT, SP.CAN_FLIP]					= false;
+global.spellData[SPELL.SPROUT, SP.CHAIN_PIECE]				= noone;
+global.spellData[SPELL.SPROUT, SP.DAMAGE_LOW]				= 0;						
+global.spellData[SPELL.SPROUT, SP.DAMAGE_HIGH]				= 0;
+global.spellData[SPELL.SPROUT, SP.ORIGIN]					= TEAM.FRIENDLY;
+global.spellData[SPELL.SPROUT, SP.ACCURACY]					= 1;
+global.spellData[SPELL.SPROUT, SP.MOVES]					= noone;
+global.spellData[SPELL.SPROUT, SP.FLOOD_CHANCE]				= noone;
+global.spellData[SPELL.SPROUT, SP.FLOOD_AMOUNT_LO]			= noone;
+global.spellData[SPELL.SPROUT, SP.FLOOD_AMOUNT_HI]			= noone;
+global.spellData[SPELL.SPROUT, SP.SMOKE_CHANCE]				= noone;
+global.spellData[SPELL.SPROUT, SP.SMOKE_TIME]				= noone;
+global.spellData[SPELL.SPROUT, SP.SOUND]					= sfx_sprout;
+global.spellData[SPELL.SPROUT, SP.SOUND_CHARGE]				= sfx_sprout_charge;
+global.spellData[SPELL.SPROUT, SP.SOUND_FRAME]				= noone;
+global.spellData[SPELL.SPROUT, SP.SPRITE_ANIMATION]			= sSprout;
+global.spellData[SPELL.SPROUT, SP.SCREEN_SHAKE_CAST]		= noone;
+global.spellData[SPELL.SPROUT, SP.SCREEN_SHAKE_HIT]			= 1;
+global.spellData[SPELL.SPROUT, SP.SCREEN_FLASH_HIT]			= 0.2;
+global.spellData[SPELL.SPROUT, SP.EFFECT_TYPE]				= ELEMENT.GRASS;
+global.spellData[SPELL.SPROUT, SP.EFFECT_CHANCE]			= 0;
+global.spellData[SPELL.SPROUT, SP.CONVERT_ROW]				= noone;
+global.spellData[SPELL.SPROUT, SP.CONVERT_COLUMN]			= noone;
+global.spellData[SPELL.SPROUT, SP.CONVERT_ROW_CONFIG]		= noone;
+global.spellData[SPELL.SPROUT, SP.CONVERT_COLUMN_CONFIG]	= noone;
 
-#region Brushfire
+// Brushfire
 global.spellData[SPELL.BRUSHFIRE, SP.SPELL_NAME]			= "Brushfire";	
 global.spellData[SPELL.BRUSHFIRE, SP.SPELL_INFO]			= "Dmg: 4";
 global.spellData[SPELL.BRUSHFIRE, SP.SPELL_TYPE]			= "Active";
@@ -237,4 +287,7 @@ global.spellData[SPELL.BRUSHFIRE, SP.SCREEN_SHAKE_HIT]		= 2;
 global.spellData[SPELL.BRUSHFIRE, SP.SCREEN_FLASH_HIT]		= 0.3;
 global.spellData[SPELL.BRUSHFIRE, SP.EFFECT_TYPE]			= ELEMENT.FIRE;
 global.spellData[SPELL.BRUSHFIRE, SP.EFFECT_CHANCE]			= 0;
-#endregion
+global.spellData[SPELL.BRUSHFIRE, SP.CONVERT_ROW]			= noone;
+global.spellData[SPELL.BRUSHFIRE, SP.CONVERT_COLUMN]		= noone;
+global.spellData[SPELL.BRUSHFIRE, SP.CONVERT_ROW_CONFIG]	= noone;
+global.spellData[SPELL.BRUSHFIRE, SP.CONVERT_COLUMN_CONFIG]	= noone;

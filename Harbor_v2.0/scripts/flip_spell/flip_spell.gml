@@ -10,8 +10,8 @@ if (kFlipPressed) {
 		for (var i = 0; i < array_length_1d(config); i++) {
 			var c = config[i];
 		
-			var cx = (c[0] * -1) + cursorW - 1;
-			var cy = c[1];
+			var cx = (c[0] * -1) + (cursorW - 1);
+			var cy = (c[1]);
 			
 			audio_play_sound(sfx_spell_flip, 0, 0);
 			

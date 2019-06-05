@@ -11,7 +11,7 @@ if (room == rm_deckBuilder) {
 				deckBuilder.player2Collection = player2Collection;
 			}
 			else {
-				show_message("Entered rm_deckBuilder without a collection loaded.");	
+				//show_message("Entered rm_deckBuilder without a collection loaded.");	
 			}
 		}
 		else {
@@ -37,7 +37,7 @@ if (room == rm_puzzle) {
 				puzzleController.player2Book = player2Book;
 			}
 			else {
-				show_message("Entered rm_puzzle without a spellBook loaded.");
+				//show_message("Entered rm_puzzle without a spellBook loaded.");
 			}
 		}
 		else {

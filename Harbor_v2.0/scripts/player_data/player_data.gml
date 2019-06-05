@@ -1,10 +1,10 @@
 enum PP { 
 	MAX_LIFE, LIFE, CONTROL, AFFINITY, WEAKNESS, SKIN,
 	LEFT_KEY, RIGHT_KEY, UP_KEY, DOWN_KEY, A1_KEY, A2_KEY, A3_KEY, A4_KEY, A5_KEY,
-	SPELL_COLLECTION,
+	SPELL_COLLECTION, AUTO_SCROLL_SPEED, AUTO_SCROLL_DELAY
 }
 
-#region Player 1 Data -- Always Main Player, Used For Single Player
+// Player 1 Data -- Always Main Player, Used For Single Player
 global.playerData[PLAYER.P1, PP.MAX_LIFE]			= 10;
 global.playerData[PLAYER.P1, PP.LIFE]				= 10;
 global.playerData[PLAYER.P1, PP.CONTROL]			= CONTROL.HUMAN;
@@ -22,9 +22,11 @@ global.playerData[PLAYER.P1, PP.A2_KEY]				= ord("H");
 global.playerData[PLAYER.P1, PP.A3_KEY]				= ord("J");
 global.playerData[PLAYER.P1, PP.A4_KEY]				= ord("K");
 global.playerData[PLAYER.P1, PP.A5_KEY]				= ord("L");
-#endregion
 
-#region Player 2 Data
+global.playerData[PLAYER.P1, PP.AUTO_SCROLL_SPEED]	= 5;
+global.playerData[PLAYER.P1, PP.AUTO_SCROLL_DELAY]	= 20;
+
+// Player 2 Data
 global.playerData[PLAYER.P2, PP.MAX_LIFE]			= 10;
 global.playerData[PLAYER.P2, PP.LIFE]				= 10;
 global.playerData[PLAYER.P2, PP.CONTROL]			= CONTROL.HUMAN;
@@ -42,4 +44,6 @@ global.playerData[PLAYER.P2, PP.A2_KEY]				= ord("V");
 global.playerData[PLAYER.P2, PP.A3_KEY]				= ord("C");
 global.playerData[PLAYER.P2, PP.A4_KEY]				= ord("X");
 global.playerData[PLAYER.P2, PP.A5_KEY]				= ord("Z");
-#endregion
+
+global.playerData[PLAYER.P2, PP.AUTO_SCROLL_SPEED]	= 5;
+global.playerData[PLAYER.P2, PP.AUTO_SCROLL_DELAY]	= 20;
