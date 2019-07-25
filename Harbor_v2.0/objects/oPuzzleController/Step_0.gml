@@ -18,6 +18,9 @@ switch(state) {
 		player1Inst.spellBook = master_book(); // replace with variable reference
 		player1Inst.pid = PLAYER.P1;
 		player1Inst.skin = global.playerData[player1Inst.pid, PP.SKIN];
+		player1Inst.startingLife = global.playerData[player1Inst.pid, PP.LIFE];
+		player1Inst.life = global.playerData[player1Inst.pid, PP.LIFE];
+		player1Inst.maxLife = global.playerData[player1Inst.pid, PP.MAX_LIFE];
 		player1Inst.ground = ground1;
 		ground1.playerInst = player1Inst;
 		
@@ -25,9 +28,11 @@ switch(state) {
 		player2Inst.spellBook = master_book(); // replace with variable reference
 		player2Inst.pid = PLAYER.P2;
 		player2Inst.skin = global.playerData[player2Inst.pid, PP.SKIN];
+		player2Inst.startingLife = global.playerData[player2Inst.pid, PP.LIFE];
+		player2Inst.life = global.playerData[player2Inst.pid, PP.LIFE];
+		player2Inst.maxLife = global.playerData[player2Inst.pid, PP.MAX_LIFE];
 		player2Inst.ground = ground2;
 		ground2.playerInst = player2Inst;
-		
 		player1Inst.enemy = player2Inst;
 		player2Inst.enemy = player1Inst;
 		

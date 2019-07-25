@@ -2699,6 +2699,25 @@
             }
         },
         {
+            "Key": "93566aad-c3b3-48a9-8fa7-9c5ee19f74ac",
+            "Value": {
+                "id": "2dbba620-f134-4588-8ef4-469041d0e4ee",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "options\/tvos\/options_tvos.yy",
+                "resourceType": "GMtvOSOptions"
+            }
+        },
+        {
             "Key": "94a17dbe-7593-4844-b245-a30c8cf0d0ee",
             "Value": {
                 "id": "0940b653-9a11-464b-8c02-bf7bf476339f",

@@ -79,24 +79,26 @@ if (board2Inst != noone) {
 
 #region Draw Health Bar
 
-if (player1Inst != noone) {
-	if (instance_exists(player1Inst)) {
-		var _xOff = 40;
-		var _heartX = player1Inst.x - _xOff + ((player1Inst.x > room_width / 2) * _xOff * 2)
-		var _heartRed = make_color_rgb(255, 0, 52);
-		var _heartGreen = make_color_rgb(0, 241, 0);
-		draw_healthbar(_heartX - 3, player1Inst.y - 55, _heartX + 3, player1Inst.y - 5, player1Inst.life / player1Inst.startingLife * 100, c_black, _heartRed, _heartGreen, 3, true, false);
-		draw_sprite(sHeart, 0, _heartX, player1Inst.y);
+var _heartRed = make_color_rgb(255, 0, 52);
+var _heartGreen = make_color_rgb(0, 241, 0);
+var _xOff = 40;
+
+if (board1Inst != noone) {
+	if (instance_exists(board1Inst)) {
+		
+		var _x1 = board1Inst.x + board1Inst.gridW * board1Inst.space / 2;
+		var _heartX = _x1 - _xOff + ((_x1 > room_width / 2) * _xOff * 2)
+		draw_healthbar(_heartX - 3, ground1.y - 55, _heartX + 3, ground1.y - 5, player1Inst.life / player1Inst.startingLife * 100, c_black, _heartRed, _heartGreen, 3, true, false);
+		draw_sprite(sHeart, 0, _heartX, ground1.y);
 	}
 }
-if (player2Inst != noone) {
-	if (instance_exists(player2Inst)) {
-		var _xOff = 40;
-		var _heartX = player2Inst.x - _xOff + ((player2Inst.x > room_width / 2) * _xOff * 2)
-		var _heartRed = make_color_rgb(255, 0, 52);
-		var _heartGreen = make_color_rgb(0, 241, 0);
-		draw_healthbar(_heartX - 3, player2Inst.y - 55, _heartX + 3, player2Inst.y - 5, player2Inst.life / player2Inst.startingLife * 100, c_black, _heartRed, _heartGreen, 3, true, false);
-		draw_sprite(sHeart, 0, _heartX, player2Inst.y);
+if (board2Inst != noone) {
+	if (instance_exists(board2Inst)) {
+		
+		var _x2 = board2Inst.x + board2Inst.gridW * board1Inst.space / 2;
+		var _heartX = _x2 - _xOff + ((_x2 > room_width / 2) * _xOff * 2)
+		draw_healthbar(_heartX - 3, ground2.y - 55, _heartX + 3, ground2.y - 5, player2Inst.life / player2Inst.startingLife * 100, c_black, _heartRed, _heartGreen, 3, true, false);
+		draw_sprite(sHeart, 0, _heartX, ground2.y);
 	}
 }
 	

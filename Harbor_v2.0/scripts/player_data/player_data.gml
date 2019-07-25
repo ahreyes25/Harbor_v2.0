@@ -5,8 +5,8 @@ enum PP {
 }
 
 // Player 1 Data -- Always Main Player, Used For Single Player
-global.playerData[PLAYER.P1, PP.MAX_LIFE]			= 10;
-global.playerData[PLAYER.P1, PP.LIFE]				= 10;
+global.playerData[PLAYER.P1, PP.MAX_LIFE]			= 30;
+global.playerData[PLAYER.P1, PP.LIFE]				= 30;
 global.playerData[PLAYER.P1, PP.CONTROL]			= CONTROL.HUMAN;
 global.playerData[PLAYER.P1, PP.AFFINITY]			= [ELEMENT.ALL];
 global.playerData[PLAYER.P1, PP.WEAKNESS]			= [ELEMENT.NONE];
@@ -27,8 +27,8 @@ global.playerData[PLAYER.P1, PP.AUTO_SCROLL_SPEED]	= 5;
 global.playerData[PLAYER.P1, PP.AUTO_SCROLL_DELAY]	= 20;
 
 // Player 2 Data
-global.playerData[PLAYER.P2, PP.MAX_LIFE]			= 10;
-global.playerData[PLAYER.P2, PP.LIFE]				= 10;
+global.playerData[PLAYER.P2, PP.MAX_LIFE]			= 30;
+global.playerData[PLAYER.P2, PP.LIFE]				= 30;
 global.playerData[PLAYER.P2, PP.CONTROL]			= CONTROL.HUMAN;
 global.playerData[PLAYER.P2, PP.AFFINITY]			= [ELEMENT.ALL];
 global.playerData[PLAYER.P2, PP.WEAKNESS]			= [ELEMENT.NONE];
